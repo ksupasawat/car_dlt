@@ -2,21 +2,11 @@
   "meta": {
     "year": 2569,
     "month": 6,
-    "generated_at": "2026-07-31T17:05:28.800242",
-    "candidate_count": 7,
-    "total_units": 245
+    "generated_at": "2026-07-31T18:25:23.396029",
+    "candidate_count": 6,
+    "total_units": 94
   },
   "candidates": [
-    {
-      "brand": "JAECOO",
-      "raw_model": "5 EV MAX+",
-      "model": "5 EV MAX+",
-      "units": 151,
-      "confidence": "high",
-      "reason_code": "approved_model_match",
-      "reason": "Raw model name closely resembles the approved BEV raw model '5 EV LONG RANGE DYNAMIC'.",
-      "review_status": "pending"
-    },
     {
       "brand": "GWM",
       "raw_model": "ORA 5",
