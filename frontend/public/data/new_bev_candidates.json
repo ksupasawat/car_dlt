@@ -2,21 +2,11 @@
   "meta": {
     "year": 2569,
     "month": 6,
-    "generated_at": "2026-07-31T16:11:23.949391",
-    "candidate_count": 8,
-    "total_units": 425
+    "generated_at": "2026-07-31T17:05:28.800242",
+    "candidate_count": 7,
+    "total_units": 245
   },
   "candidates": [
-    {
-      "brand": "OMODA",
-      "raw_model": "C5 EV MAX+",
-      "model": "C5 EV MAX+",
-      "units": 180,
-      "confidence": "high",
-      "reason_code": "approved_model_match",
-      "reason": "Raw model name closely resembles the approved BEV raw model 'C5 EV LONG RANGE DYNAMIC'.",
-      "review_status": "pending"
-    },
     {
       "brand": "JAECOO",
       "raw_model": "5 EV MAX+",
