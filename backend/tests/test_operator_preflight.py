@@ -98,6 +98,14 @@ def test_approved_missing_fields():
           expect_error=True, needle="approved")
 
 
+def test_blank_rows_skipped():
+    """Fully-blank trailing rows (Excel save artifact) must not be reported as errors."""
+    tmp = _write([PENDING])
+    with open(tmp, "a", newline="") as f:
+        f.write(",,,,,,,,\n" * 5)
+    check("blank rows skipped", tmp, expect_error=False)
+
+
 def test_blank_required():
     check("blank required", _write([dict(PENDING, model2="")]),
           expect_error=True, needle="ห้ามเว้นว่าง")
@@ -162,6 +170,7 @@ if __name__ == "__main__":
     test_bad_status()
     test_bad_candidate()
     test_approved_missing_fields()
+    test_blank_rows_skipped()
     test_blank_required()
     test_collects_all_errors()
     test_count_pending()

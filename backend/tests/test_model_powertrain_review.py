@@ -151,6 +151,33 @@ def test_invalid_candidate_powertrain_fails_validation():
         tmp.unlink()
 
 
+def test_blank_rows_dropped_on_sync():
+    """Fully-blank rows (Excel trailing blank lines) must be dropped on rewrite."""
+    fd, path = tempfile.mkstemp(suffix=".csv")
+    os.close(fd)
+    tmp = Path(path)
+    with open(tmp, "w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=model_map.REVIEW_HEADERS)
+        w.writeheader()
+        w.writerows([{
+            "brand2": "BYD", "raw_model": "SEAL", "model2": "SEAL",
+            "candidate_powertrain": "", "review_status": "pending",
+            "evidence": "", "reviewer": "", "reviewed_at": "", "notes": "",
+        }])
+        f.write(",,,,,,,,\n" * 5)
+    try:
+        df = pd.DataFrame([{"ยี่ห้อรถ2": "BYD", "รุ่นรถ": "ATTO 3", "รุ่นรถ2": "ATTO 3"}])
+        model_map.sync_model_powertrain_review(df, path=tmp)
+        with open(tmp, encoding="utf-8-sig") as f:
+            rows = list(csv.DictReader(f))
+        if len(rows) != 2:
+            failures.append(f"expected 2 rows after blank-row cleanup, got {len(rows)}")
+        elif any(not r["brand2"].strip() for r in rows):
+            failures.append("blank rows survived sync rewrite")
+    finally:
+        tmp.unlink()
+
+
 if __name__ == "__main__":
     test_new_model_appended_as_pending()
     test_sync_is_idempotent()
@@ -158,6 +185,7 @@ if __name__ == "__main__":
     test_duplicate_keys_fail_validation()
     test_approved_missing_evidence_fails_validation()
     test_invalid_candidate_powertrain_fails_validation()
+    test_blank_rows_dropped_on_sync()
     if failures:
         print(f"FAIL — {len(failures)} issue(s) in model-powertrain-review tests:")
         for f in failures:

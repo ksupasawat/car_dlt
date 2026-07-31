@@ -76,6 +76,11 @@ def load_model_map():
             raw_model = (row.get("raw_model") or "").strip()
             model2 = (row.get("model2") or "").strip()
 
+            # Skip fully-blank rows (trailing blank lines Excel appends on save);
+            # they carry no review data and must never fail the build.
+            if not (brand2 or raw_model or model2):
+                continue
+
             if not brand2 or not raw_model or not model2:
                 raise ValueError(f"{MODEL_MAP_PATH}:{i}: blank brand2/raw_model/model2")
 
@@ -194,6 +199,10 @@ def sync_model_powertrain_review(df_model, path=None):
             reader = csv.DictReader(f)
             _check_headers(reader, REVIEW_HEADERS, path)
             for row in reader:
+                # Drop fully-blank rows (e.g. trailing blank lines Excel appends on save)
+                # so they are never carried into the next rewrite.
+                if not any((row.get(c) or "").strip() for c in ("brand2", "raw_model", "model2")):
+                    continue
                 existing_rows.append(row)
                 existing_keys.add(normalize_key(row.get("brand2", ""), row.get("raw_model", "")))
 

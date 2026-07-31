@@ -69,7 +69,7 @@ The current public dashboard is a static Next export deployed to GitHub Pages:
 - Pages branch: `gh-pages`
 - Source branch: `main`
 - GitHub Pages base path: `/toyota_analysis_car`
-- Release gate: `BUILD_RELEASE.bat`
+- Monthly update: `MONTHLY_UPDATE.bat`
 
 For deployment work, preserve the static approach unless the user explicitly asks for
 API/database migration.

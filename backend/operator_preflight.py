@@ -90,6 +90,10 @@ def validate_review_csv(path=DEFAULT_CSV):
             brand2 = (row.get("brand2") or "").strip()
             raw_model = (row.get("raw_model") or "").strip()
             model2 = (row.get("model2") or "").strip()
+            # Skip fully-blank rows (trailing blank lines Excel appends on save);
+            # they carry no review data and must never block the update.
+            if not (brand2 or raw_model or model2):
+                continue
             candidate = (row.get("candidate_powertrain") or "").strip()
             status = (row.get("review_status") or "").strip()
             evidence = (row.get("evidence") or "").strip()

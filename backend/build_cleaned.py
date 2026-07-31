@@ -91,7 +91,7 @@ def ordered_cols(df):
 
 def load_powertrain_map(path: str, key_field="fuel", value_field="powertrain") -> dict:
     powertrain_map = {}
-    with open(path, newline="", encoding="utf-8") as csvfile:
+    with open(path, newline="", encoding="utf-8-sig") as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
             key = row[key_field].strip()

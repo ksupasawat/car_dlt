@@ -9,7 +9,6 @@ The current shipped workflow is a local Windows workflow plus GitHub Pages publi
 
 - Use `START.bat` to open the dashboard.
 - Use `MONTHLY_UPDATE.bat` when new monthly DLT Excel files arrive.
-- Use `BUILD_RELEASE.bat` before publishing a release.
 - Use GitHub Actions `Deploy dashboard to GitHub Pages` to publish the static website.
 
 There is no separate app login. GitHub permissions are the admin permission system for
@@ -120,21 +119,13 @@ unknown
 
 Do not use `EV`. Use `BEV`.
 
-After editing `model_powertrain_review.csv`, run `MONTHLY_UPDATE.bat` again or run
-`BUILD_RELEASE.bat` before publishing so Sheets 7-8 are regenerated from the approved
-review rows.
+After editing `model_powertrain_review.csv`, run `MONTHLY_UPDATE.bat` again so Sheets 7-8
+are regenerated from the approved review rows.
 
-## Release And Publish Workflow
+## Publishing To GitHub Pages
 
-Before publishing, run:
-
-```text
-BUILD_RELEASE.bat
-```
-
-This rebuilds and validates the release. It also runs the frontend production build.
-
-If the release build passes, publish through GitHub:
+Publishing the dashboard to the live website is done through GitHub Actions — no local
+build is needed:
 
 1. Go to the repository on GitHub.
 2. Open the `Actions` tab.
@@ -151,7 +142,6 @@ private admin credentials and does not accept dashboard writes from visitors.
 |---|---|
 | `START.bat` | Opens the dashboard for normal viewing. |
 | `MONTHLY_UPDATE.bat` | Runs the guided monthly data update. |
-| `BUILD_RELEASE.bat` | Runs release validation before publishing. |
 | `TAKEOVER.bat` | Menu for handoff/setup/start/update guide actions. |
 | `backend/raw data/` | Local folder for the two monthly raw DLT Excel files. |
 | `backend/config/brand_map.csv` | Maps raw brand names to canonical brand names. |
@@ -252,6 +242,6 @@ Common causes:
 - Do not use `EV`; use `BEV`.
 - Do not edit generated JSON files by hand.
 - Do not delete files under `backend/config/`.
-- Do not publish if `BUILD_RELEASE.bat` fails.
+- Do not publish if `MONTHLY_UPDATE.bat` fails.
 - Pending review rows are safe; they can wait.
 - GitHub publishing is controlled by GitHub repository permissions.

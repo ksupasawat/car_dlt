@@ -63,11 +63,10 @@ These scripts at the project root cover normal operation and handoff:
 | `TAKEOVER.bat` | Handoff sessions on another laptop | Opens a four-choice maintenance menu: start the dashboard, update monthly data, open the monthly guide, or exit. |
 | `SETUP.bat` | Once, or after pulling dependency changes | Installs backend Python packages (`backend/requirements.txt`) and frontend npm packages. |
 | `MONTHLY_UPDATE.bat` | Monthly, by anyone (operator or developer) | Guided double-click flow: checks the 2 raw files, preflights the model-review CSV, rebuilds the pipeline + dashboard + Sheets 7-8, builds into a staging copy, validates it, and only then atomically swaps the live JSON (rollback on any failure — the dashboard always keeps the last good data). Writes `reports/monthly_operator_summary.txt` and a timestamped `logs/` file, all with Thai messages. See `docs/THAI_OPERATOR_MONTHLY_GUIDE.md`. |
-| `BUILD_RELEASE.bat` | Before publishing | Runs the full deterministic pipeline, exports dashboard/analyst/manual-report data, validates against a markdown export and the public-release gate, then builds the Next.js production bundle. Set `MARKDOWN_REPORT_PATH` to point at the `*_sheets1-9.md` export directly; otherwise it looks for the newest one in `%USERPROFILE%\Downloads`. |
 
 After a monthly build, review newly appended `pending` rows in
 `backend/config/model_powertrain_review.csv`, record evidence/reviewer/date, and set only
-confirmed rows to `approved`. Run `BUILD_RELEASE.bat` again to refresh Sheets 7-8.
+confirmed rows to `approved`. Run `MONTHLY_UPDATE.bat` again to refresh Sheets 7-8.
 
 Raw DLT workbooks and generated parquet/Excel files are intentionally excluded from Git.
 Maintainers who rebuild the data must supply those files locally; dashboard users do not
@@ -76,8 +75,8 @@ need them.
 ## Checks
 
 Pull requests and pushes to `main` run backend unit tests plus frontend tests, linting,
-type checking, and a static production build. The real-data reconciliation test is run by
-`BUILD_RELEASE.bat` because its raw DLT inputs are intentionally not published.
+type checking, and a static production build. The monthly update also runs
+`validate_public_release.py` on every build before publishing.
 
 ## Key files
 

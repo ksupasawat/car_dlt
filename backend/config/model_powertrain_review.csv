@@ -3612,7 +3612,7 @@ SUMITOMO,SH125X-3B,SH125X-3B,,pending,,,,auto-added from latest model data
 TCM,850,850,,pending,,,,auto-added from latest model data
 TCM,L20-2,L20-2,,pending,,,,auto-added from latest model data
 TCM,SDT8,SDT8,,pending,,,,auto-added from latest model data
-VOGELE,Jun-83,Jun-83,,pending,,,,auto-added from latest model data
+VOGELE,มิ.ย.-83,มิ.ย.-83,,pending,,,,auto-added from latest model data
 VOLVO,EC300DLR,EC300DLR,,pending,,,,auto-added from latest model data
 XCMG,TY230,TY230,,pending,,,,auto-added from latest model data
 HITACHI,EX120-3M,EX120-3M,,pending,,,,auto-added from latest model data
@@ -6848,7 +6848,7 @@ TOYOTA,GR86 RZ 40TH ANNIVERSARY,GR86 RZ 40TH ANNIVERSARY,,pending,,,,auto-added 
 TOYOTA,HARRIER S,HARRIER S,,pending,,,,auto-added from latest model data
 TOYOTA,LAND CRUISER 70 AX,LAND CRUISER 70 AX,,pending,,,,auto-added from latest model data
 VOLKSWAGEN,PASSAT ESTATE 2.0 TDI,PASSAT ESTATE 2.0 TDI,,pending,,,,auto-added from latest model data
-VOLVO,EX30,EX30,,pending,,,,auto-added from latest model data
+VOLVO,EX30,EX30,BEV,approved,google,P_pop,31/7/2569,auto-added from latest model data
 WEIAO BOMA,STANDARD,STANDARD,,pending,,,,auto-added from latest model data
 Deepal + Changan,LUMIN,LUMIN,,pending,,,,auto-added from latest model data
 SUZUKI,CIAZ GL 1.25L MT,CIAZ GL 1.25L MT,,pending,,,,auto-added from latest model data
@@ -8228,7 +8228,7 @@ RIDDARA,RD6 ECON,RD6,,pending,,,,auto-added from latest model data
 SUZUKI,HUSTLER HYBRID G,HUSTLER HYBRID G,,pending,,,,auto-added from latest model data
 SUZUKI,JIMNY NOMADE FC 5 DOOR,JIMNY NOMADE FC 5 DOOR,,pending,,,,auto-added from latest model data
 TOYOTA,GR 86 RZ 2.4L,GR 86 RZ 2.4L,,pending,,,,auto-added from latest model data
-WULING,Bingou SRDTH CCS2,Bingou,,pending,,,,auto-added from latest model data
+WULING,Bingou SRDTH CCS2,Bingou,BEV,approved,google,p_pop,31/7/2026,Reviewed in Batch 2
 BENELLI,TNT600GT,TNT600GT,,pending,,,,auto-added from latest model data
 DECO,DX30,DX30,,pending,,,,auto-added from latest model data
 DECO,Purra,Purra,,pending,,,,auto-added from latest model data
@@ -8634,7 +8634,7 @@ Mercedes-Benz,Mercedes-Maybach S 580 e,Mercedes-Maybach S 580 e,,pending,,,,auto
 Mercedes-Benz,SPRINTER HYMER CAMPER VAN,SPRINTER HYMER CAMPER VAN,,pending,,,,auto-added from latest model data
 BYD,BYD SEALION5 DM-i PREMIUM,BYD SEALION5 DM-i PREMIUM,,pending,,,,auto-added from latest model data
 JAECOO,5 EV MAX+,5 EV MAX+,,pending,,,,auto-added from latest model data
-JAECOO,6 EV 2WD MAX,6 EV 2WD MAX,,pending,,,,auto-added from latest model data
+JAECOO,6 EV 2WD MAX,6 EV 2WD MAX,BEV,approved,googel,p_pop,07/31/2026,review in batch 2
 LAMBORGHINI,HURACAN 5.2 V10 EVO COUPE,HURACAN 5.2 V10 EVO COUPE,,pending,,,,auto-added from latest model data
 LAMBORGHINI,URUS SE PHEV,URUS SE PHEV,,pending,,,,auto-added from latest model data
 LAND ROVER,DEFENDER DIESEL 3.0 D250 SE,DEFENDER DIESEL 3.0 D250 SE,,pending,,,,auto-added from latest model data

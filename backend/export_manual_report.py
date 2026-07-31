@@ -4,7 +4,7 @@ This is the single source the /report page renders. It reproduces the manual rep
 from the two DLT raw files plus repo mapping tables so the frontend never recomputes
 spreadsheet logic.
 
-Source rules (from specs/public_dashboard_markdown_parity_spec.md):
+Source rules for the Manual Report sheets:
   * Sheets 1-6 and 9 -> test_fuel_cleaned.parquet, fuel-derived powertrain (PT).
   * Sheets 7-8      -> test_model_cleaned.parquet, filtered to (Brand2, raw model) pairs
                        explicitly approved as BEV in config/model_powertrain_review.csv
@@ -405,5 +405,5 @@ if __name__ == "__main__":
         print()
         print("MANUAL REPORT NOT EXPORTED")
         print(f"Problem: {error}")
-        print("Fix: open backend/config/model_powertrain_review.csv, correct the named row, save it as CSV UTF-8, then run BUILD_RELEASE.bat again.")
+        print("Fix: open backend/config/model_powertrain_review.csv, correct the named row, save it as CSV UTF-8, then run MONTHLY_UPDATE.bat again.")
         sys.exit(1)

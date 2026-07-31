@@ -45,6 +45,6 @@ cd ..
 echo.
 
 echo ============================================================
-echo  Setup complete. Next: MONTHLY_UPDATE.bat or BUILD_RELEASE.bat
+echo  Setup complete. Next: MONTHLY_UPDATE.bat
 echo ============================================================
 if /I not "%~1"=="nopause" pause

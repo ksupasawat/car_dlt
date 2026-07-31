@@ -2,41 +2,11 @@
   "meta": {
     "year": 2569,
     "month": 6,
-    "generated_at": "2026-07-31T13:36:54.734284",
-    "candidate_count": 11,
-    "total_units": 654
+    "generated_at": "2026-07-31T16:11:23.949391",
+    "candidate_count": 8,
+    "total_units": 425
   },
   "candidates": [
-    {
-      "brand": "VOLVO",
-      "raw_model": "EX30",
-      "model": "EX30",
-      "units": 10,
-      "confidence": "high",
-      "reason_code": "approved_family_match",
-      "reason": "Same brand and canonical model family ('EX30') as an already-approved BEV.",
-      "review_status": "pending"
-    },
-    {
-      "brand": "WULING",
-      "raw_model": "Bingou SRDTH CCS2",
-      "model": "Bingou",
-      "units": 5,
-      "confidence": "high",
-      "reason_code": "approved_family_match",
-      "reason": "Same brand and canonical model family ('Bingou') as an already-approved BEV.",
-      "review_status": "pending"
-    },
-    {
-      "brand": "JAECOO",
-      "raw_model": "6 EV 2WD MAX",
-      "model": "6 EV 2WD MAX",
-      "units": 214,
-      "confidence": "high",
-      "reason_code": "approved_model_match",
-      "reason": "Raw model name closely resembles the approved BEV raw model '6 EV LONG RANGE 2WD'.",
-      "review_status": "pending"
-    },
     {
       "brand": "OMODA",
       "raw_model": "C5 EV MAX+",
