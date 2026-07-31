@@ -1,14 +1,14 @@
 {
   "status": "review_needed",
   "reporting_period": "June 2569",
-  "generated_at": "2026-07-31T18:25:35.308945",
-  "last_run_at": "2026-07-31T18:23:45.925076",
+  "generated_at": "2026-07-31T19:07:51.972431",
+  "last_run_at": "2026-07-31T19:05:47.201572",
   "model_row_count": 646979,
   "fuel_row_count": 225353,
   "model_total_units": 13966182,
   "fuel_total_units": 13966182,
   "totals_match": true,
-  "pending_review_count": 8543,
+  "pending_review_count": 8542,
   "published_files": [
     {
       "file": "dashboard_summary.json",
@@ -40,9 +40,9 @@
     }
   ],
   "bev_watchlist": {
-    "candidate_count": 6,
-    "total_units": 94,
-    "message": "6 possible new BEV models need checking. Published data remains safe."
+    "candidate_count": 5,
+    "total_units": 12,
+    "message": "5 possible new BEV models need checking. Published data remains safe."
   },
   "next_action": "Review the possible BEV models listed in the watchlist. Approve only models supported by reliable evidence.",
   "safe_live_data": true

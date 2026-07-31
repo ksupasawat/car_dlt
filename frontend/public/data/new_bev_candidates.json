@@ -2,21 +2,11 @@
   "meta": {
     "year": 2569,
     "month": 6,
-    "generated_at": "2026-07-31T18:25:23.396029",
-    "candidate_count": 6,
-    "total_units": 94
+    "generated_at": "2026-07-31T19:07:40.143078",
+    "candidate_count": 5,
+    "total_units": 12
   },
   "candidates": [
-    {
-      "brand": "GWM",
-      "raw_model": "ORA 5",
-      "model": "ORA 5",
-      "units": 82,
-      "confidence": "high",
-      "reason_code": "approved_model_match",
-      "reason": "Raw model name closely resembles the approved BEV raw model 'ORA 07'.",
-      "review_status": "pending"
-    },
     {
       "brand": "MINI",
       "raw_model": "Cooper S Countryman RHD",
