@@ -1,30 +1,30 @@
 {
   "meta": {
     "year": 2569,
-    "month": 6,
-    "generated_at": "2026-07-31T19:07:40.143078",
-    "candidate_count": 5,
-    "total_units": 12
+    "month": 7,
+    "generated_at": "2026-08-07T11:30:39.892390",
+    "candidate_count": 8,
+    "total_units": 225
   },
   "candidates": [
     {
-      "brand": "MINI",
-      "raw_model": "Cooper S Countryman RHD",
-      "model": "Cooper S Countryman RHD",
-      "units": 7,
+      "brand": "HYUNDAI",
+      "raw_model": "IONIQ5",
+      "model": "IONIQ5",
+      "units": 2,
       "confidence": "high",
-      "reason_code": "approved_model_match",
-      "reason": "Raw model name closely resembles the approved BEV raw model 'COOPER SE HATCH RHD'.",
+      "reason_code": "approved_family_match",
+      "reason": "Same brand and canonical model family ('IONIQ5') as an already-approved BEV.",
       "review_status": "pending"
     },
     {
-      "brand": "MINI",
-      "raw_model": "Cooper S Hatch RHD",
-      "model": "Cooper S Hatch RHD",
-      "units": 2,
+      "brand": "WULING",
+      "raw_model": "Binguo SRD",
+      "model": "Bingou",
+      "units": 1,
       "confidence": "high",
-      "reason_code": "approved_model_match",
-      "reason": "Raw model name closely resembles the approved BEV raw model 'COOPER SE HATCH RHD'.",
+      "reason_code": "approved_family_match",
+      "reason": "Same brand and canonical model family ('Bingou') as an already-approved BEV.",
       "review_status": "pending"
     },
     {
@@ -39,8 +39,8 @@
     },
     {
       "brand": "MINI",
-      "raw_model": "Cooper S Clubman RHD",
-      "model": "Cooper S Clubman RHD",
+      "raw_model": "Cooper S Convertible RHD",
+      "model": "Cooper S Convertible RHD",
       "units": 1,
       "confidence": "high",
       "reason_code": "approved_model_match",
@@ -49,12 +49,42 @@
     },
     {
       "brand": "MINI",
-      "raw_model": "Cooper S Convertible RHD",
-      "model": "Cooper S Convertible RHD",
+      "raw_model": "Cooper S Countryman RHD",
+      "model": "Cooper S Countryman RHD",
       "units": 1,
       "confidence": "high",
       "reason_code": "approved_model_match",
       "reason": "Raw model name closely resembles the approved BEV raw model 'COOPER SE HATCH RHD'.",
+      "review_status": "pending"
+    },
+    {
+      "brand": "WULING",
+      "raw_model": "DARION EV",
+      "model": "DARION EV",
+      "units": 157,
+      "confidence": "medium",
+      "reason_code": "electric_name_marker",
+      "reason": "Raw model name contains an electric-vehicle name marker (EV/BEV/ELECTRIC).",
+      "review_status": "pending"
+    },
+    {
+      "brand": "WULING",
+      "raw_model": "PORTA EV",
+      "model": "PORTA EV",
+      "units": 33,
+      "confidence": "medium",
+      "reason_code": "electric_name_marker",
+      "reason": "Raw model name contains an electric-vehicle name marker (EV/BEV/ELECTRIC).",
+      "review_status": "pending"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "raw_model": "CLA 250+ electric",
+      "model": "CLA 250+ electric",
+      "units": 29,
+      "confidence": "medium",
+      "reason_code": "electric_name_marker",
+      "reason": "Raw model name contains an electric-vehicle name marker (EV/BEV/ELECTRIC).",
       "review_status": "pending"
     }
   ]
