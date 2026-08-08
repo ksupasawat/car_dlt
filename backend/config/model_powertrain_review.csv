@@ -6644,7 +6644,7 @@ BMW,740d M Sport,740d M Sport,,pending,,,,auto-added from latest model data
 CHEVROLET,CORVETTE STINGRAY 3LT,CORVETTE STINGRAY 3LT,,pending,,,,auto-added from latest model data
 GMC,YUKON XL,YUKON XL,,pending,,,,auto-added from latest model data
 HONDA,STEPWAGON e:HEV SPADA PREMIUM,STEPWAGON e:HEV SPADA PREMIUM,,pending,,,,auto-added from latest model data
-HYUNDAI,IONIQ5,IONIQ5,,pending,,,,auto-added from latest model data
+HYUNDAI,IONIQ5,IONIQ5,BEV,approved,HeadlightMag: Hyundai IONIQ 5 launch https://www.headlightmag.com/2023-11-29-official-price-hyundai-ioniq-5-thailand/,claude-code,8/7/2026,approved per user request
 JEEP,WRANGLER RUBICON V6 3-DOOR,WRANGLER RUBICON V6 3-DOOR,,pending,,,,auto-added from latest model data
 KINZAN,RHD620 EU COMFORT,RHD620 EU COMFORT,,pending,,,,auto-added from latest model data
 LOTUS,ELETRE R,ELETRE R,,pending,,,,auto-added from latest model data
@@ -7074,7 +7074,7 @@ VOLKSWAGEN,ID BUZZ FIRST EDITION,ID BUZZ FIRST EDITION,,pending,,,,auto-added fr
 VOLVO,EC40,EC40,,pending,,,,auto-added from latest model data
 VOLVO,EX40,EX40,,pending,,,,auto-added from latest model data
 XEV,YOYO PLUS,YOYO PLUS,,pending,,,,auto-added from latest model data
-WULING,Bingou SRD,Bingou,,pending,,,,auto-added from latest model data
+WULING,Bingou SRD,Bingou,BEV,approved,https://autolifethailand.tv/official-price-wuling-binguo-ev-thailand-assembly/,claude-code,8/7/2026,approved per user request
 TOYOTA,LAND CRUISER 250 ZX FIRST,LAND CRUISER 250 ZX FIRST,,pending,,,,auto-added from latest model data
 BMW,K 1600 GTL,K 1600 GTL,,pending,,,,auto-added from latest model data
 GPX,DZ3,DZ3,,pending,,,,auto-added from latest model data
@@ -7129,7 +7129,7 @@ VOLVO,FM1342R49400ALSI-TH,FM1342R49400ALSI-TH,,pending,,,,auto-added from latest
 HINO,XZU600R-HKMQLT3,XZU600R-HKMQLT3,,pending,,,,auto-added from latest model data
 RELY,"Q22B,1.1L","Q22B,1.1L",,pending,,,,auto-added from latest model data
 ASM,ไม่ระบุ,ไม่ระบุ,,pending,,,,auto-added from latest model data
-WULING,Binguo SRD,Bingou,,pending,,,,auto-added from latest model data
+WULING,Binguo SRD,Bingou,BEV,approved,https://autolifethailand.tv/official-price-wuling-binguo-ev-thailand-assembly/,claude-code,8/7/2026,approved per user request
 Mercedes-Benz,G500 4X4 SQUARED,G500 4X4 SQUARED,,pending,,,,auto-added from latest model data
 BMW,ALPINA B5 TOURING,ALPINA B5 TOURING,,pending,,,,auto-added from latest model data
 BMW,X1 xDrive30e M Sport,X1 xDrive30e M Sport,,pending,,,,auto-added from latest model data
@@ -8730,8 +8730,8 @@ TOYOTA,GR86 CUP CAR BASIC HKS,GR86 CUP CAR BASIC HKS,,pending,,,,auto-added from
 TOYOTA,VELLFIRE PHEV EXECUTIVE LOUNGE,VELLFIRE PHEV EXECUTIVE LOUNGE,,pending,,,,auto-added from latest model data
 VOLKSWAGEN,CADDY MAXI LIFE 2.0 TDI,CADDY MAXI LIFE 2.0 TDI,,pending,,,,auto-added from latest model data
 VOLKSWAGEN,GOLF HATCH MATCH 1.5 TSI,GOLF HATCH MATCH 1.5 TSI,,pending,,,,auto-added from latest model data
-WULING,DARION EV,DARION EV,,pending,,,,auto-added from latest model data
-WULING,PORTA EV,PORTA EV,,pending,,,,auto-added from latest model data
+WULING,DARION EV,DARION EV,BEV,approved,https://www.wulingthai.com/model/darion-ev,claude-code,8/7/2026,approved per user request
+WULING,PORTA EV,PORTA EV,BEV,approved,https://www.wulingthai.com/model/porta-ev,claude-code,8/7/2026,approved per user request
 BMW,R 12 G/S,R 12 G/S,,pending,,,,auto-added from latest model data
 DUCATI,SCRAMBLER RIZOMA,SCRAMBLER RIZOMA,,pending,,,,auto-added from latest model data
 EM,ARENA,ARENA,,pending,,,,auto-added from latest model data
