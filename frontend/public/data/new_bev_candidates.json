@@ -2,80 +2,9 @@
   "meta": {
     "year": 2569,
     "month": 8,
-    "generated_at": "2026-09-04T22:18:01.009858",
-    "candidate_count": 7,
-    "total_units": 107
+    "generated_at": "2026-09-04T22:42:52.175118",
+    "candidate_count": 0,
+    "total_units": 0
   },
-  "candidates": [
-    {
-      "brand": "AVATR",
-      "raw_model": "AVATR 11 ULTRA",
-      "model": "AVATR 11 ULTRA",
-      "units": 3,
-      "confidence": "high",
-      "reason_code": "approved_model_match",
-      "reason": "Raw model name closely resembles the approved BEV raw model 'AVATR 11 LONG RANGE'.",
-      "review_status": "pending"
-    },
-    {
-      "brand": "MINI",
-      "raw_model": "Cooper S Countryman RHD",
-      "model": "Cooper S Countryman RHD",
-      "units": 3,
-      "confidence": "high",
-      "reason_code": "approved_model_match",
-      "reason": "Raw model name closely resembles the approved BEV raw model 'COOPER SE HATCH RHD'.",
-      "review_status": "pending"
-    },
-    {
-      "brand": "MINI",
-      "raw_model": "Cooper Hatch RHD",
-      "model": "Cooper Hatch RHD",
-      "units": 1,
-      "confidence": "high",
-      "reason_code": "approved_model_match",
-      "reason": "Raw model name closely resembles the approved BEV raw model 'COOPER SE HATCH RHD'.",
-      "review_status": "pending"
-    },
-    {
-      "brand": "MINI",
-      "raw_model": "Cooper S 5-Turer RHD",
-      "model": "Cooper S 5-Turer RHD",
-      "units": 1,
-      "confidence": "high",
-      "reason_code": "approved_model_match",
-      "reason": "Raw model name closely resembles the approved BEV raw model 'COOPER SE HATCH RHD'.",
-      "review_status": "pending"
-    },
-    {
-      "brand": "MINI",
-      "raw_model": "Cooper S Convertible RHD",
-      "model": "Cooper S Convertible RHD",
-      "units": 1,
-      "confidence": "high",
-      "reason_code": "approved_model_match",
-      "reason": "Raw model name closely resembles the approved BEV raw model 'COOPER SE HATCH RHD'.",
-      "review_status": "pending"
-    },
-    {
-      "brand": "Mercedes-Benz",
-      "raw_model": "CLA 250+ electric",
-      "model": "CLA 250+ electric",
-      "units": 97,
-      "confidence": "medium",
-      "reason_code": "electric_name_marker",
-      "reason": "Raw model name contains an electric-vehicle name marker (EV/BEV/ELECTRIC).",
-      "review_status": "pending"
-    },
-    {
-      "brand": "HYUNDAI",
-      "raw_model": "KONA EV",
-      "model": "KONA EV",
-      "units": 1,
-      "confidence": "medium",
-      "reason_code": "electric_name_marker",
-      "reason": "Raw model name contains an electric-vehicle name marker (EV/BEV/ELECTRIC).",
-      "review_status": "pending"
-    }
-  ]
+  "candidates": []
 }

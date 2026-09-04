@@ -127,7 +127,7 @@ MG,HS,HS,,pending,,,,auto-added from latest model data
 MG,MG EXTENDER,MG EXTENDER,,pending,,,,auto-added from latest model data
 MG,NEW MG3,NEW MG3,,pending,,,,auto-added from latest model data
 MG,ZS,ZS,,pending,,,,auto-added from latest model data
-MINI,Cooper S Countryman RHD,Cooper S Countryman RHD,,pending,,,,auto-added from latest model data
+MINI,Cooper S Countryman RHD,Cooper S Countryman RHD,ICE,rejected,Fuel-grain cross-check: MINI models named SE/E account for exactly the BEV units in all 12 months to Aug 2569 while this trim sits in the petrol remainder. MINI Thailand lineup: https://www.mini.co.th/en_TH/home/serv/special-offers/the_new_mini_family.html,claude-code,9/4/2026,rejected per user review - petrol trim; false match on shared first token Cooper
 MITSUBISHI,ATTRAGE,ATTRAGE,,pending,,,,auto-added from latest model data
 MITSUBISHI,MIRAGE,MIRAGE,,pending,,,,auto-added from latest model data
 MITSUBISHI,PAJERO SPORT,PAJERO SPORT,,pending,,,,auto-added from latest model data
@@ -320,7 +320,7 @@ HONDA,STEP WGN SPADA,STEP WGN SPADA,,pending,,,,auto-added from latest model dat
 HONDA,STEPWGN SPADA HYBRID G,STEP WGN SPADA HYBRID G,,pending,,,,auto-added from latest model data
 HYUNDAI,GRAND STAREX,GRAND STAREX,,pending,,,,auto-added from latest model data
 HYUNDAI,IONIQ EV,IONIQ EV,,pending,,,,auto-added from latest model data
-HYUNDAI,KONA EV,KONA EV,,pending,,,,auto-added from latest model data
+HYUNDAI,KONA EV,KONA EV,BEV,approved,HeadlightMag: Hyundai KONA Electric official price Thailand https://www.headlightmag.com/official-price-hyundai-kona-ev-thailand/,claude-code,9/4/2026,approved per user request
 HYUNDAI,VELOSTER,VELOSTER,,pending,,,,auto-added from latest model data
 JAGUAR,E-PACE 2.0L T/C AWD AUTO,E-PACE 2.0L T/C AWD AUTO,,pending,,,,auto-added from latest model data
 JEEP,GLADIATOR RUBICON,GLADIATOR RUBICON,,pending,,,,auto-added from latest model data
@@ -357,8 +357,8 @@ MG,ZS EV,ZS EV,BEV,approved,paultan.org: MG ZS EV B-seg SUV launched in Thailand
 MINI,COOPER D RHD,COOPER D RHD,,pending,,,,auto-added from latest model data
 MINI,Cooper Clubman RHD,Cooper Clubman RHD,,pending,,,,auto-added from latest model data
 MINI,Cooper D 5-Turer RHD,Cooper D 5-Turer RHD,,pending,,,,auto-added from latest model data
-MINI,Cooper Hatch RHD,Cooper Hatch RHD,,pending,,,,auto-added from latest model data
-MINI,Cooper S 5-Turer RHD,Cooper S 5-Turer RHD,,pending,,,,auto-added from latest model data
+MINI,Cooper Hatch RHD,Cooper Hatch RHD,ICE,rejected,Fuel-grain cross-check: MINI models named SE/E account for exactly the BEV units in all 12 months to Aug 2569 while this trim sits in the petrol remainder. MINI Thailand lineup: https://www.mini.co.th/en_TH/home/serv/special-offers/the_new_mini_family.html,claude-code,9/4/2026,rejected per user review - petrol trim; false match on shared first token Cooper
+MINI,Cooper S 5-Turer RHD,Cooper S 5-Turer RHD,ICE,rejected,Fuel-grain cross-check: MINI models named SE/E account for exactly the BEV units in all 12 months to Aug 2569 while this trim sits in the petrol remainder. MINI Thailand lineup: https://www.mini.co.th/en_TH/home/serv/special-offers/the_new_mini_family.html,claude-code,9/4/2026,rejected per user review - petrol trim; false match on shared first token Cooper
 MINI,Cooper S Cabrio RHD,Cooper S Cabrio RHD,,pending,,,,auto-added from latest model data
 MINI,Cooper S Clubman RHD,Cooper S Clubman RHD,,pending,,,,auto-added from latest model data
 MINI,Cooper S Hatch RHD,Cooper S Hatch RHD,,pending,,,,auto-added from latest model data
@@ -7771,7 +7771,7 @@ JEEP,RENEGADE SUMMIT E-HYBRID MHEV,RENEGADE SUMMIT E-HYBRID MHEV,,pending,,,,aut
 LAND ROVER,DEFENDER 4.4 LITRE T/C PETROL,DEFENDER 4.4 LITRE T/C PETROL,,pending,,,,auto-added from latest model data
 MCLAREN,ARTURA SPIDER,ARTURA SPIDER,,pending,,,,auto-added from latest model data
 MG,IM6,IM6,,pending,,,,auto-added from latest model data
-MINI,Cooper S Convertible RHD,Cooper S Convertible RHD,,pending,,,,auto-added from latest model data
+MINI,Cooper S Convertible RHD,Cooper S Convertible RHD,ICE,rejected,Fuel-grain cross-check: MINI models named SE/E account for exactly the BEV units in all 12 months to Aug 2569 while this trim sits in the petrol remainder. MINI Thailand lineup: https://www.mini.co.th/en_TH/home/serv/special-offers/the_new_mini_family.html,claude-code,9/4/2026,rejected per user review - petrol trim; false match on shared first token Cooper
 STELATO,S9,S9,,pending,,,,auto-added from latest model data
 SUZUKI,JIMNY ALPHA 4WD,JIMNY ALPHA 4WD,,pending,,,,auto-added from latest model data
 TOYOTA,ALPHARD HYBRID Z EXECUTIVE,ALPHARD HYBRID Z EXECUTIVE,,pending,,,,auto-added from latest model data
@@ -8715,7 +8715,7 @@ CATERPILLAR,320E-2,320E-2,,pending,,,,auto-added from latest model data
 CATERPILLAR,305.5E2,305.5E2,,pending,,,,auto-added from latest model data
 BYD,BYD SEALION6 DM-i PREMIUM,BYD SEALION6 DM-i PREMIUM,,pending,,,,auto-added from latest model data
 Deepal + Changan,NEVO Q05,NEVO Q05,,pending,,,,auto-added from latest model data
-Mercedes-Benz,CLA 250+ electric,CLA 250+ electric,,pending,,,,auto-added from latest model data
+Mercedes-Benz,CLA 250+ electric,CLA 250+ electric,BEV,approved,HeadlightMag: Mercedes-Benz CLA 250+ Electric official price Thailand https://www.headlightmag.com/official-price-mercedes-benz-cla-250-electric/,claude-code,9/4/2026,approved per user request
 BYD,BYD SEALION6,BYD SEALION6,,pending,,,,auto-added from latest model data
 BYD,BYD SEALION6 DM-i DYNAMIC,BYD SEALION6 DM-i DYNAMIC,,pending,,,,auto-added from latest model data
 BYD,BYD SHARK 6 LIMITED,BYD SHARK 6 LIMITED,,pending,,,,auto-added from latest model data
@@ -8783,7 +8783,7 @@ LINXYS,G100-R CARGO,G100-R CARGO,,pending,,,,auto-added from latest model data
 AION,GN8 PHEV PREMIUM,GN8 PHEV PREMIUM,,pending,,,,auto-added from latest model data
 Mercedes-Benz,AMG SL 55 4MATIC+,AMG SL 55 4MATIC+,,pending,,,,auto-added from latest model data
 AUDI,A6 2.0 TDI,A6 2.0 TDI,,pending,,,,auto-added from latest model data
-AVATR,AVATR 11 ULTRA,AVATR 11 ULTRA,,pending,,,,auto-added from latest model data
+AVATR,AVATR 11 ULTRA,AVATR 11 ULTRA,BEV,approved,Official AVATR Thailand brochure: Avatr 11 https://www.avatr.co.th/cd23266c-7032-4c10-b746-ff8b4822ad27/E-leaflet_EN_website.pdf,claude-code,9/4/2026,approved per user request
 BMW,iX3 50 xDrive,iX3 50 xDrive,,pending,,,,auto-added from latest model data
 CHERY,Q QOOL,Q QOOL,,pending,,,,auto-added from latest model data
 CHERY,Q QUINT,Q QUINT,,pending,,,,auto-added from latest model data
