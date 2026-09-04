@@ -1,7 +1,9 @@
 {
   "master_model": "output\\test_9_masterModel.xlsx",
-  "run_date": "2026-08-07",
-  "new_months": [],
+  "run_date": "2026-09-04",
+  "new_months": [
+    "2569_สิงหาคม"
+  ],
   "corrected_months": [
     "2568_กรกฎาคม",
     "2568_กันยายน",
