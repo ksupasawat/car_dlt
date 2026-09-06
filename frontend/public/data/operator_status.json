@@ -1,14 +1,14 @@
 {
   "status": "review_needed",
   "reporting_period": "August 2569",
-  "generated_at": "2026-09-04T22:43:05.110162",
-  "last_run_at": "2026-09-04T22:41:04.957024",
+  "generated_at": "2026-09-06T19:09:40.675021",
+  "last_run_at": "2026-09-06T19:06:50.389952",
   "model_row_count": 667892,
   "fuel_row_count": 233061,
   "model_total_units": 14402847,
   "fuel_total_units": 14402847,
   "totals_match": true,
-  "pending_review_count": 8668,
+  "pending_review_count": 8578,
   "published_files": [
     {
       "file": "dashboard_summary.json",
@@ -44,6 +44,6 @@
     "total_units": 0,
     "message": "No new BEV candidates."
   },
-  "next_action": "No action needed — new data is published and safe. 8668 new model row(s) are awaiting review and won't appear in Sheets 7-8 until approved in model_powertrain_review.csv; only act if a specific new BEV model is missing.",
+  "next_action": "No action needed — new data is published and safe. 8578 new model row(s) are awaiting review and won't appear in Sheets 7-8 until approved in model_powertrain_review.csv; only act if a specific new BEV model is missing.",
   "safe_live_data": true
 }
