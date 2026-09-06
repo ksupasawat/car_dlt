@@ -4,6 +4,16 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { AlertTriangle, ChevronDown, ChevronRight, Download, RefreshCw } from "lucide-react";
 import {
+  Bar,
+  BarChart,
+  CartesianGrid,
+  Legend,
+  ResponsiveContainer,
+  Tooltip,
+  XAxis,
+  YAxis,
+} from "recharts";
+import {
   MANUAL_REPORT_SHEETS as SHEETS,
   buildManualReportFileName,
   buildManualReportSheetRows,
@@ -14,6 +24,7 @@ import {
   type ManualReport,
   type ManualReportMeta,
   type ReportRow,
+  type SheetKind,
 } from "../reportExport";
 
 // Canonical manual report: /report renders this JSON directly and never recomputes
@@ -50,6 +61,100 @@ function growthClass(n: number | null | undefined) {
 function rankChange(n: number | null | undefined) {
   if (n === null || n === undefined || Number.isNaN(n) || n === 0) return "—";
   return n > 0 ? `+${n}` : String(n);
+}
+
+// Same palette and tooltip chrome as the dashboard charts so the two pages read as one product.
+const PT_COLORS: Record<string, string> = {
+  ICE: "#64748b", BEV: "#169387", HEV: "#fbbf24", PHEV: "#fb923c",
+};
+const CURR_COLOR = "#169387";
+const PREV_COLOR = "#475569";
+const TT = {
+  contentStyle: {
+    backgroundColor: "#0f172a", border: "1px solid #1e293b",
+    borderRadius: "2px", color: "#f1f5f9", fontSize: "11px", padding: "8px",
+  },
+  itemStyle: { color: "#94a3b8" },
+  cursor: { fill: "rgba(255,255,255,0.05)" },
+};
+const AXIS = { stroke: "#334155", tick: { fill: "#64748b", fontSize: 10 } };
+
+// A table of 140 rows answers "what is the number"; the chart answers "who is big and
+// which way is it moving" without anyone reading a cell. Sheet 1 is the only one whose
+// story is composition over time — the rest are a ranking, so they all get the same
+// top-ten shape with last year beside this year.
+function SheetChart({ kind, rows, meta, labels }: {
+  kind: SheetKind;
+  rows: ReportRow[];
+  meta: ManualReportMeta;
+  labels: ReturnType<typeof latestMonthLabels>;
+}) {
+  const series = useMemo(
+    () => (kind === "powertrain" ? rows.filter((r) => r.label !== "Grand Total").map((r) => r.label) : []),
+    [kind, rows],
+  );
+
+  const monthly = useMemo(() => {
+    if (kind !== "powertrain") return [];
+    return meta.months.slice(0, meta.latest_month_num).map((m, i) => {
+      const point: Record<string, string | number> = { month: m };
+      rows.forEach((r) => {
+        if (r.label === "Grand Total") return;
+        point[r.label] = r.curr_months?.[i] ?? 0;
+      });
+      return point;
+    });
+  }, [kind, rows, meta]);
+
+  // Tree-shaped sheets carry parent rows too; chart the leaves the sheet is named for.
+  const top = useMemo(() => {
+    if (kind === "powertrain") return [];
+    const level = kind === "model_tree" ? "model" : kind === "province_tree" ? "province" : null;
+    return rows
+      .filter((r) => (level ? r.level === level : r.level !== "grand" && r.label !== "Grand Total"))
+      .slice()
+      .sort((a, b) => (b.curr_ytd ?? 0) - (a.curr_ytd ?? 0))
+      .slice(0, 10)
+      .map((r) => ({ name: r.label, prev: r.prev_ytd ?? 0, curr: r.curr_ytd ?? 0 }));
+  }, [kind, rows]);
+
+  if (kind === "powertrain" ? monthly.length === 0 : top.length === 0) return null;
+
+  const caption = kind === "powertrain"
+    ? `Registrations by powertrain, ${meta.months[0]}–${labels.currMonth} ${meta.latest_year}`
+    : `Top ${top.length} by ${labels.currYtdPeriod}, compared with ${labels.prevYtdPeriod}`;
+
+  return (
+    <div className="border-t border-slate-800 px-4 pb-4 pt-3">
+      <div className="mb-2 text-[11px] text-slate-500">{caption}</div>
+      <div style={{ height: kind === "powertrain" ? 260 : 340 }}>
+        <ResponsiveContainer width="100%" height="100%">
+          {kind === "powertrain" ? (
+            <BarChart data={monthly} margin={{ top: 4, right: 12, left: 4, bottom: 0 }}>
+              <CartesianGrid strokeDasharray="1 3" stroke="#1e293b" vertical={false} />
+              <XAxis dataKey="month" {...AXIS} />
+              <YAxis {...AXIS} tickFormatter={(v: number) => (v >= 1000 ? `${Math.round(v / 1000)}k` : String(v))} />
+              <Tooltip {...TT} formatter={(v: unknown) => Number(v).toLocaleString()} />
+              <Legend verticalAlign="top" height={22} iconType="square" wrapperStyle={{ fontSize: "10px", color: "#94a3b8" }} />
+              {series.map((name) => (
+                <Bar key={name} dataKey={name} stackId="pt" fill={PT_COLORS[name] ?? "#64748b"} isAnimationActive={false} />
+              ))}
+            </BarChart>
+          ) : (
+            <BarChart data={top} layout="vertical" margin={{ top: 4, right: 16, left: 8, bottom: 0 }}>
+              <CartesianGrid strokeDasharray="2 4" stroke="#1e293b" horizontal={false} />
+              <XAxis type="number" {...AXIS} tickFormatter={(v: number) => (v >= 1000 ? `${Math.round(v / 1000)}k` : String(v))} />
+              <YAxis dataKey="name" type="category" width={150} stroke="#334155" tick={{ fill: "#94a3b8", fontSize: 10 }} interval={0} />
+              <Tooltip {...TT} formatter={(v: unknown) => Number(v).toLocaleString()} />
+              <Legend verticalAlign="top" height={22} iconType="square" wrapperStyle={{ fontSize: "10px", color: "#94a3b8" }} />
+              <Bar dataKey="prev" name={labels.prevYtdPeriod} fill={PREV_COLOR} radius={[0, 2, 2, 0]} barSize={9} isAnimationActive={false} />
+              <Bar dataKey="curr" name={labels.currYtdPeriod} fill={CURR_COLOR} radius={[0, 2, 2, 0]} barSize={9} isAnimationActive={false} />
+            </BarChart>
+          )}
+        </ResponsiveContainer>
+      </div>
+    </div>
+  );
 }
 
 function MonthlyDetailPanel({ row, meta, onClose }: { row: ReportRow; meta: ManualReportMeta; onClose: () => void }) {
@@ -766,6 +871,7 @@ export default function ManualReportPage() {
               )}
             </table>
           </div>
+          <SheetChart kind={active.kind} rows={rows} meta={meta} labels={labels} />
           <div className="border-t border-slate-800 p-2 text-right text-[10px] text-slate-600">
             {rows.length.toLocaleString()} rows · generated {new Date(meta.generated_at).toLocaleString()}
           </div>
