@@ -224,11 +224,8 @@ def find_mixed(names, rows, targets, cols):
         if done and len(sols) == 1:
             idx = [i for i in range(len(rows)) if i != j]
             pure = {idx[i] for i in sols[0]}
-            split = []
-            for m, (y, mo) in enumerate(cols):
-                bev = targets[m] - sum(rows[i][m] for i in pure)
-                if rows[j][m] or bev:
-                    split.append((y, mo, bev, rows[j][m]))
+            split = [(y, mo, targets[m] - sum(rows[i][m] for i in pure), rows[j][m])
+                     for m, (y, mo) in enumerate(cols)]
             hits.append((cand, split))
         if len(hits) > 1:
             return None                      # more than one story fits; say nothing
@@ -319,9 +316,11 @@ def write_report(results, gaps, cols, applied):
         for brand, (model, split), units in mixed:
             add("")
             add(f"    {brand} · {model}")
-            add(f"        {'เดือน':<22}{'BEV':>8}{'ทั้งรุ่น':>10}")
-            for y, mo, bev, tot in split[-6:]:
-                add(f"        {mo + ' ' + str(y):<22}{bev:>8,}{tot:>10,}")
+            add(f"        {'เดือน':<22}{'BEV':>9}{'ไม่ใช่ BEV':>13}{'ทั้งรุ่น':>11}")
+            for y, mo, bev, tot in split:
+                add(f"        {mo + ' ' + str(y):<22}{bev:>9,}{tot - bev:>13,}{tot:>11,}")
+            tb, tt = sum(s[2] for s in split), sum(s[3] for s in split)
+            add(f"        {'รวม ' + str(len(split)) + ' เดือน':<22}{tb:>9,}{tt - tb:>13,}{tt:>11,}")
         add("")
     add(f"[{4 if mixed else 3}] แบรนด์ที่สรุปไม่ได้ ต้องใช้คนตรวจ")
     reasons = {"infeasible": "ไม่มีชุดใดรวมได้พอดี และอธิบายด้วยรุ่นผสมรุ่นเดียวไม่ได้",
