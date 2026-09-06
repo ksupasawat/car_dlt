@@ -68,6 +68,14 @@ After a monthly build, review newly appended `pending` rows in
 `backend/config/model_powertrain_review.csv`, record evidence/reviewer/date, and set only
 confirmed rows to `approved`. Run `MONTHLY_UPDATE.bat` again to refresh Sheets 7-8.
 
+The watchlist only flags a pending model whose name carries an EV/BEV/ELECTRIC marker or
+closely resembles an approved BEV name, so a model such as `NEVO Q05` can register
+thousands of units and never be offered for review. `python backend/bev_reconcile.py`
+closes that gap without inferring anything: per brand it solves which subset of model rows
+reproduces that brand's monthly BEV totals from the fuel grain, accepts the answer only
+when it is the sole subset that fits every month in the window, and reports the rest for a
+human. Add `--apply` to approve the proven rows, then rerun `MONTHLY_UPDATE.bat`.
+
 Raw DLT workbooks and generated parquet/Excel files are intentionally excluded from Git.
 Maintainers who rebuild the data must supply those files locally; dashboard users do not
 need them.
@@ -88,6 +96,7 @@ type checking, and a static production build. The monthly update also runs
 | `backend/config/model_map.csv` | `(brand2, raw_model)` → canonical model name mapping |
 | `backend/config/model_powertrain_review.csv` | Human-reviewed model classification; approved BEV rows feed Sheets 7-8 |
 | `backend/config/powertrain_map.csv` | Raw fuel type → powertrain (ICE/HEV/PHEV/BEV) mapping |
+| `backend/bev_reconcile.py` | Finds BEV models the watchlist rules miss, by reconciling model rows against the fuel grain |
 | `backend/test_model_cleaned.parquet` | Model-grain output; never carries fuel or Powertrain columns |
 | `backend/test_fuel_cleaned.parquet` | Fuel-grain output and Powertrain source |
 | `frontend/public/data/dashboard_summary.json` | General summary and powertrain data |
