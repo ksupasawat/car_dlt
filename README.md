@@ -75,6 +75,10 @@ closes that gap without inferring anything: per brand it solves which subset of 
 reproduces that brand's monthly BEV totals from the fuel grain, accepts the answer only
 when it is the sole subset that fits every month in the window, and reports the rest for a
 human. Add `--apply` to approve the proven rows, then rerun `MONTHLY_UPDATE.bat`.
+It also names the cases that cannot be fixed by review at all: where DLT files a BEV and a
+non-BEV version of one car under the same model name (GWM `ORA 5` is sold as both EV and
+HEV), no `model_map.csv` entry can separate them, because the mapping keys on that one raw
+name. The report gives the monthly BEV count for such a nameplate instead.
 
 Raw DLT workbooks and generated parquet/Excel files are intentionally excluded from Git.
 Maintainers who rebuild the data must supply those files locally; dashboard users do not

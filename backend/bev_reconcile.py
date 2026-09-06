@@ -64,19 +64,24 @@ NODE_BUDGET = 400_000     # give up rather than hang on a pathological brand
 
 # ── the solver ────────────────────────────────────────────────────────────────
 
-def solve(rows, targets, limit=2):
-    """Exact subset selection.
+def solve(rows, lo, hi, limit=2):
+    """Subset selection against a per-month range.
 
-    rows[i] is one model's monthly unit vector; targets is the brand's monthly
-    BEV vector. Returns up to `limit` distinct 0/1 selections x with
-    sum(x[i] * rows[i]) == targets for every month, plus a flag saying whether
-    the search finished (False = hit the node budget, answer not trustworthy).
+    rows[i] is one model's monthly unit vector. Returns up to `limit` distinct
+    0/1 selections x with lo[m] <= sum(x[i] * rows[i][m]) <= hi[m] for every
+    month m, plus a flag saying whether the search finished (False = hit the
+    node budget, answer not trustworthy).
+
+    Pass lo == hi to demand an exact match — that is the normal case, where the
+    selected models must reproduce the brand's BEV totals on the nose. A range
+    is used to test whether one nameplate is sold as both BEV and non-BEV: the
+    other models then have to land within one model's worth of the total.
 
     Models are tried heaviest-first: the big ones fix most of each month's total
     early, so contradictions surface near the root and the tree stays small.
     """
     n = len(rows)
-    months = len(targets)
+    months = len(lo)
     order = sorted(range(n), key=lambda i: -sum(rows[i]))
 
     # suffix[k][m] = units still available from models order[k:] in month m,
@@ -100,12 +105,12 @@ def solve(rows, targets, limit=2):
             exhausted = False
             return
         for m in range(months):
-            if partial[m] > targets[m]:
+            if partial[m] > hi[m]:
                 return                                   # already overshot
-            if partial[m] + suffix[k][m] < targets[m]:
+            if partial[m] + suffix[k][m] < lo[m]:
                 return                                   # can no longer reach
         if k == n:
-            if partial == targets:
+            if all(lo[m] <= partial[m] <= hi[m] for m in range(months)):
                 found.append(set(chosen))
             return
         i = order[k]
@@ -181,17 +186,53 @@ def reconcile(model, fuel, months):
         fb = bev[bev["ยี่ห้อรถ2"] == brand].groupby(["ปี", "เดือน"])["จำนวนรถ"].sum()
         targets = [int(fb.get((y, m), 0)) for y, m in cols]
 
-        sols, done = solve(rows, targets)
+        sols, done = solve(rows, targets, targets)
         if not done:
             out[brand] = ("budget", [], int(brand_bev))
         elif not sols:
-            out[brand] = ("infeasible", [], int(brand_bev))
+            mixed = find_mixed(names, rows, targets, cols)
+            out[brand] = ("mixed", mixed, int(brand_bev)) if mixed else ("infeasible", [], int(brand_bev))
         elif len(sols) > 1:
             differ = sorted({names[i] for i in (sols[0] ^ sols[1])})
             out[brand] = ("ambiguous", differ, int(brand_bev))
         else:
             out[brand] = ("solved", sorted(names[i] for i in sols[0]), int(brand_bev))
     return out, cols
+
+
+def find_mixed(names, rows, targets, cols):
+    """Explain an unsolvable brand as one nameplate sold in two powertrains.
+
+    A brand fails the exact test when DLT files a BEV and a non-BEV version of
+    one car under the same model name — GWM's ORA 5 (EV and HEV) is the case
+    this was written for. The signature is that some single model M can absorb
+    the shortfall: every other model splits cleanly, and the leftover BEV units
+    each month sit between zero and M's own volume that month.
+
+    Returns (model, [(year, month, bev_units, total_units)]) for the unique M
+    that fits, or None. The split is a monthly count, not a row-level fact: the
+    source gives both versions the same name, so nothing downstream can tell
+    one registration from the other.
+    """
+    hits = []
+    for j, cand in enumerate(names):
+        others = [rows[i] for i in range(len(rows)) if i != j]
+        if not others:
+            continue
+        lo = [max(0, targets[m] - rows[j][m]) for m in range(len(targets))]
+        sols, done = solve(others, lo, targets, limit=2)
+        if done and len(sols) == 1:
+            idx = [i for i in range(len(rows)) if i != j]
+            pure = {idx[i] for i in sols[0]}
+            split = []
+            for m, (y, mo) in enumerate(cols):
+                bev = targets[m] - sum(rows[i][m] for i in pure)
+                if rows[j][m] or bev:
+                    split.append((y, mo, bev, rows[j][m]))
+            hits.append((cand, split))
+        if len(hits) > 1:
+            return None                      # more than one story fits; say nothing
+    return hits[0] if len(hits) == 1 else None
 
 
 def pending_gaps(review, results):
@@ -269,8 +310,21 @@ def write_report(results, gaps, cols, applied):
         add("[2] ไม่มีรุ่นที่ค้าง pending ทั้งที่พิสูจน์ได้ว่าเป็น BEV — ครบแล้ว")
     add("")
 
-    add("[3] แบรนด์ที่สรุปไม่ได้ ต้องใช้คนตรวจ")
-    reasons = {"infeasible": "ไม่มีชุดใดรวมได้พอดี (มักเกิดจาก model2 เดียวมีทั้ง BEV และไม่ใช่ BEV ปนกัน)",
+    mixed = sorted(by.get("mixed", []), key=lambda x: -x[2])
+    if mixed:
+        add("[3] รุ่นชื่อเดียวที่ขายทั้ง BEV และไม่ใช่ BEV")
+        add("    DLT ใช้ชื่อรุ่นเดียวกันทั้งสองระบบขับเคลื่อน แยกเป็นคนละ model2 ไม่ได้")
+        add("    (model_map.csv จับคู่จากชื่อรุ่นดิบ ซึ่งเหมือนกันทุกประการ) — ตัวเลขข้างล่างคือ")
+        add("    จำนวนที่เป็น BEV ต่อเดือน ซึ่งคำนวณย้อนจาก fuel grain ได้แน่นอน")
+        for brand, (model, split), units in mixed:
+            add("")
+            add(f"    {brand} · {model}")
+            add(f"        {'เดือน':<22}{'BEV':>8}{'ทั้งรุ่น':>10}")
+            for y, mo, bev, tot in split[-6:]:
+                add(f"        {mo + ' ' + str(y):<22}{bev:>8,}{tot:>10,}")
+        add("")
+    add(f"[{4 if mixed else 3}] แบรนด์ที่สรุปไม่ได้ ต้องใช้คนตรวจ")
+    reasons = {"infeasible": "ไม่มีชุดใดรวมได้พอดี และอธิบายด้วยรุ่นผสมรุ่นเดียวไม่ได้",
                "ambiguous": "มีคำตอบมากกว่าหนึ่งชุด",
                "too-many": f"รุ่นเกิน {MAX_MODELS} รุ่น",
                "budget": "ค้นหาไม่จบภายในงบที่ตั้งไว้"}
