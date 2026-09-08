@@ -2,7 +2,6 @@ import {
   type BrandNode,
   type ModelNode,
   type TreeMonthly,
-  brandTotals,
   seriesTotals,
 } from "./selectors.ts";
 
@@ -12,6 +11,8 @@ export type DeepDiveFilters = {
   selectedModels: string[];
   selectedProvinces: string[];
   selectedVehicleTypes: string[];
+  selectedPowertrains: string[];
+  selectedSegments: string[];
 };
 
 export type SeriesRow = ModelNode & { totals: { grandTotal: number; ytdTotal: number } };
@@ -38,10 +39,19 @@ export function selectDeepDiveMatrixOptions(
   const brandsSet = new Set<string>();
   const modelsSet = new Set<string>();
   const provincesSet = new Set(metaProvinces);
+  const powertrainsSet = new Set<string>();
+  const marketSegmentsSet = new Set<string>();
 
   tree?.forEach((node) => {
     if (node.brand) brandsSet.add(node.brand);
     collectMonthlyProvinces(node.monthly, provincesSet);
+
+    node.models?.forEach((model) => {
+      model.segments?.forEach((segment) => {
+        if (segment.powertrain) powertrainsSet.add(segment.powertrain);
+      });
+      if (model.market_segment) marketSegmentsSet.add(model.market_segment);
+    });
 
     if (selectedBrands.length > 0 && !selectedBrands.includes(node.brand)) return;
     node.models?.forEach((model) => {
@@ -55,6 +65,10 @@ export function selectDeepDiveMatrixOptions(
     allBrands: Array.from(brandsSet).sort(),
     allModels: Array.from(modelsSet).sort(),
     allProvinces: Array.from(provincesSet).sort(),
+    // Only powertrains the registry actually proves at model grain are offered; nothing is
+    // invented for a series the review has not classified.
+    allPowertrains: Array.from(powertrainsSet).sort(),
+    allMarketSegments: Array.from(marketSegmentsSet).sort(),
   };
 }
 
@@ -64,6 +78,8 @@ export function deepDiveFilterKey(filters: DeepDiveFilters) {
     filters.selectedModels.join(","),
     filters.selectedProvinces.join(","),
     filters.selectedVehicleTypes.join(","),
+    filters.selectedPowertrains.join(","),
+    filters.selectedSegments.join(","),
     filters.activeYears.join(","),
   ].join("|");
 }
@@ -83,24 +99,20 @@ export function buildDeepDiveMatrixRows(
       const toggleKey = brandNode.brand;
       const isExpanded = expandedBrands.has(toggleKey);
 
-      const bTotals = brandTotals(
-        brandNode,
-        filters.activeYears,
-        latestYear,
-        [],
-        filters.selectedVehicleTypes,
-        filters.selectedProvinces
-      );
-      if (bTotals.grandTotal === 0) return null;
-
       const filteredModels = (brandNode.models || [])
         .map((model): SeriesRow | null => {
           if (filters.selectedModels.length > 0 && !filters.selectedModels.includes(model.name)) return null;
+          if (
+            filters.selectedSegments.length > 0 &&
+            !(model.market_segment && filters.selectedSegments.includes(model.market_segment))
+          ) {
+            return null;
+          }
           const mTotals = seriesTotals(
             model,
             filters.activeYears,
             latestYear,
-            [],
+            filters.selectedPowertrains,
             filters.selectedVehicleTypes,
             filters.selectedProvinces
           );
@@ -109,6 +121,17 @@ export function buildDeepDiveMatrixRows(
         })
         .filter((m): m is SeriesRow => m !== null)
         .sort((a, b) => b.totals.grandTotal - a.totals.grandTotal);
+
+      // The brand line is the sum of the series it actually shows, so brand totals, the
+      // filtered grand total and the visible rows can never disagree under any filter.
+      const bTotals = filteredModels.reduce(
+        (acc, model) => ({
+          grandTotal: acc.grandTotal + model.totals.grandTotal,
+          ytdTotal: acc.ytdTotal + model.totals.ytdTotal,
+        }),
+        { grandTotal: 0, ytdTotal: 0 }
+      );
+      if (bTotals.grandTotal === 0) return null;
 
       return {
         ...brandNode,

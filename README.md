@@ -39,6 +39,14 @@ fuel rows derive it from `backend/config/powertrain_map.csv`. Model maintenance 
 - `backend/config/model_map.csv` maps `(brand2, raw_model)` to the canonical `model2` name.
 - `backend/config/model_powertrain_review.csv` stores human review decisions. New model rows
   are appended as `pending`; approved BEV rows control Sheets 7-8 only.
+- `backend/config/model_segment.csv` maps `(brand2, model2)` to a market segment (B-SUV,
+  C-Segment, MPV, ...) using Autolifethailand's naming. It covers the reviewed competitor
+  set only; a model absent from it carries no segment and is never guessed from body text.
+
+`export_dashboard.py` writes both onto each series in `dashboard_models.json`: `market_segment`
+from the CSV above, and a `BEV` segment for every model the review has approved (everything
+else stays `N/A`). Nothing here infers a model Powertrain from aggregate fuel data — the Deep
+Dive page's Powertrain filter therefore offers only what the review actually proves.
 
 ```
 build_cleaned.py      ← every month  →  separate model-grain and fuel-grain parquets
@@ -68,18 +76,6 @@ After a monthly build, review newly appended `pending` rows in
 `backend/config/model_powertrain_review.csv`, record evidence/reviewer/date, and set only
 confirmed rows to `approved`. Run `MONTHLY_UPDATE.bat` again to refresh Sheets 7-8.
 
-The watchlist only flags a pending model whose name carries an EV/BEV/ELECTRIC marker or
-closely resembles an approved BEV name, so a model such as `NEVO Q05` can register
-thousands of units and never be offered for review. `python backend/bev_reconcile.py`
-closes that gap without inferring anything: per brand it solves which subset of model rows
-reproduces that brand's monthly BEV totals from the fuel grain, accepts the answer only
-when it is the sole subset that fits every month in the window, and reports the rest for a
-human. Add `--apply` to approve the proven rows, then rerun `MONTHLY_UPDATE.bat`.
-It also names the cases that cannot be fixed by review at all: where DLT files a BEV and a
-non-BEV version of one car under the same model name (GWM `ORA 5` is sold as both EV and
-HEV), no `model_map.csv` entry can separate them, because the mapping keys on that one raw
-name. The report gives the monthly BEV count for such a nameplate instead.
-
 Raw DLT workbooks and generated parquet/Excel files are intentionally excluded from Git.
 Maintainers who rebuild the data must supply those files locally; dashboard users do not
 need them.
@@ -99,8 +95,8 @@ type checking, and a static production build. The monthly update also runs
 | `backend/config/brand_map.csv` | Raw brand → canonical brand mapping |
 | `backend/config/model_map.csv` | `(brand2, raw_model)` → canonical model name mapping |
 | `backend/config/model_powertrain_review.csv` | Human-reviewed model classification; approved BEV rows feed Sheets 7-8 |
+| `backend/config/model_segment.csv` | `(brand2, model2)` → market segment (Autolifethailand naming); feeds the Deep Dive Segment filter |
 | `backend/config/powertrain_map.csv` | Raw fuel type → powertrain (ICE/HEV/PHEV/BEV) mapping |
-| `backend/bev_reconcile.py` | Finds BEV models the watchlist rules miss, by reconciling model rows against the fuel grain |
 | `backend/test_model_cleaned.parquet` | Model-grain output; never carries fuel or Powertrain columns |
 | `backend/test_fuel_cleaned.parquet` | Fuel-grain output and Powertrain source |
 | `frontend/public/data/dashboard_summary.json` | General summary and powertrain data |

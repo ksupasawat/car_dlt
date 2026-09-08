@@ -34,6 +34,8 @@ export default function ModelsPage() {
   const [selectedModels, setSelectedModels] = useState<string[]>([]);
   const [selectedVehicleTypes, setSelectedVehicleTypes] = useState<string[]>([]);
   const [selectedProvinces, setSelectedProvinces] = useState<string[]>([]);
+  const [selectedPowertrains, setSelectedPowertrains] = useState<string[]>([]);
+  const [selectedSegments, setSelectedSegments] = useState<string[]>([]);
 
   const [expandedBrands, setExpandedBrands] = useState<Set<string>>(new Set());
 
@@ -50,7 +52,9 @@ export default function ModelsPage() {
     selectedModels,
     selectedProvinces,
     selectedVehicleTypes,
-  }), [activeYears, selectedBrands, selectedModels, selectedProvinces, selectedVehicleTypes]);
+    selectedPowertrains,
+    selectedSegments,
+  }), [activeYears, selectedBrands, selectedModels, selectedProvinces, selectedVehicleTypes, selectedPowertrains, selectedSegments]);
   const currentFilterKey = deepDiveFilterKey(filters);
   if (currentFilterKey !== prevFilterKey) {
     setPrevFilterKey(currentFilterKey);
@@ -104,9 +108,15 @@ export default function ModelsPage() {
   const latestYear = years.length > 0 ? String(years[years.length - 1]) : null;
 
   // Available filter options based on raw tree data
-  const { allBrands, allModels, allProvinces } = useMemo(
+  const { allBrands, allModels, allProvinces, allPowertrains, allMarketSegments } = useMemo(
     () => selectDeepDiveMatrixOptions(data?.brand_model_tree, selectedBrands, meta?.provinces ?? []),
     [data?.brand_model_tree, selectedBrands, meta?.provinces]
+  );
+
+  // "N/A" is the registry's own label for a series no human review has classified.
+  const powertrainOptions = useMemo(
+    () => allPowertrains.map((pt) => ({ id: pt, label: pt === "N/A" ? "Unclassified" : pt })),
+    [allPowertrains]
   );
 
   const handleSelectedBrandsChange = (brands: string[]) => {
@@ -145,6 +155,24 @@ export default function ModelsPage() {
   const superGrandTotal = useMemo(() => {
     return filteredTree.reduce((sum, b) => sum + b.totals.grandTotal, 0);
   }, [filteredTree]);
+
+  const superYtdTotal = useMemo(() => {
+    return filteredTree.reduce((sum, b) => sum + b.totals.ytdTotal, 0);
+  }, [filteredTree]);
+
+  // Month-by-month totals for the summary row: every filtered brand, not just this page.
+  const superMonthlyByYear = useMemo(() => {
+    const out: Record<string, number[]> = {};
+    activeYears.forEach((year) => {
+      const acc = Array(12).fill(0) as number[];
+      filteredTree.forEach((brandNode) => {
+        const monthly = brandMonthlyValues(brandNode, year, selectedPowertrains, selectedVehicleTypes, selectedProvinces);
+        for (let i = 0; i < 12; i++) acc[i] += monthly[i];
+      });
+      out[year] = acc;
+    });
+    return out;
+  }, [filteredTree, activeYears, selectedPowertrains, selectedVehicleTypes, selectedProvinces]);
 
   // Paginated Rows Assembly
   const paginatedTree = useMemo(() => {
@@ -187,17 +215,30 @@ export default function ModelsPage() {
         vehicleTypes: string[],
         provinces: string[],
         brandFilter: string[],
-        modelFilter: string[]
+        modelFilter: string[],
+        powertrains: string[],
+        marketSegments: string[]
       ) => {
         const rows: Record<string, string | number>[] = [];
         (data.brand_model_tree || []).forEach((brandNode) => {
           if (brandFilter.length > 0 && !brandFilter.includes(brandNode.brand)) return;
-          const bTotals = brandTotals(brandNode, activeYears, latestYear, [], vehicleTypes, provinces);
+
+          // Keep only the series the table would show, then read the brand line off that
+          // same set, so the workbook and the screen can never disagree.
+          const keptModels = (brandNode.models || []).filter((model) => {
+            if (modelFilter.length > 0 && !modelFilter.includes(model.name)) return false;
+            if (marketSegments.length > 0 && !(model.market_segment && marketSegments.includes(model.market_segment))) return false;
+            return seriesTotals(model, activeYears, latestYear, powertrains, vehicleTypes, provinces).grandTotal !== 0;
+          });
+          if (keptModels.length === 0) return;
+
+          const keptBrand = { ...brandNode, models: keptModels };
+          const bTotals = brandTotals(keptBrand, activeYears, latestYear, powertrains, vehicleTypes, provinces);
           if (bTotals.grandTotal === 0) return;
 
-          const bRow: Record<string, string | number> = { "Brand / Model": brandNode.brand };
+          const bRow: Record<string, string | number> = { "Brand / Model": brandNode.brand, Segment: "" };
           activeYears.forEach((year) => {
-            const monthly = brandMonthlyValues(brandNode, year, [], vehicleTypes, provinces);
+            const monthly = brandMonthlyValues(keptBrand, year, powertrains, vehicleTypes, provinces);
             monthly.forEach((val, mIdx) => { bRow[`${year} ${MONTHS_EN[mIdx]}`] = val || ""; });
             bRow[`${year} Total`] = monthly.reduce((s, v) => s + v, 0) || "";
           });
@@ -205,14 +246,15 @@ export default function ModelsPage() {
           bRow["Grand Total"] = bTotals.grandTotal || "";
           rows.push(bRow);
 
-          (brandNode.models || []).forEach((model) => {
-            if (modelFilter.length > 0 && !modelFilter.includes(model.name)) return;
-            const mTotals = seriesTotals(model, activeYears, latestYear, [], vehicleTypes, provinces);
-            if (mTotals.grandTotal === 0) return;
+          keptModels.forEach((model) => {
+            const mTotals = seriesTotals(model, activeYears, latestYear, powertrains, vehicleTypes, provinces);
 
-            const mRow: Record<string, string | number> = { "Brand / Model": `  ${model.name}` };
+            const mRow: Record<string, string | number> = {
+              "Brand / Model": `  ${model.name}`,
+              Segment: model.market_segment ?? "",
+            };
             activeYears.forEach((year) => {
-              const monthly = seriesMonthlyValues(model, year, [], vehicleTypes, provinces);
+              const monthly = seriesMonthlyValues(model, year, powertrains, vehicleTypes, provinces);
               monthly.forEach((val, mIdx) => { mRow[`${year} ${MONTHS_EN[mIdx]}`] = val || ""; });
               mRow[`${year} Total`] = monthly.reduce((s, v) => s + v, 0) || "";
             });
@@ -225,10 +267,17 @@ export default function ModelsPage() {
       };
 
       // Full sheet: every brand/model, every segment, all vehicle types/provinces — ignores active filters.
-      const fullRows = buildRows([], [], [], []);
+      const fullRows = buildRows([], [], [], [], [], []);
 
       // Filtered sheet: the exact same selectors as the table, with the current filter state.
-      const filteredRows = buildRows(selectedVehicleTypes, selectedProvinces, selectedBrands, selectedModels);
+      const filteredRows = buildRows(
+        selectedVehicleTypes,
+        selectedProvinces,
+        selectedBrands,
+        selectedModels,
+        selectedPowertrains,
+        selectedSegments
+      );
 
       const wb = XLSX.utils.book_new();
       XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(fullRows), "Full");
@@ -323,6 +372,8 @@ export default function ModelsPage() {
             <div className="min-w-[150px]"><FilterPillPopover label="Model" placeholder="Search models..." options={allModels} value={selectedModels} onChange={handleSelectedModelsChange} /></div>
             <div className="min-w-[170px]"><FilterPillPopover label="Province" placeholder="Search provinces..." options={allProvinces} value={selectedProvinces} onChange={setSelectedProvinces} /></div>
             <div className="min-w-[190px]"><FilterPillPopover label="Vehicle Type" placeholder="Search vehicle types..." options={meta?.vehicle_types_list?.map(v => ({ id: v.code, label: v.label })) ?? []} value={selectedVehicleTypes} onChange={setSelectedVehicleTypes} /></div>
+            <div className="min-w-[150px]"><FilterPillPopover label="Powertrain" placeholder="Search powertrains..." options={powertrainOptions} value={selectedPowertrains} onChange={setSelectedPowertrains} /></div>
+            <div className="min-w-[150px]"><FilterPillPopover label="Segment" placeholder="Search segments..." options={allMarketSegments} value={selectedSegments} onChange={setSelectedSegments} /></div>
 
             {/* Year Checklist */}
             <div className="flex flex-col justify-center md:ml-auto">
@@ -400,7 +451,40 @@ export default function ModelsPage() {
                     </td>
                   </tr>
                 ) : (
-                  paginatedTree.map((brandNode) => (
+                  <>
+                  {/* Filtered total — every brand matching the current filters, not just this page */}
+                  <tr className="bg-slate-800/60 border-b-2 border-slate-600 font-semibold">
+                    <th scope="row" className="px-3 py-2.5 text-left sticky left-0 bg-slate-800 z-20 border-r border-slate-700">
+                      <span className="text-xs font-bold tracking-wide text-slate-100">Filtered Total</span>
+                      <span className="ml-2 text-[10px] font-normal text-slate-400">{filteredTree.length.toLocaleString()} brands</span>
+                    </th>
+
+                    {activeYears.map((year) => {
+                      const monthly = superMonthlyByYear[year] ?? Array(12).fill(0);
+                      const total = monthly.reduce((s, v) => s + v, 0);
+                      return (
+                        <Fragment key={`total-${year}`}>
+                          {monthly.map((val, idx) => (
+                            <td key={`total-val-${year}-${idx}`} className="px-2 py-2.5 border-l border-slate-700/60 text-center font-mono text-slate-100">
+                              {val ? val.toLocaleString() : "—"}
+                            </td>
+                          ))}
+                          <td className="px-3 py-2.5 border-l-2 border-slate-600 bg-slate-800/60 text-center font-mono font-bold text-teal-300">
+                            {total ? total.toLocaleString() : "—"}
+                          </td>
+                        </Fragment>
+                      );
+                    })}
+
+                    <td className="px-3 py-2.5 border-l-2 border-slate-600 text-right font-mono font-bold text-emerald-300 bg-emerald-950/20">
+                      {superYtdTotal ? superYtdTotal.toLocaleString() : "—"}
+                    </td>
+                    <td className="px-3 py-2.5 border-l border-slate-600 text-right font-mono font-bold text-amber-300 bg-slate-900">
+                      {superGrandTotal ? superGrandTotal.toLocaleString() : "—"}
+                    </td>
+                  </tr>
+
+                  {paginatedTree.map((brandNode) => (
                     <Fragment key={brandNode.toggleKey}>
                       {/* Brand Row */}
                       <tr
@@ -422,7 +506,7 @@ export default function ModelsPage() {
                         </td>
 
                         {activeYears.map((year) => {
-                          const monthly = brandMonthlyValues(brandNode, year, [], selectedVehicleTypes, selectedProvinces);
+                          const monthly = brandMonthlyValues(brandNode, year, selectedPowertrains, selectedVehicleTypes, selectedProvinces);
                           const total = monthly.reduce((s, v) => s + v, 0);
                           return (
                             <Fragment key={year}>
@@ -460,7 +544,7 @@ export default function ModelsPage() {
                           </td>
 
                           {activeYears.map((year) => {
-                            const monthly = seriesMonthlyValues(model, year, [], selectedVehicleTypes, selectedProvinces);
+                            const monthly = seriesMonthlyValues(model, year, selectedPowertrains, selectedVehicleTypes, selectedProvinces);
                             const total = monthly.reduce((s, v) => s + v, 0);
                             return (
                               <Fragment key={year}>
@@ -485,7 +569,8 @@ export default function ModelsPage() {
                         </tr>
                       ))}
                     </Fragment>
-                  ))
+                  ))}
+                  </>
                 )}
               </tbody>
             </table>

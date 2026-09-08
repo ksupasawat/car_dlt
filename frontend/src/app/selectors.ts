@@ -27,6 +27,9 @@ export type SeriesSegment = {
 // those same units by registry-backed Powertrain and must sum back to `monthly`.
 export type ModelNode = {
   name: string;
+  // Market segment (B-SUV, C-Segment, MPV, …) from backend/config/model_segment.csv.
+  // Absent when the series is outside the reviewed competitor set — never inferred here.
+  market_segment?: string | null;
   monthly: TreeMonthly;
   segments: SeriesSegment[];
 };

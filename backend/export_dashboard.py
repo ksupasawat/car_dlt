@@ -10,6 +10,7 @@ import pandas as pd
 from aggregate import aggregate, current_period
 from schema import validate_model, validate_fuel
 from build_cleaned import load_powertrain_map
+import model_map
 
 sys.stdout.reconfigure(encoding="utf-8")
 
@@ -36,6 +37,30 @@ VEHICLE_TYPE_DICT = {
 # Canonical fuel->powertrain mapping, single source of truth (see config/powertrain_map.csv).
 FUEL_MAP = load_powertrain_map(str(BASE / "config" / "powertrain_map.csv"))
 
+MODEL_SEGMENT_PATH = BASE / "config" / "model_segment.csv"
+
+
+def load_model_segment_map(path=MODEL_SEGMENT_PATH) -> dict:
+    """(brand2, model2) -> market segment, e.g. B-SUV / C-Segment / MPV.
+
+    DLT publishes no segment of any kind, so this is a curated CSV using the naming
+    Autolifethailand uses in its price announcements. Absent or unlisted models stay
+    unclassified rather than being guessed at export time; edit the CSV to extend it.
+    """
+    if not path.exists():
+        return {}
+    import csv
+
+    out = {}
+    with path.open(encoding="utf-8-sig", newline="") as fh:
+        for row in csv.DictReader(fh):
+            brand = (row.get("brand2") or "").strip()
+            model = (row.get("model2") or "").strip()
+            seg = (row.get("market_segment") or "").strip()
+            if brand and model and seg:
+                out[(brand.upper(), model.upper())] = seg
+    return out
+
 MONTH_MAP = {
     "มกราคม": "Jan", "กุมภาพันธ์": "Feb", "มีนาคม": "Mar",
     "เมษายน": "Apr", "พฤษภาคม": "May", "มิถุนายน": "Jun",
@@ -54,10 +79,27 @@ FULL_MONTH_EN = {
 def build_brand_model_tree(df_model_rows: pd.DataFrame) -> list:
     """Build model facts as brand -> canonical series -> unclassified PT segments.
 
-    Brand and series nodes expose source totals in ``monthly``. Each series also exposes
-    one ``N/A`` segment because model-grain rows do not prove Powertrain. The segment
-    must sum back to the series total at every vehicle/province/year/month coordinate.
+    Brand and series nodes expose source totals in ``monthly``. A series splits into one
+    powertrain segment per proven class: rows whose (brand2, raw_model) a human approved
+    as BEV in model_powertrain_review.csv become a ``BEV`` segment, everything else stays
+    ``N/A``. Nothing is inferred from the fuel grain — an unreviewed row is unclassified,
+    never guessed. The segments must still sum back to the series total at every
+    vehicle/province/year/month coordinate.
+
+    Series also carry ``market_segment`` (B-SUV, C-Segment, MPV, ...) from
+    config/model_segment.csv, or None when that model is not listed there.
     """
+    df_model_rows = df_model_rows.copy()
+    approved = model_map.approved_bev_keys()
+    if approved and "รุ่นรถ" in df_model_rows.columns:
+        keys = [
+            model_map.normalize_key(b, r)
+            for b, r in zip(df_model_rows["ยี่ห้อรถ2"], df_model_rows["รุ่นรถ"])
+        ]
+        df_model_rows["PT"] = ["BEV" if k in approved else "N/A" for k in keys]
+
+    segment_map = load_model_segment_map()
+
     model_grp = aggregate(
         df_model_rows,
         ["ยี่ห้อรถ2", "รุ่นรถ2", "PT", "v_code", "จังหวัด", "ปี", "เดือน"],
@@ -101,6 +143,7 @@ def build_brand_model_tree(df_model_rows: pd.DataFrame) -> list:
         for series in sorted(bn["models"].values(), key=lambda x: -total(x)):
             models.append({
                 "name": series["name"],
+                "market_segment": segment_map.get((bn["brand"].upper(), series["name"].upper())),
                 "monthly": series["monthly"],
                 "segments": list(series["segments"].values()),
             })
@@ -184,6 +227,11 @@ def export_data():
     # 2. Brand/model tree from model facts only
     print("  Building brand_model_tree...")
     brand_model_tree = build_brand_model_tree(df)
+    classified = sum(1 for b in brand_model_tree for m in b["models"] if m.get("market_segment"))
+    bev_series = sum(1 for b in brand_model_tree for m in b["models"]
+                     for s in m["segments"] if s.get("powertrain") == "BEV")
+    print(f"  model series with a market segment: {classified:,}")
+    print(f"  model series carrying a proven BEV segment: {bev_series:,}")
     tree_total = sum(
         sum(arr)
         for bn in brand_model_tree

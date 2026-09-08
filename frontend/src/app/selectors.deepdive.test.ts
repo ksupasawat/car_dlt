@@ -278,6 +278,8 @@ test("Deep Dive matrix rows respect selected province", () => {
       selectedModels: [],
       selectedProvinces: ["CHIANG_MAI"],
       selectedVehicleTypes: ["VT1"],
+      selectedPowertrains: [],
+      selectedSegments: [],
     },
     "2569",
     new Set(["ACME"]),
@@ -295,10 +297,161 @@ test("Deep Dive filter key changes when selected province changes", () => {
     selectedBrands: ["ACME"],
     selectedModels: ["ALPHA"],
     selectedVehicleTypes: ["VT1"],
+    selectedPowertrains: [],
+    selectedSegments: [],
   };
 
   assert.notEqual(
     deepDiveFilterKey({ ...base, selectedProvinces: ["BANGKOK"] }),
     deepDiveFilterKey({ ...base, selectedProvinces: ["CHIANG_MAI"] }),
+  );
+});
+
+// --- Powertrain and market-segment filters on the Deep Dive matrix ---
+
+const segmentedTree: BrandNode[] = [
+  {
+    brand: "ACME",
+    monthly: { VT1: { BANGKOK: { "2569": [20, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] } } },
+    models: [
+      {
+        name: "ALPHA",
+        market_segment: "B-SUV",
+        monthly: { VT1: { BANGKOK: { "2569": [14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] } } },
+        segments: [
+          { powertrain: "BEV", monthly: { VT1: { BANGKOK: { "2569": [10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] } } } },
+          { powertrain: "N/A", monthly: { VT1: { BANGKOK: { "2569": [4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] } } } },
+        ],
+      },
+      {
+        name: "BETA",
+        market_segment: "C-SUV",
+        monthly: { VT1: { BANGKOK: { "2569": [6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] } } },
+        segments: [
+          { powertrain: "N/A", monthly: { VT1: { BANGKOK: { "2569": [6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] } } } },
+        ],
+      },
+    ],
+  },
+  {
+    brand: "ZENITH",
+    monthly: { VT1: { BANGKOK: { "2569": [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] } } },
+    models: [
+      {
+        name: "GAMMA",
+        monthly: { VT1: { BANGKOK: { "2569": [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] } } },
+        segments: [
+          { powertrain: "BEV", monthly: { VT1: { BANGKOK: { "2569": [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] } } } },
+        ],
+      },
+    ],
+  },
+];
+
+const deepDiveBase = {
+  activeYears: ["2569"],
+  selectedBrands: [],
+  selectedModels: [],
+  selectedProvinces: [],
+  selectedVehicleTypes: [],
+  selectedPowertrains: [],
+  selectedSegments: [],
+};
+
+const filteredGrandTotal = (rows: { totals: { grandTotal: number } }[]) =>
+  rows.reduce((sum, row) => sum + row.totals.grandTotal, 0);
+
+test("Deep Dive matrix options expose the tree's powertrains and market segments", () => {
+  const options = selectDeepDiveMatrixOptions(segmentedTree, [], []);
+
+  assert.deepEqual(options.allPowertrains, ["BEV", "N/A"]);
+  assert.deepEqual(options.allMarketSegments, ["B-SUV", "C-SUV"]);
+  // A model outside the reviewed competitor set contributes no segment option.
+  assert.equal(options.allMarketSegments.length, 2);
+});
+
+test("Powertrain filter counts only matching segments, across brands", () => {
+  const rows = buildDeepDiveMatrixRows(
+    segmentedTree,
+    { ...deepDiveBase, selectedPowertrains: ["BEV"] },
+    "2569",
+    new Set(["ACME", "ZENITH"]),
+  );
+
+  assert.deepEqual(rows.map((r) => r.brand), ["ACME", "ZENITH"]);
+  assert.equal(rows[0].totals.grandTotal, 10);
+  assert.deepEqual(rows[0].models.map((m) => m.name), ["ALPHA"]);
+  assert.equal(rows[1].totals.grandTotal, 3);
+  assert.equal(filteredGrandTotal(rows), 13);
+});
+
+test("Segment filter keeps only series carrying that market segment", () => {
+  const rows = buildDeepDiveMatrixRows(
+    segmentedTree,
+    { ...deepDiveBase, selectedSegments: ["B-SUV"] },
+    "2569",
+    new Set(["ACME", "ZENITH"]),
+  );
+
+  assert.deepEqual(rows.map((r) => r.brand), ["ACME"]);
+  assert.deepEqual(rows[0].models.map((m) => m.name), ["ALPHA"]);
+  assert.equal(rows[0].totals.grandTotal, 14);
+  assert.equal(filteredGrandTotal(rows), 14);
+});
+
+test("Powertrain and Segment filters compose", () => {
+  const rows = buildDeepDiveMatrixRows(
+    segmentedTree,
+    { ...deepDiveBase, selectedPowertrains: ["BEV"], selectedSegments: ["B-SUV"] },
+    "2569",
+    new Set(["ACME"]),
+  );
+
+  assert.equal(filteredGrandTotal(rows), 10);
+});
+
+test("Brand total always equals the sum of the series rows shown under it", () => {
+  const cases = [
+    deepDiveBase,
+    { ...deepDiveBase, selectedPowertrains: ["BEV"] },
+    { ...deepDiveBase, selectedSegments: ["C-SUV"] },
+    { ...deepDiveBase, selectedModels: ["ALPHA"] },
+    { ...deepDiveBase, selectedBrands: ["ACME", "ZENITH"] },
+  ];
+
+  cases.forEach((filters) => {
+    buildDeepDiveMatrixRows(segmentedTree, filters, "2569", new Set()).forEach((row) => {
+      assert.equal(row.totals.grandTotal, filteredGrandTotal(row.models));
+    });
+  });
+});
+
+test("Cross-brand selection compares brands without changing their totals", () => {
+  const both = buildDeepDiveMatrixRows(
+    segmentedTree,
+    { ...deepDiveBase, selectedBrands: ["ACME", "ZENITH"] },
+    "2569",
+    new Set(),
+  );
+  const acmeOnly = buildDeepDiveMatrixRows(
+    segmentedTree,
+    { ...deepDiveBase, selectedBrands: ["ACME"] },
+    "2569",
+    new Set(),
+  );
+
+  assert.deepEqual(both.map((r) => r.brand), ["ACME", "ZENITH"]);
+  assert.equal(both[0].totals.grandTotal, acmeOnly[0].totals.grandTotal);
+  assert.equal(filteredGrandTotal(both), 23);
+});
+
+test("Deep Dive filter key changes when Powertrain or Segment changes", () => {
+  assert.notEqual(
+    deepDiveFilterKey(deepDiveBase),
+    deepDiveFilterKey({ ...deepDiveBase, selectedPowertrains: ["BEV"] }),
+  );
+  assert.notEqual(
+    deepDiveFilterKey(deepDiveBase),
+    deepDiveFilterKey({ ...deepDiveBase, selectedSegments: ["B-SUV"] }),
   );
 });
