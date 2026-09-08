@@ -2,7 +2,14 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 
-import { buildAnalystRowsFromFacts, filterAnalystRows, selectAnalystFilterOptions } from "./analystFilters.ts";
+import {
+  buildAnalystRowsFromFacts,
+  buildModelSegmentMap,
+  filterAnalystRows,
+  filterFactsBySegment,
+  selectAnalystFilterOptions,
+  type AnalystFact,
+} from "./analystFilters.ts";
 import { modelOwnerLookup } from "./selectors.ts";
 
 const rows = [
@@ -98,4 +105,99 @@ test("Analyst province facts can build province-scoped rows", () => {
   assert.equal(out[0].curr_month_units, 12);
   assert.equal(out[1].brand, "ACME");
   assert.equal(out[1].curr_growth_vs_prev_month, 0.5);
+});
+
+// --- Market segment: the same filter the Deep Dive matrix uses, applied to analyst facts ---
+
+const SEG_TRIPLES: [string, string, string][] = [
+  ["TOYOTA", "YARIS CROSS", "B-SUV"],
+  ["Deepal + Changan", "S05 BEV", "B-SUV"],
+  ["TOYOTA", "CAMRY", "D-Segment"],
+];
+
+const segFacts: AnalystFact[] = [
+  { p: "ALL", b: "TOYOTA", m: "YARIS CROSS", y: 2569, mo: 8, v: "รย.1", u: 10 },
+  { p: "ALL", b: "TOYOTA", m: "Yaris Cross", y: 2569, mo: 8, v: "รย.1", u: 5 },
+  { p: "ALL", b: "Deepal + Changan", m: "S05 BEV", y: 2569, mo: 8, v: "รย.1", u: 7 },
+  { p: "ALL", b: "TOYOTA", m: "CAMRY", y: 2569, mo: 8, v: "รย.1", u: 3 },
+  { p: "ALL", b: "TOYOTA", m: "SOME UNLISTED MODEL", y: 2569, mo: 8, v: "รย.1", u: 99 },
+  { p: "ALL", b: "TOYOTA", y: 2569, mo: 8, v: "รย.1", u: 42 },
+];
+
+test("segment map matches brand and model case-insensitively", () => {
+  const map = buildModelSegmentMap(SEG_TRIPLES);
+
+  assert.equal(map.get("TOYOTA||YARIS CROSS"), "B-SUV");
+  assert.equal(map.get("DEEPAL + CHANGAN||S05 BEV"), "B-SUV");
+  assert.equal(map.size, 3);
+});
+
+test("segment filter keeps only facts whose model the map lists in that segment", () => {
+  const map = buildModelSegmentMap(SEG_TRIPLES);
+  const kept = filterFactsBySegment(segFacts, map, "B-SUV");
+
+  assert.deepEqual(kept.map((f) => f.u), [10, 5, 7]);
+  // An unlisted model and a fact with no model at all belong to no segment, never to this one.
+  assert.equal(kept.some((f) => f.u === 99 || f.u === 42), false);
+});
+
+test("segment ALL, or an empty map, filters nothing away", () => {
+  const map = buildModelSegmentMap(SEG_TRIPLES);
+
+  assert.equal(filterFactsBySegment(segFacts, map, "ALL").length, segFacts.length);
+  assert.equal(filterFactsBySegment(segFacts, buildModelSegmentMap([]), "B-SUV").length, 0);
+  assert.equal(buildModelSegmentMap(undefined).size, 0);
+});
+
+test("brand rows under a segment are that segment's models grouped by brand", () => {
+  const map = buildModelSegmentMap(SEG_TRIPLES);
+  const rowsBySegment = buildAnalystRowsFromFacts({
+    facts: filterFactsBySegment(segFacts, map, "B-SUV"),
+    viewBy: "brand",
+    powertrain: "ALL",
+    vehicleType: "ALL",
+    province: "ALL",
+    currentYear: 2569,
+    currentMonthNum: 8,
+  });
+
+  const grand = rowsBySegment.find((r) => r.is_grand_total);
+  const details = rowsBySegment.filter((r) => !r.is_grand_total);
+
+  assert.equal(grand?.curr_month_units, 22);
+  assert.deepEqual(details.map((r) => [r.brand, r.curr_month_units]), [
+    ["TOYOTA", 15],
+    ["Deepal + Changan", 7],
+  ]);
+  // Shares are computed inside the segment, so they add up to 1 across its brands.
+  assert.equal(details.reduce((sum, r) => sum + (r.curr_month_share ?? 0), 0), 1);
+});
+
+test("Analyst segment tables are self-contained: model-grain, powertrain-free, and they add up", () => {
+  const artifact = JSON.parse(
+    readFileSync(new URL("../../public/data/analyst_data.json", import.meta.url), "utf8"),
+  );
+
+  const segments: string[] = artifact.meta.segments;
+  assert.ok(Array.isArray(segments) && segments.length > 0);
+  assert.deepEqual(Object.keys(artifact.data_by_segment).sort(), segments.slice().sort());
+  assert.ok(Array.isArray(artifact.meta.model_segments) && artifact.meta.model_segments.length > 0);
+
+  segments.forEach((segment) => {
+    const table = artifact.data_by_segment[segment];
+    // A segment table has exactly the two views and no powertrain axis of its own.
+    assert.deepEqual(Object.keys(table).sort(), ["brand", "model"]);
+
+    const brandRows = table.brand.ALL;
+    const modelRows = table.model.ALL;
+    const grand = brandRows.find((r: { is_grand_total?: boolean }) => r.is_grand_total);
+    const sum = (rows: { is_grand_total?: boolean; curr_ytd_units?: number }[]) =>
+      rows.filter((r) => !r.is_grand_total).reduce((n, r) => n + (r.curr_ytd_units ?? 0), 0);
+
+    // Brand rows are the same units as the model rows, grouped one level up, and the
+    // Grand Total is the segment's own total -- not the whole market's.
+    assert.equal(grand.curr_ytd_units, sum(brandRows));
+    assert.equal(grand.curr_ytd_units, sum(modelRows));
+    assert.equal(modelRows.find((r: { is_grand_total?: boolean }) => r.is_grand_total).curr_ytd_units, grand.curr_ytd_units);
+  });
 });

@@ -9,7 +9,7 @@ import pandas as pd
 sys.path.append(os.path.dirname(__file__))
 from aggregate import current_period
 from calculation_builder import MONTH_TO_NUM, THAI_MONTHS, build_calculation_table
-from export_dashboard import VEHICLE_TYPE_DICT
+from export_dashboard import VEHICLE_TYPE_DICT, load_model_segment_map
 from schema import validate_fuel, validate_model
 
 VEHICLE_TYPE_PRESETS = {
@@ -74,6 +74,26 @@ def province_model_facts(df_model: pd.DataFrame, current_year: int) -> list[dict
     return grouped[["p", "b", "m", "y", "mo", "v", "u"]].to_dict("records")
 
 
+def attach_market_segment(df_model: pd.DataFrame) -> pd.DataFrame:
+    """Tag each model row with its curated market segment, or None when unlisted.
+
+    The map is config/model_segment.csv, the same file the dashboard tree uses, keyed on
+    (brand2, model2) case-insensitively. A model the CSV does not list stays unsegmented
+    and simply never appears under a segment view -- nothing is guessed here.
+    """
+    df = df_model.copy()
+    seg_map = load_model_segment_map()
+    if not seg_map:
+        df["_segment"] = None
+        return df
+    keys = zip(
+        df["ยี่ห้อรถ2"].astype(str).str.strip().str.upper(),
+        df["รุ่นรถ2"].astype(str).str.strip().str.upper(),
+    )
+    df["_segment"] = [seg_map.get(k) for k in keys]
+    return df
+
+
 def export_analyst_data():
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     fuel_path = os.path.join(base_dir, "backend", "test_fuel_cleaned.parquet")
@@ -125,6 +145,44 @@ def export_analyst_data():
                 )
                 results[vb][pt][vt_code] = [asdict(r) for r in rows]
 
+    # Segment axis: the same calculation table restricted to one market segment. Segments
+    # exist only on the model grain, so every segment table is powertrain-ALL and is built
+    # from model rows -- a Brand view under a segment is that segment's models grouped by
+    # brand. Shares, ranks and the Grand Total are therefore computed within the segment.
+    df_model_seg = attach_market_segment(df_model)
+    segments = sorted(set(df_model_seg["_segment"].dropna().astype(str).tolist()))
+    results_by_segment = {}
+    for seg in segments:
+        df_seg = df_model_seg[df_model_seg["_segment"] == seg]
+        results_by_segment[seg] = {}
+        for vb in view_bys:
+            results_by_segment[seg][vb] = {}
+            for vt_code, vt_set in VEHICLE_TYPE_PRESETS.items():
+                rows = build_calculation_table(
+                    df=df_seg,
+                    view_by=vb,  # type: ignore
+                    powertrain="ALL",
+                    current_year=max_year,
+                    current_month_num=current_month_num,
+                    vehicle_types=vt_set,
+                )
+                results_by_segment[seg][vb][vt_code] = [asdict(r) for r in rows]
+        model_rows = len(results_by_segment[seg]["model"]["ALL"]) - 1
+        brand_rows = len(results_by_segment[seg]["brand"]["ALL"]) - 1
+        print(f"Processing segment={seg}: {model_rows} models across {brand_rows} brands")
+
+    # (brand2, model2, segment) exactly as the facts spell them, so the province view can
+    # apply the same segment filter client-side.
+    model_segments = (
+        df_model_seg.dropna(subset=["_segment", "ยี่ห้อรถ2", "รุ่นรถ2"])
+        .groupby(["ยี่ห้อรถ2", "รุ่นรถ2", "_segment"], dropna=True)
+        .size()
+        .reset_index()[["ยี่ห้อรถ2", "รุ่นรถ2", "_segment"]]
+        .astype(str)
+        .values.tolist()
+    )
+    print(f"Segments: {len(segments)} covering {len(model_segments)} brand/model pairs")
+
     provinces = sorted(df_model["จังหวัด"].dropna().astype(str).unique().tolist())
     vehicle_types_list = [
         {"code": code, "label": VEHICLE_TYPE_DICT[code]}
@@ -138,8 +196,11 @@ def export_analyst_data():
             "current_month_th": current_month_th,
             "vehicle_types_list": vehicle_types_list,
             "provinces": provinces,
+            "segments": segments,
+            "model_segments": model_segments,
         },
         "data": results,
+        "data_by_segment": results_by_segment,
     }
 
     province_payload = {

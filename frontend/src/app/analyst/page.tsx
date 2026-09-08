@@ -3,7 +3,15 @@
 import { useEffect, useState, useMemo, useRef } from "react";
 import Link from "next/link";
 import { Download, RefreshCw, AlertTriangle, ArrowUpDown, ArrowUp, ArrowDown } from "lucide-react";
-import { buildAnalystRowsFromFacts, filterAnalystRows, selectAnalystFilterOptions, type AnalystFact } from "../analystFilters";
+import {
+  buildAnalystRowsFromFacts,
+  buildModelSegmentMap,
+  filterAnalystRows,
+  filterFactsBySegment,
+  selectAnalystFilterOptions,
+  type AnalystFact,
+  type ModelSegmentTriple,
+} from "../analystFilters";
 import { FilterPillPopover } from "../../components/FilterPillPopover";
 import { modelOwnerLookup } from "../selectors";
 
@@ -43,6 +51,8 @@ export type AnalystData = {
     years?: number[];
     months?: string[];
     provinces?: string[];
+    segments?: string[];
+    model_segments?: ModelSegmentTriple[];
     vehicle_types_list?: { code: string; label: string }[];
     [key: string]: unknown;
   };
@@ -50,6 +60,13 @@ export type AnalystData = {
     brand?: Record<string, Record<string, AnalystRow[]>>;
     model?: Record<string, Record<string, AnalystRow[]>>;
   };
+  // One calculation table per market segment, built from model rows only: shares, ranks
+  // and the Grand Total are computed within the segment, never carried over from the
+  // whole market. Powertrain is always ALL here — model rows carry no powertrain.
+  data_by_segment?: Record<string, {
+    brand?: Record<string, AnalystRow[]>;
+    model?: Record<string, AnalystRow[]>;
+  }>;
 };
 
 type AnalystProvinceData = {
@@ -72,6 +89,7 @@ export default function AnalystPage() {
   const [currentPowertrain, setCurrentPowertrain] = useState<string>("ALL");
   const [selectedVehicleType, setSelectedVehicleType] = useState<string>("ALL");
   const [selectedProvince, setSelectedProvince] = useState<string>("ALL");
+  const [selectedSegment, setSelectedSegment] = useState<string>("ALL");
   const [selectedBrand, setSelectedBrand] = useState("");
   const [selectedModel, setSelectedModel] = useState("");
   
@@ -129,7 +147,7 @@ export default function AnalystPage() {
 
   // Reset page to 1 when filters or sorting changes (using render-phase state updates)
   const [prevFilterKey, setPrevFilterKey] = useState("");
-  const currentFilterKey = `${selectedBrand}||${selectedModel}||${currentViewBy}||${currentPowertrain}||${selectedVehicleType}||${selectedProvince}||${sortField}||${sortDirection}`;
+  const currentFilterKey = `${selectedBrand}||${selectedModel}||${currentViewBy}||${currentPowertrain}||${selectedVehicleType}||${selectedProvince}||${selectedSegment}||${sortField}||${sortDirection}`;
   if (currentFilterKey !== prevFilterKey) {
     setPrevFilterKey(currentFilterKey);
     setCurrentPage(1);
@@ -186,7 +204,7 @@ export default function AnalystPage() {
     return () => {
       observer.disconnect();
     };
-  }, [loading, data, currentViewBy, currentPowertrain, selectedVehicleType, selectedProvince]);
+  }, [loading, data, currentViewBy, currentPowertrain, selectedVehicleType, selectedProvince, selectedSegment]);
 
   const meta = data?.meta;
   const currYear = meta?.current_year;
@@ -194,9 +212,19 @@ export default function AnalystPage() {
   const monthLabel = MONTHS_EN[(meta?.current_month_num ?? 0) - 1] || "";
   const isProvinceMode = selectedProvince !== "ALL";
   const isProvincePending = isProvinceMode && !provinceData && !provinceError;
+  const isSegmentMode = selectedSegment !== "ALL";
+  // Segments are a model-grain fact, so a segment view always reads model rows and its
+  // powertrain is ALL — the same rule the Model view already follows.
+  const effectivePowertrain = currentViewBy === "model" || isSegmentMode ? "ALL" : currentPowertrain;
+  const segmentMap = useMemo(() => buildModelSegmentMap(meta?.model_segments), [meta?.model_segments]);
+  const segmentOptions = meta?.segments ?? [];
   const currentFacts = useMemo(
-    () => isProvinceMode ? provinceData?.facts[currentViewBy] ?? [] : [],
-    [isProvinceMode, provinceData, currentViewBy],
+    () => {
+      if (!isProvinceMode || !provinceData) return [];
+      if (isSegmentMode) return filterFactsBySegment(provinceData.facts.model, segmentMap, selectedSegment);
+      return provinceData.facts[currentViewBy] ?? [];
+    },
+    [isProvinceMode, provinceData, currentViewBy, isSegmentMode, segmentMap, selectedSegment],
   );
   const currentMonthNum = meta?.current_month_num ?? 0;
   const currentYearNum = meta?.current_year ?? 0;
@@ -211,7 +239,9 @@ export default function AnalystPage() {
     () => {
       if (isProvinceMode && provinceData && currentYearNum && currentMonthNum) {
         return buildAnalystRowsFromFacts({
-          facts: provinceData.facts.model,
+          facts: isSegmentMode
+            ? filterFactsBySegment(provinceData.facts.model, segmentMap, selectedSegment)
+            : provinceData.facts.model,
           viewBy: "model",
           powertrain: "ALL",
           vehicleType: selectedVehicleType,
@@ -220,9 +250,10 @@ export default function AnalystPage() {
           currentMonthNum,
         });
       }
+      if (isSegmentMode) return data?.data_by_segment?.[selectedSegment]?.model?.[selectedVehicleType] || [];
       return data?.data?.model?.ALL?.[selectedVehicleType] || [];
     },
-    [isProvinceMode, provinceData, currentYearNum, currentMonthNum, selectedVehicleType, selectedProvince, data],
+    [isProvinceMode, provinceData, currentYearNum, currentMonthNum, selectedVehicleType, selectedProvince, data, isSegmentMode, segmentMap, selectedSegment],
   );
 
   // Model view options come from the already-loaded analyst rows for the active vehicle type.
@@ -240,9 +271,15 @@ export default function AnalystPage() {
   const brandOptions = useMemo(() => {
     if (currentViewBy === "model") return modelViewOptions.brands;
     const brandsSet = new Set<string>();
+    if (isSegmentMode && !isProvinceMode) {
+      (data?.data_by_segment?.[selectedSegment]?.brand?.[selectedVehicleType] ?? []).forEach((r) => {
+        if (!r.is_grand_total && r.brand) brandsSet.add(r.brand);
+      });
+      return Array.from(brandsSet).sort();
+    }
     if (isProvinceMode && provinceData && currentYearNum && currentMonthNum) {
       buildAnalystRowsFromFacts({
-        facts: provinceData.facts.brand,
+        facts: isSegmentMode ? currentFacts : provinceData.facts.brand,
         viewBy: "brand",
         powertrain: "ALL",
         vehicleType: selectedVehicleType,
@@ -262,7 +299,7 @@ export default function AnalystPage() {
       });
     }
     return Array.from(brandsSet).sort();
-  }, [currentViewBy, isProvinceMode, provinceData, currentYearNum, currentMonthNum, selectedVehicleType, selectedProvince, data, modelViewOptions.brands]);
+  }, [currentViewBy, isProvinceMode, provinceData, currentYearNum, currentMonthNum, selectedVehicleType, selectedProvince, data, modelViewOptions.brands, isSegmentMode, selectedSegment, currentFacts]);
 
   const handleBrandChange = (brand: string) => {
     setSelectedBrand(brand);
@@ -300,6 +337,23 @@ export default function AnalystPage() {
       const validBrands = new Set(selectAnalystFilterOptions(rows, "").brands);
       if (!validBrands.has(selectedBrand)) setSelectedBrand("");
     }
+  };
+
+  // Picking a segment swaps the whole table to that segment's own calculation, so the
+  // Model pick never survives and the Brand pick survives only if that brand sells in the
+  // segment. Powertrain goes back to ALL because model rows cannot carry one.
+  const handleSegmentChange = (segment: string) => {
+    setSelectedSegment(segment);
+    setSelectedModel("");
+    if (segment === "ALL") return;
+    setCurrentPowertrain("ALL");
+    if (!selectedBrand) return;
+    const validBrands = new Set(
+      (data?.data_by_segment?.[segment]?.brand?.[selectedVehicleType] ?? [])
+        .filter((r) => !r.is_grand_total)
+        .map((r) => r.brand),
+    );
+    if (!validBrands.has(selectedBrand)) setSelectedBrand("");
   };
 
   const handleProvinceChange = (province: string) => {
@@ -357,13 +411,15 @@ export default function AnalystPage() {
       ? buildAnalystRowsFromFacts({
           facts: currentFacts,
           viewBy: currentViewBy,
-          powertrain: currentViewBy === "model" ? "ALL" : currentPowertrain,
+          powertrain: effectivePowertrain,
           vehicleType: selectedVehicleType,
           province: selectedProvince,
           currentYear: currentYearNum,
           currentMonthNum,
         })
-      : data?.data?.[currentViewBy]?.[currentPowertrain]?.[selectedVehicleType] || [];
+      : isSegmentMode
+        ? data?.data_by_segment?.[selectedSegment]?.[currentViewBy]?.[selectedVehicleType] || []
+        : data?.data?.[currentViewBy]?.[currentPowertrain]?.[selectedVehicleType] || [];
     if (rawRows.length === 0) return [];
 
     let filtered = rawRows.slice();
@@ -384,7 +440,7 @@ export default function AnalystPage() {
     });
 
     return grandTotals.concat(details);
-  }, [isProvinceMode, provinceData, currentYearNum, currentMonthNum, currentFacts, currentViewBy, currentPowertrain, selectedVehicleType, selectedProvince, data, selectedBrand, selectedModel, sortField, sortDirection]);
+  }, [isProvinceMode, provinceData, currentYearNum, currentMonthNum, currentFacts, currentViewBy, currentPowertrain, effectivePowertrain, selectedVehicleType, selectedProvince, data, selectedBrand, selectedModel, sortField, sortDirection, isSegmentMode, selectedSegment]);
 
   const paginatedRows = useMemo(() => {
     const grandTotals = filteredAndSortedRows.filter(r => r.is_grand_total);
@@ -419,13 +475,15 @@ export default function AnalystPage() {
         ? buildAnalystRowsFromFacts({
             facts: currentFacts,
             viewBy: currentViewBy,
-            powertrain: currentViewBy === "model" ? "ALL" : currentPowertrain,
+            powertrain: effectivePowertrain,
             vehicleType: selectedVehicleType,
             province: selectedProvince,
             currentYear: currentYearNum,
             currentMonthNum,
           })
-        : data.data[currentViewBy]?.[currentPowertrain]?.[selectedVehicleType] || [];
+        : isSegmentMode
+          ? data.data_by_segment?.[selectedSegment]?.[currentViewBy]?.[selectedVehicleType] || []
+          : data.data[currentViewBy]?.[currentPowertrain]?.[selectedVehicleType] || [];
       const excelFull = getExcelRows(fullRows);
 
       // Sheet 2: Analyst View (currently filtered & sorted)
@@ -603,9 +661,25 @@ export default function AnalystPage() {
                 singleSelect
               />
             </div>
+            <div className="min-w-[150px]">
+              <FilterPillPopover
+                label="Segment"
+                placeholder="Search segments..."
+                options={segmentOptions}
+                value={selectedSegment === "ALL" ? [] : [selectedSegment]}
+                onChange={(v) => handleSegmentChange(v[0] ?? "ALL")}
+                singleSelect
+              />
+            </div>
             <div
-              className={`min-w-[150px] ${currentViewBy === "model" ? "opacity-40 pointer-events-none" : ""}`}
-              title={currentViewBy === "model" ? "Powertrain locked to ALL — model data has no powertrain breakdown" : undefined}
+              className={`min-w-[150px] ${currentViewBy === "model" || isSegmentMode ? "opacity-40 pointer-events-none" : ""}`}
+              title={
+                isSegmentMode
+                  ? "Powertrain locked to ALL — a segment is a model-level fact and model data has no powertrain breakdown"
+                  : currentViewBy === "model"
+                    ? "Powertrain locked to ALL — model data has no powertrain breakdown"
+                    : undefined
+              }
             >
               <FilterPillPopover
                 label="Powertrain"

@@ -48,6 +48,8 @@ from the CSV above, and a `BEV` segment for every model the review has approved 
 else stays `N/A`). Nothing here infers a model Powertrain from aggregate fuel data — the Deep
 Dive page's Powertrain filter therefore offers only what the review actually proves.
 
+`export_analyst.py` uses the same CSV for the Analyst page's Segment filter. Each segment gets its own calculation table (`data_by_segment[segment][brand|model][vehicle type]`), so share, rank and the Grand Total are computed inside the segment rather than carried over from the whole market. Those tables are model-grain and therefore always powertrain-ALL; picking a segment locks the Powertrain filter.
+
 ```
 build_cleaned.py      ← every month  →  separate model-grain and fuel-grain parquets
 build_analyst.py      ← every month  →  YYYYMM_รถใหม่_...(analyst).xlsx
@@ -102,7 +104,7 @@ type checking, and a static production build. The monthly update also runs
 | `frontend/public/data/dashboard_summary.json` | General summary and powertrain data |
 | `frontend/public/data/dashboard_models.json` | Brand and model data tree |
 | `frontend/public/data/cleaned_data_manifest.json` | Cleaned dataset metadata manifest |
-| `frontend/public/data/analyst_data.json` | Analyst pivot table calculations |
+| `frontend/public/data/analyst_data.json` | Analyst pivot table calculations, plus one calculation table per market segment |
 
 ## License
 

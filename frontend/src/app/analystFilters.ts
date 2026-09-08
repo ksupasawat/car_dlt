@@ -39,6 +39,35 @@ export type AnalystCalculatedRow = {
   rank_diff?: string | number | null;
 };
 
+// (brand, model, market segment) triples exactly as the facts spell brand and model, so a
+// province view can apply the same segment filter the precomputed segment tables use.
+export type ModelSegmentTriple = [string, string, string];
+
+function segmentKey(brand: string, model: string) {
+  return `${brand.trim().toUpperCase()}||${model.trim().toUpperCase()}`;
+}
+
+export function buildModelSegmentMap(triples?: ModelSegmentTriple[] | null): Map<string, string> {
+  const map = new Map<string, string>();
+  (triples ?? []).forEach((triple) => {
+    const [brand, model, segment] = triple ?? [];
+    if (!brand || !model || !segment) return;
+    map.set(segmentKey(brand, model), segment);
+  });
+  return map;
+}
+
+// A fact with no model, or a model the segment map does not list, belongs to no segment and
+// is dropped rather than guessed into one.
+export function filterFactsBySegment(
+  facts: AnalystFact[],
+  segmentMap: Map<string, string>,
+  segment: string,
+): AnalystFact[] {
+  if (!segment || segment === "ALL") return facts;
+  return facts.filter((fact) => !!fact.m && segmentMap.get(segmentKey(fact.b, fact.m)) === segment);
+}
+
 export function selectAnalystFilterOptions(rows: AnalystFilterRow[], selectedBrand: string) {
   const brands = new Set<string>();
   const models = new Set<string>();
