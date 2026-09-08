@@ -94,3 +94,1233 @@ XPENG,X9,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention);
 ZEEKR,ZEEKR 009,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
 ZEEKR,ZEEKR 7X,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
 ZEEKR,ZEEKR X,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A1 SB 35 TFSI S line,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A1 SPORTBACK 1.4 TFSI,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A3 2.0TDI S LINE SALOON MANUAL,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A3 SALOON 35 TFSI,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A3 SB 35 TFSI S line,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A4 40 TFSI S line,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A4 40 TFSI S line IB,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A4 AV 45 TFSI q S line BE,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A4 AV 45 TFSI q S line IB,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A4 BLACK EDITION 35 TFSI,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A5,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A5 2.0T FSI COUPE,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A5 Avant e-hybrid q Tech Plus,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A5 Avant e-hybrid q Tech Pro,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A5 Coupe 40 TFSI,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A5 Coupe 45 TFSI q S line,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A5 CP 40 TFSI S line,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A5 CP 40 TFSI S line eo,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A5 CP 45 TFSI q S line BE,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A5 CP 45 TFSI q S line eo,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A5 SB 40 TFSI,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A5 SB 40 TFSI S line,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A5 SB 40 TFSI S line eo,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A5 SB 45 TFSI q S line,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A5 SB 45 TFSI q S line BE,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A5 SB 45 TFSI q S line eo,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A5 SB e-hybrid q Tech Plus,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A5 SB e-hybrid q Tech Pro,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A6 2.0 TDI,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A6 40 TFSI S line,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A6 50 TFSI,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A6 AV 40 TFSI S line,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A6 AV 45 TFSI q S line BE,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A6 AV 55 TFSI q S line,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A7 SB 45 TFSI,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A7 SB 45 TFSI q,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A7 SB 55 TFSI q S line,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A7 SB 55 TFSIe q Sline,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A7 SB 55 TFSIe q Sline BE,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A7 SPORTBACK 40 TDI,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A8,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A8 L 55 TFSI q Pg S line,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A8 L 55 TFSI q Premium,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A8 L 55 TFSI q Prestige,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A8 L TFSI E QUATTRO,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,A8L 60 TFSIe q Pstg Sline,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,e-tron GT quattro,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,e-tron GT quattro PF,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q2 35 TFSI,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q3 35 TFSI,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q3 35 TFSI S line,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q3 40 TFSI q S line BE,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q3 SB 35 TFSI S line,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q3 SB 40 TFSI q S line BE,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q3 SPORTBACK 35 TFSI S LINE,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q3 SPORTBACK BLACK EDITION 35,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q3 TECHNIK 35 TFSI,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q5 35 TDI q,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q5 40 TDI q,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q5 45 TFSI q S line,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q5 45 TFSI q S line BE,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q5 55 TFSI e q S line,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q5 55 TFSI e q S line BE,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q5 SB 55 TFSIe q S lineBE,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q7 3.0 TDI QUATTRO,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q7 40 TFSI q,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q7 45 TDI q,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q7 45 TDI q S line,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q7 45 TFSI q,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q7 45 TFSI q S line,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q7 45 TFSI q S line BE,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q7 55 TFSI q S line,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q7 60 TFSI e q S line BE,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q7 TFSI e q S line edition one,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q8 50 TDI QUATTRO,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q8 55 TFSI q S line,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q8 60 TFSI e q S line BE,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q8 e-tron 50 q,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q8 etron 55 q BE,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q8 SB e-tron 50 q S line,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q8 SB etron 55 q Sline BE,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,Q8 TFSI e q S line edition one,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,R8 COUPE V10,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,R8 COUPE V10 PERFORMANCE,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,R8 CP V10 Performance q,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,R8 SPYDER V10,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,R8 SPYDER V10 PERFORMANCE,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,R8 V10 COUPE,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,TT COUPE,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,TT COUPE 2.0 TFSI,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,TT Coupe 45 TFSI q S line,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,TT Coupe Final Icon Black,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,TT RD 45 TFSI q 20 years,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,TT RD 45 TFSI q S line,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,TT RD Final Icon Black,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,TT RS Coupe q,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,TT RS Heritage Edition,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AUDI,TTS Coupe q,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,118D M SPORT HATCH MANUAL,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,118i M Sport,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,218i Gran Coupe RHD,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,220 Gran Coupe M Sport Pr,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,220I COUPE RHD,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,220i Gran Coupe M Sport,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,220i Gran Coupe Sport,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,318D M SPORT SALOON MANUAL,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,320d,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,320d GT Luxury,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,320d GT M Sport,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,320d GT Sport,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,320d Limousine RHD,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,320d Luxury,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,320d M Performance,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,320d M Sport,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,320d Sport,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,320i Sport,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,320Li,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,320Li Limousine LWB RHD,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,320Li Limousine RHD,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,328I M SPORT,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,330e,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,330e Limousine RHD,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,330e Luxury,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,330e M Sport,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,330e Sport,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,330i Limousine RHD,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,330Li,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,330Li Limousine RHD,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,420D COUPE RHD,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,420D GRAN COUPE RHD,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,420I CABRIO RHD,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,420I COUPE M SPORT,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,420i Coupe RHD,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,420I GRAN COUPE RHD,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,430D CONVERTIBLE Mild-hybrid,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,430i Cabrio RHD,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,430i Convertible RHD,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,430i Coupe RHD,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,520d,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,520d Limousine RHD,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,520d M Sport,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,520d M Sport Pro,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,520d Sport,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,520I,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,525d,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,525d Celebration Edition,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,525d Luxury,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,525d M Sport,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,528i Luxury,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,530e Elite,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,530e Highline,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,530e Inspiring,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,530e Luxury,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,530e M Sport,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,530e M Sport Pro,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,530i Limousine RHD,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,530i Touring RHD,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,630Ci,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,630d Gran Turismo RHD,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,630I COUPE RHD,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,630i Gran Turismo RHD,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,650I,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,725Ld,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,730Ld,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,730Ld Limousine RHD,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,730Ld M Sport,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,730Ld Pure Excellence,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,740d M Sport,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,740Le xDrive iPerformance RHD,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,740Le xDrive M Sport,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,740Le xDrive Pure Excellence,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,740Li Limousine RHD,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,745Le xDrive M Sport,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,750e xDrive,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,750e xDrive M Sport,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,840D XDRIVE,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,840D XDRIVE COUPE,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,840D XDRIVE M COUPE,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,840I CONVERTIBLE,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,840I M SPORT COUPE,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,840i M SPORT GRAN COUPE,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,I3,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,i4 eDrive35 Gran Coupe RH,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,i4 eDrive40 Gran Coupe RH,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,i4 M50 Gran Coupe RHD,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,i5 eDrive40 M Sport,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,i5 eDrive40 RHD,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,i5 eDrive40 Touring RHD,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,i5 M60 xDrive RHD,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,i7 eDrive50 RHD,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,i7 M70 xDrive RHD,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,i7 xDrive60 Limousine RHD,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,iX xDrive40 RHD,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,iX xDrive50,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,iX xDrive50 RHD,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,iX1 eDrive20L,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,iX3 50 xDrive,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,iX3 M Sport RHD,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M2 COMPETITION,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M2 Comptetition RHD,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M2 COUPE,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M2 Coupe RHD,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M2 Coupe RHD MX,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M2 CS,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M2 CS COUPE,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M2 CS Coupe RHD,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M2 RHD,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M340i xDrive,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M340i xDrive Limousine RHD,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M4 Cabrio RHD,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M4 COMPETITION,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M4 COMPETITION COUPE,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M4 Competition Coupe RHD,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M4 COMPETITION COUPE WITH M,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M4 Competition M xDrive C,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M4 COMPETITION M XDRIVE COUPE,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M4 Coupe RHD,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M4 CS Coupe RHD,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M4 CS RHD,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M4 CSL,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M4 CSL Coupe RHD,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M4 GTS COUPE,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M4 GTS Coupe RHD,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M8 COMPETITION COUPE,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M8 Coupe RHD,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,M8 Gran Coupe RHD,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X1 sDrive 18d,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X1 sDrive18d M Sport,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X1 sDrive18d RHD,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X1 sDrive18d xLine,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X1 sDrive18i,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X1 SDRIVE18I SPORT,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X1 SDRIVE18I XLINE,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X1 sDrive20d Highline,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X1 sDrive20d M Sport,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X1 SDRIVE20D XLINE,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X1 sDrive20i M Sport,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X1 sDrive20i xLine,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X1 sDrive30e M Sport,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X1 xDrive30e,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X1 xDrive30e M Sport,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X3 20d xDrive M Sport Pro,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X3 20d xDrive RHD,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X3 M RHD,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X3 M50 xDrive,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X3 M50 xDrive RHD,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X3 xDrive20d Celebration Editi,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X3 xDrive20d Highline,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X3 xDrive20d M Sport,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X3 xDrive20d RHD,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X3 xDrive20d xLine,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X3 XDRIVE20I,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X3 xDrive30e M Sport,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X3 xDrive30e xLine,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X4 M COMPETITION V6 3.0L,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X4 M RHD,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X4 xDrive20d,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X4 xDrive20d M Sport,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X4 xDrive20d RHD,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X4 xDrive20i M Sport,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X5 sDrive25d,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X5 sDrive25d Celebration Editi,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X5 sDrive25d Pure Experie,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X5 xDrive30d M Sport,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X5 xDrive30d RHD,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X5 xDrive30d xLine,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X5 xDrive40e M Sport,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X5 xDrive40e Pure Experience,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X5 XDRIVE40E RHD,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X5 xDrive45e M Sport,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X5 xDrive50e RHD,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X6 M50D,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X6 M50i RHD,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X6 XDRIVE 3.0D,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X6 xDrive30d RHD,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X6 xDrive40i M Sport,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X6 xDrive40i RHD,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X7 M50d RHD,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X7 M60i xDrive,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X7 xDrive30d M Sport,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,X7 xDrive40d M Sport,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,XM 50e RHD,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,XM Label RHD,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,XM RHD,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,Z4 M40i RHD,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,Z4 M40i Roadster RHD,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,Z4 SDRIVE20I RHD,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,Z4 SDRIVE23I RHD,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BMW,Z4 sDrive30i RHD,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BYD,E6,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+BYD,T3,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+FORD,EVEREST,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+FORD,RANGER,Pickup,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+FORD,RANGER MODEL UR53RAA,Pickup,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+FORD,RANGER RAPTOR,Pickup,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+FORD,RANGER SUPER DUTY,Pickup,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+FORD,RANGER SWB,Pickup,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+FORD,RANGER UL88RAA,Pickup,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+FORD,RANGER/ค.ศ.2005,Pickup,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,ACCORD,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,ACCORD HYBRID,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,ACCORD HYBRID'15,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,ACCORD'13,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,ACCORD'14,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,ACCORD'15,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,ACCORDHYBRID'14,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,BR-V,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,CITY,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,CITY CNG'14,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,CITY HATCHBACK,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,CITY'10,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,CITY'11,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,CITY'14,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,CIVIC,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,CIVIC TYPE R,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,CIVIC TYPE R GT,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,CIVIC TYPE R LIMITED EDITION,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,CIVIC TYPE R RACING BLACK,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,CIVIC TYPE R SPOON,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,CIVIC'12,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,CIVIC'13,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,CR-V,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,CR-V'07,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,CR-V'10,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,CR-V'13,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,CR-V'14,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,CR-V'16,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,e:N1,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,FREED,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,HR-V,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,HR-V'15,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,JAZZ,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,JAZZ HYBRID'12,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,JAZZ'09,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,JAZZ'15,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,JAZZ'16,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,MOBILIO,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,MOBILIO'15,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,ODYSSEY ABSOLUTE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,ODYSSEY ABSOLUTE EX,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,ODYSSEY ABSOLUTE EX 2.4L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,ODYSSEY ABSOLUTE EX HYBRID,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,ODYSSEY e-HEV ABSOLUTE EX,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,STEP WGN,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,STEP WGN AIR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,STEP WGN E HEV SPADA,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,STEP WGN E HEV SPADA G EX,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,STEP WGN E HEV SPADA PREMIUM,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,STEP WGN e-HEV AIR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,STEP WGN e-HEV SPADA,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,STEP WGN e-HEV SPADA G,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,STEP WGN e-HEV SPADA G EX,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,STEP WGN e-HEV SPADA PREMIUM,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,STEP WGN HYBRID AIR 2.0L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,STEP WGN HYBRID MODULO X 2.0L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,STEP WGN SPADA,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,STEP WGN SPADA 1.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,STEP WGN SPADA HYBRID,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,STEP WGN SPADA HYBRID G,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,STEP WGN SPADA HYBRID G-EX,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,STEP WGN SPADA HYBRID PREMIUM,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,STEP WGN SPADA PREMIUM LINE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HONDA,WR-V,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HYUNDAI,CRETA,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HYUNDAI,H-1,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HYUNDAI,PALISADE,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HYUNDAI,SANTA FE,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HYUNDAI,SANTA FE HYBRID,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HYUNDAI,STARGAZER,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HYUNDAI,STARIA,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+HYUNDAI,TUCSON,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+ISUZU,D-MAX,Pickup,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+ISUZU,D-MAX New Style,Pickup,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+ISUZU,mu-X,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+KIA,CARNIVAL,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+KIA,CARNIVAL HEV 7P LUXURY,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+KIA,CARNIVAL HEV 7P PREMIUM,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+KIA,GRAND CARNIVAL,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+KIA,GRAND CARNIVAL 2.9L LX,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+KIA,SORENTO,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,ES300h,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,GX550,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,IS300,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,IS300H,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,LM300h,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,LM350 EMPEROR SUITE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,LM350H,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,LM350H 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,LM350H 2.5L 4 SEATS,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,LM500H,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,LM500H AWD,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,LM500H EXECUTIVE 4-SEATER,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,LS350,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,LS500,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,LS500H,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,LX 500D,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,LX 600,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,LX500D F SPORT 3.3L 4AWD,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,LX570S 8 SEATS,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,LX600 7 SEAT,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,LX600 EXECUTIVE,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,LX600 F SPORT,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,NX300,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,NX300h,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,NX350H,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,NX450H+,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,RX200t,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,RX300,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,RX350,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,RX350H,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,RX450h,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,RX450H+,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,RX500H,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,UX250H,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,UX300E,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+LEXUS,UX300H,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MAZDA,CX-3,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MAZDA,MAZDA 2,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MAZDA,MAZDA 3,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MAZDA,Mazda BT-50,Pickup,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MAZDA,MAZDA BT50,Pickup,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MAZDA,MAZDA CX-3,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MAZDA,MAZDA CX-30,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MAZDA,MAZDA CX-5,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MAZDA,MAZDA CX-8,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MAZDA,MAZDA3,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,A 180,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,A 200,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,A 250 SPORT,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG C43 4MATIC Coupe,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG CLA 35 4MATIC Coupe,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG CLA 45 S 4MATIC+,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG CLE 53 4MATIC coupe,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG CLS 53 4MATIC,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG E53 CABRIOLET,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG EQE 53 4MATIC+,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG GLA 35 4MATIC,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG GLA 45 4MATIC,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG GLC 43 4MATIC Coupe,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG GLC63 S 4MATIC+ Coupe,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG GLE 43 4MATIC Coupe,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG GLE 43 Coupe,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG GLE 53 4MATIC+,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG GLE 53 HYBRID 4MATIC+,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG GT 53 4MATIC+,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG GT 63 4MATIC+,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG GT 63 S 4MATIC+,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG GT Black Series,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG GT C,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG GT C ROADSTER,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG GT R,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG GT R PRO,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG GT R ROADSTER,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG GT S,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,AMG GT-R PRO COUPE,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,C 180,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,C 180 COUPE,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,C 200 CGI BE,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,C 200 Coupe,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,C 200 SEDAN,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,C 220 CDI,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,C 220 d,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,C 250 COUPE,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,C 300 BLUETEC HYBRID,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,C 300 e,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,C 350 e,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,CLA 180,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,CLA 180 CGI AMG,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,CLA 180 CGI COUPE,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,CLA 200,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,CLA 250,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,CLA 250 COUPE,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,CLA 250 Shooting Brake,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,CLA200,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,CLA200D COUPE,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,CLA200D SHOOTING BRAKE,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,CLA250,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,CLE 300 4MATIC coupe,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,CLS 220 d,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,CLS 250 CDI BE COUPE,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,CLS 250 CDI COUPE,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,CLS 250 d COUPE,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,CLS 300 d,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,CLS 300 d Coupe,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,E 200 CABRIOLET,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,E 200 Coupe,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,E 200 NGT,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,E 200 SEDAN,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,E 220 d,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,E 220 d Sedan,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,E 250 Cabriolet,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,E 300 BLUETEC HYBRID,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,E 300 Cabriolet,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,E 300 Coupe,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,E 300 e,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,E 350 e,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,EQB,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,EQE,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,EQS,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,G 350 D,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,G 350 d AMG,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,G 350 D PROFESSIONAL LHD,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,G 450 d,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,G 450 D AMG-Line,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,G 580,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,GLA 200,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,GLA 250,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,GLA 45 AMG 4MATIC,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,GLB 200,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,GLC 220 d,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,GLC 220 d 4MATIC,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,GLC 220 d 4MATIC Coupe,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,GLC 250 4MATIC Coupe,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,GLC 250 d 4MATIC,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,GLC 250 d 4MATIC Coupe,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,GLC 300 e 4MATIC,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,GLC 300 e 4MATIC Coupe,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,GLC 350 e 4MATIC,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,GLC 350 e 4MATIC coupe,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,GLC250 d 4MATIC Coupe,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,GLE 250 d 4MATIC,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,GLE 300 d 4MATIC,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,GLE 350 d 4MATIC Coupe,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,GLE 350 de 4MATIC,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,GLE 500 e 4MATIC,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,GLS 350 d 4MATIC,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,GLS 450 d 4MATIC,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,MAYBACH EQS 680 SUV,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,Maybach GLS 600 4MATIC,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,MAYBACH GLS600,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,MAYBACH GLS600 4MATIC,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,Maybach S 560,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,Maybach S 580 4MATIC,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,Maybach S 580 e,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,MAYBACH S 680,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,MAYBACH S580,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,MAYBACH S580 4 matic,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,MAYBACH S650,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,MAYBACH S680,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,S 300 BLUETEC HYBRID,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,S 350 d,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,S 350D LWB SALOON,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,S 500 Cabriolet,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,S 500 e,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,S 500 L,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,S 500 L 4MATIC LIMOUSINE,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,S 500L MILD HYBRID,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,S 560 Coupe,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,S 560 e,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,S 580 e,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,SL 43,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,SL 55 4MATIC+,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,SLK 200 BE ROADSTER,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,SLK200,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,SLK280,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,SPRINTER,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,SPRINTER 2.2 DIESEL,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,SPRINTER 316 CDI,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,SPRINTER 319 CDI,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,SPRINTER 319 CDI EURO,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,SPRINTER 319 CDI VAN,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,SPRINTER 324 VAN,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,SPRINTER 388 SINGLE,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,SPRINTER 416 CDI VAN,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,SPRINTER 419 CDI,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,SPRINTER 419 CDI (907),Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,SPRINTER 419 CDI VAN,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,SPRINTER 519 BLUETEC,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,SPRINTER 519 CDI,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,SPRINTER 519 CDI VAN,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,SPRINTER HYMER CAMPER VAN,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,V 220 d,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,V 250 d,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,V 300 d,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,VITO 115 CDI COM.EX.LONG,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,VITO 116 CDI,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,VITO 116 CDI VAN EX.LONG,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,VITO 116 CDI VAN EXTRA LO,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,VITO 119 CDI,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,VITO 119 CDI PANEL VAN,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+Mercedes-Benz,VITO 119 CDI TOURER,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MG,EP,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MG,ES,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MG,HS,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MG,HS PHEV,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MG,MG EXTENDER,Pickup,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MG,NEW MG3,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MG,VS HEV,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MG,ZS EV,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MG,ZS1,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,Cooper 5-Turer RHD,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,Cooper Clubman RHD,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,COOPER COUNTRYMAN HIGHTRI,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,Cooper D 5-Turer RHD,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,Cooper D Clubman RHD,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,COOPER D RHD,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,Cooper Hatch RHD,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,COOPER S 3-DOOR HATCH,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,Cooper S 5-Turer RHD,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,COOPER S 60TH ANNIVERSARY,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,Cooper S Cabrio RHD,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,Cooper S Clubman RHD,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,Cooper S Convertible RHD,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,Cooper S Countryman,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,Cooper S Countryman RHD,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,COOPER S COUPE,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,COOPER S HATCH 2.0 60 YEARS,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,Cooper S Hatch RHD,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,Cooper S RHD,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,COOPER SD ALL4 COUNTRYMAN,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,COOPER SD RHD,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,JCW Aceman E,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,JCW Convertible RHD,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,JCW Countryman ALL4,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,JCW Countryman ALL4 RHD,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,JCW E,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MINI,JCW RHD,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MITSUBISHI,ATTRAGE,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MITSUBISHI,MIRAGE,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MITSUBISHI,OUTLANDER PHEV,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MITSUBISHI,PAJERO SPORT,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MITSUBISHI,TRITON,Pickup,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MITSUBISHI,Triton C-Cab 2.5 DID (T/C)  GL,Pickup,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MITSUBISHI,Triton D-Cab 2.5 DID (T/C)   G,Pickup,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MITSUBISHI,XFORCE HEV,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MITSUBISHI,XPANDER,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MITSUBISHI,XPANDER CROSS HEV,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MITSUBISHI,XPANDER HEV,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+NISSAN,ALMERA,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+NISSAN,KICKS,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+NISSAN,MARCH,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+NISSAN,NAVARA,Pickup,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+NISSAN,NOTE,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+NISSAN,NOTE X E-POWER,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+NISSAN,SERENA,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+NISSAN,SERENA e-POWER,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+NISSAN,SERENA E-POWER AUTECH,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+NISSAN,SERENA HYBRID 2.0 HIGHWAY,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+NISSAN,SERENA HYBRID 2.0 HIGHWAY STAR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+NISSAN,SERENA HYBRID 2.0 X,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+NISSAN,SERENA HYBRID E-POWER HIGHWAY,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+NISSAN,SERENA HYBRID E-POWER X,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+NISSAN,SYLPHY,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+NISSAN,SYLPHY 1.6 E CVT,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+NISSAN,SYLPHY 1.6 V CVT,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+NISSAN,TERRA,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+NISSAN,TERRANO 2.4SR,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+NISSAN,URVAN,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+NISSAN,URVAN  (E25),Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+NISSAN,X-TRAIL,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+NISSAN,X-TRAIL e-POWER,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PEUGEOT,2008 P24 BG,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PEUGEOT,3008 P84 AG,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PEUGEOT,3008 P84 BG,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PEUGEOT,5008 P87 AG,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PEUGEOT,5008 P87 BG,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 BOXSTER,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 BOXSTER 25 YEARS,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 BOXSTER CABRIOLET PDK,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 BOXSTER CONVERTIBLE,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 BOXSTER GTS,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 BOXSTER GTS 4.0,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 BOXSTER PDK,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 BOXSTER S,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 BOXSTER S PDK,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 BOXSTER STYLE EDITION,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 BOXSTER T,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 CAYMAN,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 CAYMAN COUPE PDK,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 CAYMAN GT4,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 CAYMAN GT4 RS,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 CAYMAN GTS,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 CAYMAN GTS 4.0,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 CAYMAN PDK,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 CAYMAN S,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 CAYMAN STYLE EDITION,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 CAYMAN T,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 CAYMAN T PDK,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 SPYDER,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 SPYDER MANTHEY RACING,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 SPYDER RS,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,718 SPYDER RS 4.0,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARERRA COUPE,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA 4,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA 4 GTS,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA 4 GTS CAB.,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA 4 GTS CABRIOLET,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA 4S,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA 4S CABRIOLET,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA 4S COUPE,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA 4S COUPE PDK,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA C2,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA CABRIOLET,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA COUPE,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA COUPE PDK,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA GTS,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA GTS CAB.,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA GTS CABRIOLET,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA GTS COUPE,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA GTS COUPE PDK,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA S,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA S CABRIOLET,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA S CABRIOLET PDK,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA S COUPE,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA S COUPE 3.0,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA S COUPE MT,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA S COUPE PDK,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA T,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA T COUPE PDK,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 CARRERA TURBO S,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 DAKAR,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 GT2 RS,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 GT3,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 GT3 LHD,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 GT3 PDK,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 GT3 RS,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 GT3 RS PDK,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 GT3 RS WEISSACH PACKAGE,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 GT3 TOURING,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 GT3 TOURING LHD,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 GT3 WITH T.P.,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 GT3 WITH TOURING PACKAGE,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 R,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 R LHD,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 S/T,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 SPEEDSTER,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 SPEEDSTER HERITAGE,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 SPIRIT 70,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 SPORT CLASSIC,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 TARGA 4,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 TARGA 4 GTS,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 TARGA 4 GTS 50 YEARS,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 TARGA 4 GTS EDITION,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 TARGA 4 GTS PDK,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 TARGA 4S,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 TARGA 4S HERITAGE,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 TARGA 4S HERITAGE DESIGN,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 TARGA 4S HERITAGE EDITION,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 TARGA 4S PDK,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 TECHART GT STREET R,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 TURBO,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 TURBO 50 YEARS,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 TURBO 50 YEARS ANV,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 TURBO CABRIOLET,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 TURBO S,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 TURBO S CABRIOLET,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 TURBO S COUPE,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911 TURBO S EXC. SERIES,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911CARRERA,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,911TARGA 4S HERITAGE DEITION,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,BOXSTER 25 YEARS,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,CAYENNE,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,CAYENNE COUPE,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,CAYENNE COUPE E HYBRID,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,CAYENNE E HYBRID,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,CAYENNE E-HYBRID,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,CAYENNE E-HYBRID BLACK EDITION,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,CAYENNE E-HYBRID COUPE,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,CAYENNE E-HYBRID COUPE P.,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,CAYENNE E-HYBRID P.E.,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,CAYENNE E-HYBRID PLATINUM,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,CAYENNE E-HYBRID SUV,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,CAYENNE GTS,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,CAYENNE GTS COUPE,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,CAYENNE HYBRID PLATINUM,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,CAYENNE S,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,CAYENNE S COUPE,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,CAYENNE S E-HYBRID COUPE,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,CAYENNE TURBO,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,CAYENNE TURBO COUPE,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,CAYENNE TURBO E-HYBRID COUPE,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,CAYENNE TURBO GT,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,CAYMAN PDK,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,MACAN,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,MACAN 2.0,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,MACAN 2.0 PDK,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,MACAN 2.0L,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,MACAN 4,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,MACAN 4 ELECTRIC,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,MACAN 4S,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,MACAN GTS,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,MACAN S,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,MACAN S DIESEL,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,MACAN T,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,MACAN T 2.0,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,MACAN TURBO,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,PANAMERA 4 E-HYBRID,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,PANAMERA 4 E-HYBRID 10YR,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,PANAMERA 4 E-HYBRID EXEC.,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,PANAMERA 4 E-HYBRID EXECUTIVE,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,PANAMERA 4 E-HYBRID P.E.,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,PANAMERA 4 E-HYBRID PLATINUM,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,PANAMERA 4 E-HYBRID S.T.,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,PANAMERA 4 E-HYBRID SPORT,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,PANAMERA 4E-HYBRID10YEARS,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,PANAMERA 4S,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,PANAMERA 4S E-HYBRID,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,PANAMERA GTS SPORT TURIS,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,PANAMERA S E HYBRID,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,PANAMERA S HYBRID,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,PANAMERA TURBO S,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,PANAMERA TURBO S E-HYBRID,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,TAYCAN,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,TAYCAN 4,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,TAYCAN 4 CROSS TURISMO,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,TAYCAN 4S,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,TAYCAN 4S CROSS TURISMO,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,TAYCAN 4S SPORT TURISMO,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,TAYCAN GTS,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,TAYCAN GTS SPORT TURISMO,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,TAYCAN SPORT TURISMO,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,TAYCAN TURBO,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,TAYCAN TURBO CROSS TURIS,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,TAYCAN TURBO CROSS TURISMO,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,TAYCAN TURBO GT,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,TAYCAN TURBO S,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+PORSCHE,TAYCAN TURBO S CROSS TURISMO,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,BRZ,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,BRZ 2.0 RWD 6AT,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,BRZ 2.0 RWD 6MT,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,BRZ 2.4 EyeSight RWD 6AT,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,BRZ 2.4 EyeSight RWD 6MT,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,BRZ 2.4 RWD 6MT,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,BRZ 2.4 RWD EyeSight 6AT,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,BRZ CUP CAR BASIC,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,BRZ S 10TH ANNIVERSARY LIMITED,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,BRZ STI SPORT,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,BRZ STI SPORT YELLOW EDITION,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,BRZ STI SPORTS,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,FORESTER 2.0i-L,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,FORESTER 2.0i-L ES,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,FORESTER 2.0i-P,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,FORESTER 2.0i-S,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,FORESTER 2.0i-S ES,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,FORESTER 2.5i-S AWD CVT,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,OUTBACK 2.5I-S AWD CVT,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,OUTBACK 2.5i-T EyeSight,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,WRX + L 2.0 AWD 6MT,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,WRX + L 2.0 AWD CVT,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,WRX + L2.0 AWD 6MT,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,WRX 4D 2.0 AWD 6MT,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,WRX 4D 2.0 AWD CVT,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,WRX 4D 2.4 AWD 6MT,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,WRX 4D 2.4 EyeSight AWD 6MT,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,WRX 4D 2.4 EyeSight AWD CVT,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,WRX S4 S210,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,WRX S4 STI SPORT R EX AWD,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,WRX STI + W2.5 AWD 6MT,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,WRX STI FINAL EDITION,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,WRX STI RA-R,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,WRX STI S207,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,WRX STI S208NBR CHALLENGE,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,WRX Wagon 2.4 EyeSight AWD CVT,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,WRX+L 2.0 AWD CVT,Sports,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,XV 2.0i,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,XV 2.0I AWD CVT,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,XV 2.0i-P,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUBARU,XV 2.0i-P ES,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI, SWIFT GL 1.2L CVT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,CARRY 1.5L MT,Pickup,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,CELERIO GA 1.0L,A-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,CELERIO GA 1.0L MT,A-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,CELERIO GL 1.0L,A-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,CELERIO GL 1.0L CVT,A-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,CELERIO GL UP 1.0L CVT,A-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,CELERIO GLX 1.0L,A-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,CELERIO GX 1.0L,A-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,CELERIO GX 1.0L CVT,A-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,CIAZ GA MT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,CIAZ GL 1.25L CVT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,CIAZ GL 1.25L MT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,CIAZ GL CVT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,CIAZ GL MT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,CIAZ GL PLUS CVT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,CIAZ GLX 1.25L CVT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,CIAZ GLX CVT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,CIAZ RS 1.25L,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,CIAZ RS CVT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,ERTIGA DREZA 1.4L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,ERTIGA GL 1.4L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,ERTIGA GL 1.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,ERTIGA GX 1.4L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,ERTIGA GX 1.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,FRONX 1.5L,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,JIMNY 1.5L 4AT,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,JIMNY ALPHA,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,JIMNY ALPHA 4WD,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,JIMNY ALPHA 5 DOOR,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,JIMNY NOMADE FC 4WD,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,JIMNY NOMADE FC 5 DOOR,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,JIMNY SIERRA,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,JIMNY SIERRA 1.5L,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,JIMNY SIERRA 1.5L 4AT,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,JIMNY SIERRA 4WD,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,JIMNY SIERRA JC,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,JIMNY SIERRA JC 1.5L,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,JIMNY SIERRA JC 4WD,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,JIMNY SIERRA JL 1.5L 4WD,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,JIMNY SIERRA JL 4WD,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,JIMNY XC,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,JIMNY XC 4WD,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,JIMNY XC MT 4WD,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,JIMNY XG MT 4WD,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,JIMNY XL,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,SWIFT GA 1.25L CVT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,SWIFT GA 1.25L MT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,SWIFT GL 1.25L,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,SWIFT GL 1.25L CVT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,SWIFT GL 1.5L,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,SWIFT GL MAX EDITION,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,SWIFT GL NEXT 1.2L CVT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,SWIFT GL PLUS 1.2L CVT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,SWIFT GL SPORTS EDITION,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,SWIFT GLX 1.25L CVT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,SWIFT GLX 1.2L CVT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,SWIFT GLX-Navi 1.2L CVT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,SWIFT RX 1.25L,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,SWIFT SAI 1.25L CVT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,SWIFT SPORT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+SUZUKI,XL7 1.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 HYBRID EXE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 HYBRID EXECUTIVE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 HYBRID G,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 HYBRID G E-FOUR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 HYBRID G F,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 HYBRID G F PACKAGE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 HYBRID S,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 HYBRID S E-FOUR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 HYBRID S TYPE GOLD,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 HYBRID SR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 HYBRID SR C,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 HYBRID SR C PACKAG,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 HYBRID SR E-FOUR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 HYBRID SR SIDE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 HYBRID SR-C,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 HYBRID SRC PACKAGE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 HYBRID X,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 HYBRID X E-FOUR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 HYBRID X SIDE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 HYBRID Z,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 HYBRID Z E-FOUR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 PHEV EXECUTIVE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 S C,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 SC PACKAGE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5 Z,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5G,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5L HYBRID X,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5L S C PACKAGE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5L S TYPE GOLD III,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5L S WELCAB,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5L SC PACKAGE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5S,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,"ALPHARD 2.5S ""TYPE GOLD II""",MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,"ALPHARD 2.5S ""TYPE GOLD III""",MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,"ALPHARD 2.5S ""TYPE GOLD""",MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5S C PACKAGE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5S G PACKAGE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5X,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 2.5X SIDE LIFT UP SEAT,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 3.5 GF,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 3.5 SC,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 3.5 SC PACKAGE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD 3.5 VIP,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD EXECUTIVE LOUNGE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD GF HYBRID 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD GF PACKAGE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD GRADE HV X HYBRID,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID 2.5 G F PACKAGE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID 2.5 GF,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID 2.5 S TYPE GOLD,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID 2.5 SR C,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID 2.5L G F,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID E-FOUR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID EXECUTIVE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID G,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID G Welcab E-FOUR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID GF,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID GF 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID GF PACKAGE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID GF PACKAGE 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID S,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID S 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID S 2.5L E-FOUR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID S E-FOUR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID S TYPE GOLD,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID S TYPE GOLD II,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID S TYPE GOLD III,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID SR C,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID SRC,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID SRC 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID SRC PACKAGE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID TYPE GOLD II,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID X,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID X 2.5 WELCAB,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID X 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID X 2.5L WELCAB,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID X E-FOUR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID X SIDE LIFT UP,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID Z,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID Z 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID Z 2.5L E-FOUR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID Z 2WD,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID Z E-FOUR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID Z EXECUTIVE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD HYBRID Z PREMIER,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD PHEV EXECUTIVE LOUNGE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD S,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,"ALPHARD S ""TYPE GOLD III""",MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD S AERO GRADE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD S C PACKAGE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD S C PACKAGE 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD S TYPE GOLD 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD SC PACKAGE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD SC PACKAGE 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD SC PACKAGE 2.5L 2WD,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD SC PACKAGE 3.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD SR C PACKAGE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD SRC HYBRID 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD TYPE GOLD II HYBRID,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD X,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD X 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD X HYBRID 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD X HYBRID E-FOUR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD X SIDE LIFT UP,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD Z,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD Z 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD Z 2WD,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD Z 2WD 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD Z 4WD,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD Z HYBRID,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD Z HYBRID 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,ALPHARD Z HYBRID E-FOUR 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,BZ4X,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,C-HR,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,CAMRY,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,Camry 2.5G ESport,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,Camry HV,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,COMMUTER,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,Commuter (Silver) E4,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,Corolla,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,COROLLA CROSS,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,Fortuner,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,HIACE,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,HIACE DIESEL COMMUTER,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,HIACE DIESEL GL. SOLID,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,HIACE DX ROUTE VAN,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,HIACE MAJESTY,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,HIACE VAN,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,HILUX CHAMP,Pickup,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,Hilux Revo,Pickup,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,"HILUX TIGER B-CAB / 2L,P/S",Pickup,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,"HILUX TIGER C-CAB / 2L,P/S",Pickup,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,HILUX TIGER ECO 5 M/T (B-CAB),Pickup,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,HILUX TRAVO,Pickup,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,INNOVA,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND  CRUISER,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 200 VX,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 250 GX,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 250 VX,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 250 VX 2.8L,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 250 VX FIRST,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 250 ZX,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 250 ZX 2.8L,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 250 ZX FIRST,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 3.3L  GR SPORT,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 3.5L GR SPORT,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 300 GR SPORT,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 300 SAHARA 3.3L,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 300 SAHARA ZX,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 300 SERIES GR,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 300 ZX,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 300 ZX 3.3L,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 300 ZX DIESEL,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 70 30TH,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 70 AX,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 70 AX 2.8L 4WD,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 70 PICKUP 30TH,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 71 HARDTOP 4.0L,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 76 AX 4WD,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 79 PICK UP,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER 79 PICK UP 4.2,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER ACTIVE 2.8,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER ACTIVE 2.8D,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER AX,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER AX G,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER AX G SELECTION,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER FJ,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER GR,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER GR SPORT,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER GX,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER GX 3.5L,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER PICK UP 70TH,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER PRADO 2.7 TX-L,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER PRADO TX,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER PRADO TX 7 SEAT,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER PRADO TX L,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER PRADO TX L 70TH,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER PRADO TXL MATT,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER PRADO TZ G 2.8L,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER PRADO TZ-G,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER VX,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,LAND CRUISER ZX,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,NOAH HYBRID S-Z,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,NOAH HYBRID X,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,NOAH HYBRID X 2WD,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,NOAH S-G,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,NOAH SZ,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,NOAH SZ 2.0L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,NOAH SZ HYBRID,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,NOAH X,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,NOAH X 2WD,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,Sienta,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,SIENTA HYBRID G 2WD,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,SIENTA HYBRID Z,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE 2.4 Z PREMIER,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE 2.5,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE 2.5 GOLDEN EYES III,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE 2.5 HYBRID V,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE 2.5 HYBRID V-L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE 2.5 HYBRID X,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE 2.5 HYBRID X E-FOUR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE 2.5 HYBRID Z,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE 2.5 HYBRID Z E-FOUR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE 2.5 HYBRID Z PREMIER,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE 2.5 HYBRID ZR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE 2.5 HYBRID ZR G,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE 2.5 Z G,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE 2.5 ZG EDITION,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE 2.5L Z G EDITION,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE 2.5V,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE 2.5X SIDE LIFT,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE 2.5Z,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE 2.5Z 2WD,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE 2.5Z G EDITION,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE 2.5ZG EDITION,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE 250,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE EXECUTIVE LOUNGE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE GOLDEN EYE III,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE GOLDEN EYES III,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE GRADE 2.5Z G,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE HYBRID E-FOUR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE HYBRID EXECUTIVE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE HYBRID GOLDEN EYES,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE HYBRID V L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE HYBRID V L EDITION,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE HYBRID X,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE HYBRID X 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE HYBRID X E-FOUR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE HYBRID Z,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE HYBRID Z 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE HYBRID Z 2.5L E-FOUR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE HYBRID Z E-FOUR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE HYBRID Z PREMIER,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE HYBRID ZR G,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE HYBRID ZRG 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE HYBRID ZRG EDITION,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE PHEV EXECUTIVE LOUNGE,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE V 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE Z G EDITION,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE Z G EDITION 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE Z GOLDEN EYES 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE Z GOLDEN EYES III,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE Z PREMIER,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE Z PREMIER  2.4L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE Z PREMIER 2WD 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE Z PREMIER E-FOUR,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE Z PREMIER HYBRID,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE Z PREMIER HYBRID 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELLFIRE ZG EDITION 2.5L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VELOZ,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VIOS,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VIOS 1.5E A/T,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VIOS 1.5J A/T,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VIOS 1.5J M/T,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VIOS 1.5S A/T,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VOXY,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VOXY 1.8 HYBRID S-Z,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VOXY 1.8 HYBRID ZS,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VOXY HYBRID S-G,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VOXY HYBRID S-Z,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VOXY HYBRID SZ 1.8L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,"VOXY HYBRID ZS ""GLITTER III""",MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VOXY S-Z 2.0L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VOXY S-Z 2WD,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VOXY SZ,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VOXY SZ 2.0L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VOXY SZ HYBRID,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VOXY SZ HYBRID 1.8L,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,VOXY ZS,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,Yaris,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,Yaris 1.2E CVT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,Yaris 1.2G CVT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,Yaris 1.2J CVT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,YARIS ATIV,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,YARIS CROSS,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,YARIS CUP,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,YARIS GR CIRCUIT PACK,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,YARIS GRMN CIRCUIT PACKAGE,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,YARIS GRMN RALLY PACKAGE,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+TOYOTA,YARIS RZ HIGH PERFORMANCE,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLKSWAGEN,CARAVELLE,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLKSWAGEN,CARAVELLE 2.0 BI TDI,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLKSWAGEN,CARAVELLE 2.0 L,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLKSWAGEN,CARAVELLE 2.0 TDI SWB,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLKSWAGEN,CARAVELLE COMFORTLINE 2,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLKSWAGEN,CARAVELLE COMFORTLINE2.0L,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLKSWAGEN,CARAVELLE MINORCHANGE 2,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLKSWAGEN,CARAVELLE T69 2.0 L,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLKSWAGEN,CARAVELLE TOURING 2.0 L,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLKSWAGEN,MULTIVAN 2.0 BI TDI,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLKSWAGEN,MULTIVAN STYLE,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLKSWAGEN,TRANSPORTER,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLKSWAGEN,TRANSPORTER 6.1 PANEL VAN,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLKSWAGEN,TRANSPORTER(CARAVELLE)RHD 2.0,Van,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLT,VOLT FOR FOUR,A-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLT,VOLT FOR TWO,A-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLVO,C40,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLVO,S60,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLVO,S60 T5,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLVO,S90,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLVO,S90L,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLVO,V60,D-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLVO,V90,E-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLVO,XC60,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLVO,XC60 D4,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+VOLVO,XC90,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
