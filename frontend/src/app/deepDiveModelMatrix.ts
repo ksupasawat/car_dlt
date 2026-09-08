@@ -2,6 +2,8 @@ import {
   type BrandNode,
   type ModelNode,
   type TreeMonthly,
+  brandMonthlyValues,
+  seriesMonthlyValues,
   seriesTotals,
 } from "./selectors.ts";
 
@@ -143,6 +145,76 @@ export function buildDeepDiveMatrixRows(
     })
     .filter((b): b is BrandRow => b !== null)
     .sort((a, b) => b.totals.grandTotal - a.totals.grandTotal);
+}
+
+export type DeepDiveExportRow = Record<string, string | number>;
+
+const MONTHS_EN = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+// The Excel export and the on-screen table are the same rows: this builds its lines from
+// buildDeepDiveMatrixRows, so a workbook can never show a wider market than the table the
+// operator was looking at when they pressed Export. The first line is that view's total.
+export function buildDeepDiveExportRows(
+  tree: BrandNode[] | undefined,
+  filters: DeepDiveFilters,
+  latestYear: string | null,
+  totalLabel = "Filtered Total",
+  monthLabels: string[] = MONTHS_EN
+): DeepDiveExportRow[] {
+  const brands = buildDeepDiveMatrixRows(tree, filters, latestYear, new Set());
+
+  const line = (
+    label: string,
+    segment: string,
+    monthlyFor: (year: string) => number[],
+    totals: { grandTotal: number; ytdTotal: number }
+  ): DeepDiveExportRow => {
+    const row: DeepDiveExportRow = { "Brand / Model": label, Segment: segment };
+    filters.activeYears.forEach((year) => {
+      const monthly = monthlyFor(year);
+      monthly.forEach((value, idx) => { row[`${year} ${monthLabels[idx]}`] = value || ""; });
+      row[`${year} Total`] = monthly.reduce((sum, value) => sum + value, 0) || "";
+    });
+    row["YTD"] = totals.ytdTotal || "";
+    row["Grand Total"] = totals.grandTotal || "";
+    return row;
+  };
+
+  const brandMonthly = (brand: BrandNode, year: string) =>
+    brandMonthlyValues(brand, year, filters.selectedPowertrains, filters.selectedVehicleTypes, filters.selectedProvinces);
+
+  const totals = brands.reduce(
+    (acc, brand) => ({
+      grandTotal: acc.grandTotal + brand.totals.grandTotal,
+      ytdTotal: acc.ytdTotal + brand.totals.ytdTotal,
+    }),
+    { grandTotal: 0, ytdTotal: 0 }
+  );
+
+  const rows: DeepDiveExportRow[] = [
+    line(totalLabel, "", (year) => {
+      const acc = Array(12).fill(0) as number[];
+      brands.forEach((brand) => {
+        const monthly = brandMonthly(brand, year);
+        for (let i = 0; i < 12; i++) acc[i] += monthly[i];
+      });
+      return acc;
+    }, totals),
+  ];
+
+  brands.forEach((brand) => {
+    rows.push(line(brand.brand, "", (year) => brandMonthly(brand, year), brand.totals));
+    brand.models.forEach((model) => {
+      rows.push(line(
+        `  ${model.name}`,
+        model.market_segment ?? "",
+        (year) => seriesMonthlyValues(model, year, filters.selectedPowertrains, filters.selectedVehicleTypes, filters.selectedProvinces),
+        model.totals
+      ));
+    });
+  });
+
+  return rows;
 }
 
 export function referenceDeepDiveTotal(tree: BrandNode[] | undefined) {

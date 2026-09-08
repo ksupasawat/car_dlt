@@ -489,12 +489,16 @@ export default function AnalystPage() {
       // Sheet 2: Analyst View (currently filtered & sorted)
       const excelFiltered = getExcelRows(filteredAndSortedRows);
 
+      // The workbook opens on the operator's current view, not the whole market, so an
+      // export taken under a filter cannot be mistaken for an unfiltered one.
       const wb = XLSX.utils.book_new();
-      XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(excelFull), "Full Analyst Data");
       XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(excelFiltered), "Filtered Analyst View");
+      XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(excelFull), "Full Analyst Data");
 
       const fileDate = `${meta?.current_year ?? ""}-${String(meta?.current_month_num ?? "").padStart(2, "0")}`;
-      XLSX.writeFile(wb, `EternityOne_Analyst_Report_${fileDate}.xlsx`);
+      const hasActiveFilters = Boolean(selectedBrand) || Boolean(selectedModel) || isSegmentMode
+        || selectedVehicleType !== "ALL" || selectedProvince !== "ALL" || currentPowertrain !== "ALL";
+      XLSX.writeFile(wb, `EternityOne_Analyst_Report_${fileDate}${hasActiveFilters ? "_filtered" : ""}.xlsx`);
     } catch (e) {
       console.error(e);
       alert("Excel export failed");

@@ -6,14 +6,13 @@ import { Download, RefreshCw, AlertTriangle } from "lucide-react";
 import { FilterPillPopover } from "../../components/FilterPillPopover";
 import {
   DashboardData,
-  brandTotals,
   brandMonthlyValues,
-  seriesTotals,
   seriesMonthlyValues,
   modelBrandPairs,
   modelOwnerLookup,
 } from "../selectors";
 import {
+  buildDeepDiveExportRows,
   buildDeepDiveMatrixRows,
   deepDiveFilterKey,
   referenceDeepDiveTotal,
@@ -156,6 +155,16 @@ export default function ModelsPage() {
     return filteredTree.reduce((sum, b) => sum + b.totals.grandTotal, 0);
   }, [filteredTree]);
 
+  // Any filter narrowing the table, used to name the export so a filtered workbook is
+  // recognisable as one on disk.
+  const hasActiveFilters =
+    selectedBrands.length > 0 ||
+    selectedModels.length > 0 ||
+    selectedVehicleTypes.length > 0 ||
+    selectedProvinces.length > 0 ||
+    selectedPowertrains.length > 0 ||
+    selectedSegments.length > 0;
+
   const superYtdTotal = useMemo(() => {
     return filteredTree.reduce((sum, b) => sum + b.totals.ytdTotal, 0);
   }, [filteredTree]);
@@ -209,80 +218,29 @@ export default function ModelsPage() {
     try {
       const XLSX = await import("xlsx");
 
-      // Shared with the UI: same selectors, same filter args, so displayed and downloaded
-      // totals always match exactly.
-      const buildRows = (
-        vehicleTypes: string[],
-        provinces: string[],
-        brandFilter: string[],
-        modelFilter: string[],
-        powertrains: string[],
-        marketSegments: string[]
-      ) => {
-        const rows: Record<string, string | number>[] = [];
-        (data.brand_model_tree || []).forEach((brandNode) => {
-          if (brandFilter.length > 0 && !brandFilter.includes(brandNode.brand)) return;
-
-          // Keep only the series the table would show, then read the brand line off that
-          // same set, so the workbook and the screen can never disagree.
-          const keptModels = (brandNode.models || []).filter((model) => {
-            if (modelFilter.length > 0 && !modelFilter.includes(model.name)) return false;
-            if (marketSegments.length > 0 && !(model.market_segment && marketSegments.includes(model.market_segment))) return false;
-            return seriesTotals(model, activeYears, latestYear, powertrains, vehicleTypes, provinces).grandTotal !== 0;
-          });
-          if (keptModels.length === 0) return;
-
-          const keptBrand = { ...brandNode, models: keptModels };
-          const bTotals = brandTotals(keptBrand, activeYears, latestYear, powertrains, vehicleTypes, provinces);
-          if (bTotals.grandTotal === 0) return;
-
-          const bRow: Record<string, string | number> = { "Brand / Model": brandNode.brand, Segment: "" };
-          activeYears.forEach((year) => {
-            const monthly = brandMonthlyValues(keptBrand, year, powertrains, vehicleTypes, provinces);
-            monthly.forEach((val, mIdx) => { bRow[`${year} ${MONTHS_EN[mIdx]}`] = val || ""; });
-            bRow[`${year} Total`] = monthly.reduce((s, v) => s + v, 0) || "";
-          });
-          bRow["YTD"] = bTotals.ytdTotal || "";
-          bRow["Grand Total"] = bTotals.grandTotal || "";
-          rows.push(bRow);
-
-          keptModels.forEach((model) => {
-            const mTotals = seriesTotals(model, activeYears, latestYear, powertrains, vehicleTypes, provinces);
-
-            const mRow: Record<string, string | number> = {
-              "Brand / Model": `  ${model.name}`,
-              Segment: model.market_segment ?? "",
-            };
-            activeYears.forEach((year) => {
-              const monthly = seriesMonthlyValues(model, year, powertrains, vehicleTypes, provinces);
-              monthly.forEach((val, mIdx) => { mRow[`${year} ${MONTHS_EN[mIdx]}`] = val || ""; });
-              mRow[`${year} Total`] = monthly.reduce((s, v) => s + v, 0) || "";
-            });
-            mRow["YTD"] = mTotals.ytdTotal || "";
-            mRow["Grand Total"] = mTotals.grandTotal || "";
-            rows.push(mRow);
-          });
-        });
-        return rows;
-      };
-
-      // Full sheet: every brand/model, every segment, all vehicle types/provinces — ignores active filters.
-      const fullRows = buildRows([], [], [], [], [], []);
-
-      // Filtered sheet: the exact same selectors as the table, with the current filter state.
-      const filteredRows = buildRows(
-        selectedVehicleTypes,
-        selectedProvinces,
-        selectedBrands,
-        selectedModels,
-        selectedPowertrains,
-        selectedSegments
+      // The workbook is built from the very rows the table renders, so "Filtered View" is
+      // always exactly what was on screen -- filters, active years and all -- and it is the
+      // sheet Excel opens on. "All Data" stays as the unfiltered reference.
+      const filteredRows = buildDeepDiveExportRows(data.brand_model_tree, filters, latestYear);
+      const fullRows = buildDeepDiveExportRows(
+        data.brand_model_tree,
+        {
+          activeYears,
+          selectedBrands: [],
+          selectedModels: [],
+          selectedProvinces: [],
+          selectedVehicleTypes: [],
+          selectedPowertrains: [],
+          selectedSegments: [],
+        },
+        latestYear,
+        "Grand Total"
       );
 
       const wb = XLSX.utils.book_new();
-      XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(fullRows), "Full");
-      XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(filteredRows), "Filtered");
-      XLSX.writeFile(wb, `Thailand_EV_Model_DeepDive.xlsx`);
+      XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(filteredRows), "Filtered View");
+      XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(fullRows), "All Data");
+      XLSX.writeFile(wb, `Thailand_EV_Model_DeepDive${hasActiveFilters ? "_filtered" : ""}.xlsx`);
     } catch (e) {
       console.error(e);
       alert("Excel export failed");
