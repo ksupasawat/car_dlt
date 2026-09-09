@@ -63,7 +63,7 @@ MG,MG3,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment conventi
 MG,MG4 ELECTRIC,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
 MG,MG5,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
 MG,S5 EV,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
-MG,URBAN,A-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+MG,URBAN,B-Segment,Operator override 2026-09-09 (was A-Segment); Autolifethailand segment naming
 MG,ZS,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
 MINI,Aceman SE,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
 MINI,Cooper SE,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
