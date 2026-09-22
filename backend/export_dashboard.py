@@ -11,6 +11,7 @@ from aggregate import aggregate, current_period
 from schema import validate_model, validate_fuel
 from build_cleaned import load_powertrain_map
 import model_map
+import bev_attribution
 
 sys.stdout.reconfigure(encoding="utf-8")
 
@@ -76,35 +77,47 @@ FULL_MONTH_EN = {
     "Sep": "September", "Oct": "October", "Nov": "November", "Dec": "December",
 }
 
-def build_brand_model_tree(df_model_rows: pd.DataFrame) -> list:
+def build_brand_model_tree(df_model_rows: pd.DataFrame, df_fuel: pd.DataFrame | None = None) -> list:
     """Build model facts as brand -> canonical series -> unclassified PT segments.
 
     Brand and series nodes expose source totals in ``monthly``. A series splits into one
     powertrain segment per proven class: rows whose (brand2, raw_model) a human approved
     as BEV in model_powertrain_review.csv become a ``BEV`` segment, everything else stays
-    ``N/A``. Nothing is inferred from the fuel grain — an unreviewed row is unclassified,
-    never guessed. The segments must still sum back to the series total at every
+    ``N/A``. Nothing is guessed from the fuel grain — an unreviewed row is unclassified.
+    When ``df_fuel`` is given, BEV is reconciled to the fuel grain cell by cell: nameplates
+    listed in config/model_powertrain_mixed.csv are split, and any BEV the fuel grain still
+    holds goes to a per-brand ``BEV (ไม่ระบุรุ่น)`` series (+BEV / -N/A, net zero). The segments must still sum back to the series total at every
     vehicle/province/year/month coordinate.
 
     Series also carry ``market_segment`` (B-SUV, C-Segment, MPV, ...) from
     config/model_segment.csv, or None when that model is not listed there.
     """
     df_model_rows = df_model_rows.copy()
-    approved = model_map.approved_bev_keys()
-    if approved and "รุ่นรถ" in df_model_rows.columns:
-        keys = [
-            model_map.normalize_key(b, r)
-            for b, r in zip(df_model_rows["ยี่ห้อรถ2"], df_model_rows["รุ่นรถ"])
-        ]
-        df_model_rows["PT"] = ["BEV" if k in approved else "N/A" for k in keys]
+    if df_fuel is not None:
+        # Exact reconciliation with the fuel grain: approved rows, mixed nameplates split
+        # per cell, and a per-brand unattributed line (see bev_attribution.py).
+        df_model_rows, stats = bev_attribution.attribute_bev(df_model_rows, df_fuel)
+        print(f"  BEV attribution: fuel {stats['fuel_bev']:,} = approved {stats['pure_bev']:,} "
+              f"+ mixed {stats['mixed_bev']:,} + unattributed {stats['unattributed_bev']:,} "
+              f"(overshoot {stats['overshoot']:,})")
+    else:
+        approved = model_map.approved_bev_keys()
+        if approved and "รุ่นรถ" in df_model_rows.columns:
+            keys = [
+                model_map.normalize_key(b, r)
+                for b, r in zip(df_model_rows["ยี่ห้อรถ2"], df_model_rows["รุ่นรถ"])
+            ]
+            df_model_rows["PT"] = ["BEV" if k in approved else "N/A" for k in keys]
 
     segment_map = load_model_segment_map()
 
-    model_grp = aggregate(
-        df_model_rows,
-        ["ยี่ห้อรถ2", "รุ่นรถ2", "PT", "v_code", "จังหวัด", "ปี", "เดือน"],
-        {"mode": "monthly", "units_col": "จำนวนรถ"},
+    # Not aggregate(): it drops non-positive cells, and the unattributed series carries a
+    # deliberate negative N/A segment that must survive to keep brand totals exact.
+    model_grp = (
+        df_model_rows.groupby(["ยี่ห้อรถ2", "รุ่นรถ2", "PT", "v_code", "จังหวัด", "ปี", "เดือน"])["จำนวนรถ"]
+        .sum().reset_index()
     )
+    model_grp = model_grp[model_grp["จำนวนรถ"] != 0]
 
     brand_map: dict = {}
 
@@ -226,7 +239,7 @@ def export_data():
 
     # 2. Brand/model tree from model facts only
     print("  Building brand_model_tree...")
-    brand_model_tree = build_brand_model_tree(df)
+    brand_model_tree = build_brand_model_tree(df, df_fuel)
     classified = sum(1 for b in brand_model_tree for m in b["models"] if m.get("market_segment"))
     bev_series = sum(1 for b in brand_model_tree for m in b["models"]
                      for s in m["segments"] if s.get("powertrain") == "BEV")

@@ -1,0 +1,4 @@
+﻿brand2,raw_model,evidence,reviewer,reviewed_at,notes
+GWM,ORA 5,ORA 5 is sold as both EV and HEV under one DLT model name; per-cell BEV share = fuel-grain BEV minus approved GWM BEV rows (never above ORA 5 units in any cell).,Kamon (via bev reconciliation review),9/21/2026,"BEV 3,376 of 3,666 units (Jun-Aug 2569)"
+VOLVO,XC40,XC40 Recharge (EV) and XC40 B4/B5 share one DLT model name; per-cell BEV share = fuel-grain BEV minus approved VOLVO BEV rows.,Kamon (via bev reconciliation review),9/21/2026,"BEV 2,495 of 4,445 units (2564-2569)"
+PORSCHE,MACAN,Electric Macan (base) and combustion Macan share one DLT model name; per-cell BEV share = fuel-grain BEV minus approved PORSCHE BEV rows.,Kamon (via bev reconciliation review),9/21/2026,BEV 96 of 708 units (2565-2569)

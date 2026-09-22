@@ -39,6 +39,11 @@ fuel rows derive it from `backend/config/powertrain_map.csv`. Model maintenance 
 - `backend/config/model_map.csv` maps `(brand2, raw_model)` to the canonical `model2` name.
 - `backend/config/model_powertrain_review.csv` stores human review decisions. New model rows
   are appended as `pending`; approved BEV rows control Sheets 7-8 only.
+- `backend/config/model_powertrain_mixed.csv` lists nameplates DLT files under one name for
+  both a BEV and a non-BEV version (GWM ORA 5, VOLVO XC40, PORSCHE MACAN). `bev_attribution.py`
+  splits them per province x vehicle type x month: BEV part = fuel-grain BEV minus approved BEV
+  rows. Any fuel-grain BEV still left goes to a per-brand `BEV (ไม่ระบุรุ่น)` series (+BEV, -N/A,
+  net zero), so Deep Dive BEV and Manual Report Sheets 4/7 equal Sheet 1 BEV in every cell.
 - `backend/config/model_segment.csv` maps `(brand2, model2)` to a market segment (B-SUV,
   C-Segment, MPV, ...) using Autolifethailand's naming. It covers the reviewed competitor
   set only; a model absent from it carries no segment and is never guessed from body text.

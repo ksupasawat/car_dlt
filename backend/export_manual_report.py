@@ -6,12 +6,12 @@ spreadsheet logic.
 
 Source rules for the Manual Report sheets:
   * Sheets 1-6 and 9 -> test_fuel_cleaned.parquet, fuel-derived powertrain (PT).
-  * Sheets 7-8      -> test_model_cleaned.parquet, filtered to (Brand2, raw model) pairs
-                       explicitly approved as BEV in config/model_powertrain_review.csv
-                       (model_map.approved_bev_keys(): review_status=approved AND
-                       candidate_powertrain=BEV). No inference from brand fuel totals,
-                       dominant fuel, or model-name guessing. An empty/unreviewed table
-                       yields empty sheet7/8 sections, not a crash.
+  * Sheets 7-8      -> test_model_cleaned.parquet, BEV rows from bev_attribution.attribute_bev:
+                       (Brand2, raw model) pairs explicitly approved as BEV in
+                       config/model_powertrain_review.csv, mixed nameplates from
+                       config/model_powertrain_mixed.csv split per cell, and a per-brand
+                       "BEV (ไม่ระบุรุ่น)" line so Sheet 7 totals equal Sheet 4. No model is
+                       classified by name guessing; Sheet 8 ranks real models only.
   * Vehicle types default to รย.1,2,3,6,9,10,11.
   * Current period is auto-detected from the fuel parquet (never hardcoded).
 """
@@ -26,6 +26,7 @@ import pandas as pd
 from export_dashboard import load_data, MONTH_MAP, FULL_MONTH_EN
 from aggregate import current_period
 import model_map
+import bev_attribution
 
 sys.stdout.reconfigure(encoding="utf-8")
 
@@ -230,6 +231,7 @@ def sheet_bev_by_model(df_model: pd.DataFrame, ly, py, lm, *, has_prev_year=True
 def sheet_model_top_rank(df_model: pd.DataFrame, ly, py, lm, *, has_prev_year=True) -> list:
     """Flat model ranking (brand||model) from the explicit BEV model report mapping."""
     d = bev_model_report_slice(df_model).copy()
+    d = d[d["รุ่นรถ2"] != bev_attribution.UNATTRIBUTED_MODEL]   # a rank lists real models only
     if d.empty:
         return []
     d["_mk"] = d["ยี่ห้อรถ2"].astype(str) + " || " + d["รุ่นรถ2"].astype(str)
@@ -252,6 +254,8 @@ def bev_model_report_slice(df_model: pd.DataFrame) -> pd.DataFrame:
     fuel totals, dominant fuel, or model-name guessing. No approved BEV rows yields an
     empty (but valid) slice rather than raising.
     """
+    if "PT" in df_model.columns and (df_model["PT"] == "BEV").any():
+        return df_model[df_model["PT"] == "BEV"]
     approved = model_map.approved_bev_keys()
     if not approved:
         return df_model.iloc[0:0]
@@ -369,6 +373,11 @@ def export():
     # Vehicle-type filter (default markdown set)
     fuel = fuel[fuel["v_code"].isin(DEFAULT_VEHICLE_TYPES)].copy()
     model = model[model["v_code"].isin(DEFAULT_VEHICLE_TYPES)].copy()
+    # Sheets 7-8 reconcile to Sheet 4 (fuel-grain BEV) cell by cell; see bev_attribution.py.
+    model, stats = bev_attribution.attribute_bev(model, fuel)
+    print(f"BEV attribution: fuel {stats['fuel_bev']:,} = approved {stats['pure_bev']:,} "
+          f"+ mixed {stats['mixed_bev']:,} + unattributed {stats['unattributed_bev']:,} "
+          f"(overshoot {stats['overshoot']:,})")
 
     latest_year, latest_month_num = current_period(fuel, year_col="ปี", month_col="เดือน", month_order=MONTHS)
     # Every year with fuel data gets its own report payload (auto-detected, never hardcoded).

@@ -66,7 +66,7 @@ OMODA,C5 EV LONG RANGE PLUS,C5 EV,BEV,approved,"paultan.org (publication): Chery
 OMODA,C5 EV LONG RANGE ULTIMATE,C5 EV,BEV,approved,"paultan.org (publication): Chery Omoda C5 EV Thailand launch report, Long Range Plus/Ultimate variants https://paultan.org/2024/08/07/chery-omoda-e5-launched-in-thailand-c5-ev-suv-is-priced-from-rm113k-61-kwh-lfp-430-km-wltp-range/",Claude-research-review,7/30/2026,Legacy Evidence Batch 2: model-specific source verified.
 OMODA,OMODA C5 EV,C5 EV,BEV,approved,paultan.org (publication): Chery Omoda C5 EV Thailand launch report https://paultan.org/2024/08/07/chery-omoda-e5-launched-in-thailand-c5-ev-suv-is-priced-from-rm113k-61-kwh-lfp-430-km-wltp-range/,Claude-research-review,7/30/2026,Legacy Evidence Batch 2: model-specific source verified.
 TESLA,MODEL 3 LONG RANGE,MODEL 3,BEV,approved,"fueleconomy.gov (US DOE/EPA, official government): 2021 Tesla Model 3 Long Range AWD https://www.fueleconomy.gov/feg/Find.do?action=sbs&id=43401",Claude-research-review,7/30/2026,Legacy Evidence Batch 2: model-specific source verified.
-TESLA,MODEL 3 LONG RANGE PLUS,MODEL 3,ambiguous,ambiguous,Exact registration trim could not be matched to a documented manufacturer trim.,Claude-research-review,7/30/2026,Legacy Evidence Batch 2: trim identity unresolved; excluded until verified.
+TESLA,MODEL 3 LONG RANGE PLUS,MODEL 3,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report (was ambiguous: trim name)
 TESLA,MODEL 3 LONG RANGE RWD,MODEL 3,BEV,approved,"fueleconomy.gov (US DOE/EPA, official government): 2025 Tesla Model 3 Long Range RWD https://www.fueleconomy.gov/feg/Find.do?action=sbs&id=48765",Claude-research-review,7/30/2026,Legacy Evidence Batch 2: model-specific source verified.
 TESLA,MODEL 3 PERFORMANCE,MODEL 3,BEV,approved,"fueleconomy.gov (US DOE/EPA, official government): 2023 Tesla Model 3 Performance AWD https://www.fueleconomy.gov/feg/Find.do?action=sbs&id=46205",Claude-research-review,7/30/2026,Legacy Evidence Batch 2: model-specific source verified.
 TESLA,MODEL 3 REAR WHEEL DRIVE,MODEL 3,BEV,approved,"fueleconomy.gov (US DOE/EPA, official government): 2023 Tesla Model 3 RWD https://www.fueleconomy.gov/feg/Find.do?action=sbs&id=46206",Claude-research-review,7/30/2026,Legacy Evidence Batch 2: model-specific source verified.
@@ -103,7 +103,7 @@ XPENG,G6 LONG RANGE,G6,BEV,approved,"XPeng (official): G6 specification page, RW
 XPENG,G6 RWD LONG RANGE,G6,BEV,approved,"XPeng (official): G6 specification page, RWD Long Range variant https://www.xpeng.com/ae/g6specs.html",Claude-research-review,7/30/2026,Legacy Evidence Batch 2: model-specific source verified.
 XPENG,G6 RWD STANDARD RANGE,G6,BEV,approved,"XPeng (official): G6 specification page, RWD Standard Range variant https://www.xpeng.com/ae/g6specs.html",Claude-research-review,7/30/2026,Legacy Evidence Batch 2: model-specific source verified.
 XPENG,G6 STANDARD RANGE,G6,BEV,approved,"XPeng (official): G6 specification page, RWD Standard Range variant https://www.xpeng.com/ae/g6specs.html",Claude-research-review,7/30/2026,Legacy Evidence Batch 2: model-specific source verified.
-XPENG,X9 AWD LONG RANGE,X9,ambiguous,ambiguous,Exact registration trim could not be matched to a documented manufacturer trim.,Claude-research-review,7/30/2026,Legacy Evidence Batch 2: trim identity unresolved; excluded until verified.
+XPENG,X9 AWD LONG RANGE,X9,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report (was ambiguous: trim name)
 XPENG,X9 FWD LONG RANGE,X9,BEV,approved,"paultan.org (publication): XPeng X9 model research page, 2WD Long Range variant https://paultan.org/research/xpeng/x9/",Claude-research-review,7/30/2026,Legacy Evidence Batch 2: model-specific source verified.
 XPENG,X9 FWD STANDARD RANGE,X9,BEV,approved,"paultan.org (publication): XPeng X9 model research page, 2WD Standard Range variant https://paultan.org/research/xpeng/x9/",Claude-research-review,7/30/2026,Legacy Evidence Batch 2: model-specific source verified.
 XPENG,X9 LONG RANGE,X9,BEV,approved,"paultan.org (publication): XPeng X9 model research page, 2WD Long Range variant https://paultan.org/research/xpeng/x9/",Claude-research-review,7/30/2026,Legacy Evidence Batch 2: model-specific source verified.
@@ -228,8 +228,8 @@ AUDI,RS 6 AVANT TFSI QUATTRO,RS 6 AVANT TFSI QUATTRO,,pending,,,,auto-added from
 AUDI,TT Coupe 45 TFSI q S line,TT Coupe 45 TFSI q S line,,pending,,,,auto-added from latest model data
 AUDI,TT RD 45 TFSI q S line,TT RD 45 TFSI q S line,,pending,,,,auto-added from latest model data
 AUDI,TTS Coupe q,TTS Coupe q,,pending,,,,auto-added from latest model data
-AUDI,e-tron 55 q,e-tron 55 q,,pending,,,,auto-added from latest model data
-AUDI,e-tron SB 55 q S line,e-tron SB 55 q S line,,pending,,,,auto-added from latest model data
+AUDI,e-tron 55 q,e-tron 55 q,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+AUDI,e-tron SB 55 q S line,e-tron SB 55 q S line,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 BENTLEY,BENTAYGA HYBRID,BENTAYGA HYBRID,,pending,,,,auto-added from latest model data
 BENTLEY,BENTAYGA V8,BENTAYGA V8,,pending,,,,auto-added from latest model data
 BENTLEY,CONTINENTAL GT,CONTINENTAL GT,,pending,,,,auto-added from latest model data
@@ -291,7 +291,7 @@ CHEVROLET,COLORADO C-CAB,COLORADO C-CAB,,pending,,,,auto-added from latest model
 CHEVROLET,COLORADO C-CAB TRAIL BOSS,COLORADO C-CAB TRAIL BOSS,,pending,,,,auto-added from latest model data
 CHEVROLET,TRAILBLAZER,TRAILBLAZER,,pending,,,,auto-added from latest model data
 DFM,GLORY580,GLORY580,,pending,,,,auto-added from latest model data
-EULER,ORA-R1,ORA-R1,,pending,,,,auto-added from latest model data
+EULER,ORA-R1,ORA-R1,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 FERRARI,488 PISTA,488 PISTA,,pending,,,,auto-added from latest model data
 FOMM,FOMM ONE,FOMM ONE,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 FORD,F-150 HARLEY-DAVIDSON,F-150 HARLEY-DAVIDSON,,pending,,,,auto-added from latest model data
@@ -410,12 +410,12 @@ PORSCHE,CAYENNE E-HYBRID,CAYENNE E-HYBRID,,pending,,,,auto-added from latest mod
 PORSCHE,CAYENNE E-HYBRID COUPE,CAYENNE E-HYBRID COUPE,,pending,,,,auto-added from latest model data
 PORSCHE,CAYENNE S COUPE,CAYENNE S COUPE,,pending,,,,auto-added from latest model data
 PORSCHE,CAYENNE TURBO COUPE,CAYENNE TURBO COUPE,,pending,,,,auto-added from latest model data
-PORSCHE,MACAN,MACAN,,pending,,,,auto-added from latest model data
+PORSCHE,MACAN,MACAN,,ambiguous,,,,mixed nameplate: BEV and non-BEV filed under one name; BEV share split per cell via config/model_powertrain_mixed.csv (2026-09-21)
 PORSCHE,MACAN 2.0,MACAN 2.0,,pending,,,,auto-added from latest model data
 PORSCHE,MACAN 2.0 PDK,MACAN 2.0 PDK,,pending,,,,auto-added from latest model data
 PORSCHE,PANAMERA 4 E-HYBRID,PANAMERA 4 E-HYBRID,,pending,,,,auto-added from latest model data
 PORSCHE,PANAMERA 4 E-HYBRID 10YR,PANAMERA 4 E-HYBRID 10YR,,pending,,,,auto-added from latest model data
-PORSCHE,TAYCAN 4S,TAYCAN 4S,,pending,,,,auto-added from latest model data
+PORSCHE,TAYCAN 4S,TAYCAN 4S,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 PORSCHE,ไม่ระบุ,ไม่ระบุ,,pending,,,,auto-added from latest model data
 ROLLS-ROYCE,PHANTOM,PHANTOM,,pending,,,,auto-added from latest model data
 SOKON,CRC5021XXY,CRC5021XXY,,pending,,,,auto-added from latest model data
@@ -513,7 +513,7 @@ TOYOTA,Yaris 1.2J CVT,Yaris 1.2J CVT,,pending,,,,auto-added from latest model da
 VOLKSWAGEN,BEETLE 1.4 TSI DSG COUPE,BEETLE 1.4 TSI DSG COUPE,,pending,,,,auto-added from latest model data
 VOLVO,S60,S60,,pending,,,,auto-added from latest model data
 VOLVO,V60,V60,,pending,,,,auto-added from latest model data
-VOLVO,XC40,XC40,,pending,,,,auto-added from latest model data
+VOLVO,XC40,XC40,,ambiguous,,,,mixed nameplate: BEV and non-BEV filed under one name; BEV share split per cell via config/model_powertrain_mixed.csv (2026-09-21)
 VOLVO,XC90,XC90,,pending,,,,auto-added from latest model data
 Mercedes-Benz,CLA200,CLA200,,pending,,,,auto-added from latest model data
 ROLLS-ROYCE,Cullinan,Cullinan,,pending,,,,auto-added from latest model data
@@ -1485,14 +1485,14 @@ BMW,520d Limousine RHD,520d Limousine RHD,,pending,,,,auto-added from latest mod
 BMW,530i Limousine RHD,530i Limousine RHD,,pending,,,,auto-added from latest model data
 BMW,725Ld,725Ld,,pending,,,,auto-added from latest model data
 BMW,740Le xDrive M Sport,740Le xDrive M Sport,,pending,,,,auto-added from latest model data
-BMW,I3,I3,,pending,,,,auto-added from latest model data
+BMW,I3,I3,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 BMW,I8 RHD,I8 RHD,,pending,,,,auto-added from latest model data
 BMW,I8 ROADSTER,I8 ROADSTER,,pending,,,,auto-added from latest model data
 BMW,M4 GTS COUPE,M4 GTS COUPE,,pending,,,,auto-added from latest model data
 BMW,X3xDrive20d Highline,X3xDrive20d Highline,,pending,,,,auto-added from latest model data
 BMW,X5 sDrive25d,X5 sDrive25d,,pending,,,,auto-added from latest model data
 BMW,X5 sDrive25d Pure Experie,X5 sDrive25d Pure Experie,,pending,,,,auto-added from latest model data
-BMW,i3s 94Ah RHD,i3s 94Ah RHD,,pending,,,,auto-added from latest model data
+BMW,i3s 94Ah RHD,i3s 94Ah RHD,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 BYD,M3,M3,,pending,,,,auto-added from latest model data
 CHEVROLET,CAMARO 2SS COUPE 6.2L V8,CAMARO 2SS COUPE 6.2L V8,,pending,,,,auto-added from latest model data
 FERRARI,812 SUPERFAST,812 SUPERFAST,,pending,,,,auto-added from latest model data
@@ -1542,9 +1542,9 @@ PORSCHE,911 CARRERA 4 GTS,911 CARRERA 4 GTS,,pending,,,,auto-added from latest m
 PORSCHE,911 GT3 LHD,911 GT3 LHD,,pending,,,,auto-added from latest model data
 PORSCHE,911 TARGA 4S,911 TARGA 4S,,pending,,,,auto-added from latest model data
 PORSCHE,PANAMERA 4 E-HYBRID EXEC.,PANAMERA 4 E-HYBRID EXEC.,,pending,,,,auto-added from latest model data
-PORSCHE,TAYCAN TURBO S,TAYCAN TURBO S,,pending,,,,auto-added from latest model data
+PORSCHE,TAYCAN TURBO S,TAYCAN TURBO S,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 SKODA,SUPERB ELEGANCE,SUPERB ELEGANCE,,pending,,,,auto-added from latest model data
-SKYWELL,SHODAI-HIGH ROOF,SHODAI-HIGH ROOF,,pending,,,,auto-added from latest model data
+SKYWELL,SHODAI-HIGH ROOF,SHODAI-HIGH ROOF,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 TESLA,MODEL 3,MODEL 3,BEV,approved,Electrek guide: Tesla Model 3 all-electric sedan specs https://electrek.co/guides/tesla-model-3/,Claude-Google-review,7/30/2026,auto-added from latest model data
 TOYOTA,ACV51R-JEPEKT  AA,ACV51R-JEPEKT  AA,,pending,,,,auto-added from latest model data
 TOYOTA,ALPHARD 2.5 HYBRID G,ALPHARD 2.5 HYBRID G,,pending,,,,auto-added from latest model data
@@ -1906,7 +1906,7 @@ NISSAN,BVL2RDYD23FHN---CA,BVL2RDYD23FHN---CA,,pending,,,,auto-added from latest 
 PIERCE,ไม่ระบุ,ไม่ระบุ,,pending,,,,auto-added from latest model data
 SUZUKI,AF416PUM14060,AF416PUM14060,,pending,,,,auto-added from latest model data
 SUZUKI,AQ416PUM14058,AQ416PUM14058,,pending,,,,auto-added from latest model data
-TAKANO,TTE-500,TTE-500,,pending,,,,auto-added from latest model data
+TAKANO,TTE-500,TTE-500,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 THAINA,CR6,CR6,,pending,,,,auto-added from latest model data
 TOYOTA,A-Cab 4X2 2.5J,A-Cab 4X2 2.5J,,pending,,,,auto-added from latest model data
 TOYOTA,B-Cab 4x2 2.4J,B-Cab 4x2 2.4J,,pending,,,,auto-added from latest model data
@@ -1959,14 +1959,14 @@ FORD,Ford Fiesta,Ford Fiesta,,pending,,,,auto-added from latest model data
 FORD,MUSTANG 5.0 GT,MUSTANG 5.0 GT,,pending,,,,auto-added from latest model data
 HONDA,ACCORD'14,ACCORD'14,,pending,,,,auto-added from latest model data
 HONDA,CR-V'10,CR-V'10,,pending,,,,auto-added from latest model data
-HONDA,E ADVANCE,E ADVANCE,,pending,,,,auto-added from latest model data
+HONDA,E ADVANCE,E ADVANCE,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 HONDA,JAZZ'15,JAZZ'15,,pending,,,,auto-added from latest model data
 HONDA,N-BOX CUSTOM G-L TURBO,N-BOX CUSTOM G-L TURBO,,pending,,,,auto-added from latest model data
 HONDA,S660 CVT TURBO,S660 CVT TURBO,,pending,,,,auto-added from latest model data
 HONDA,STEP WAGON SPADA HYBRID,STEP WAGON SPADA HYBRID,,pending,,,,auto-added from latest model data
 HONDA,STEPWAGON SPADA HYBRID,STEPWAGON SPADA HYBRID,,pending,,,,auto-added from latest model data
 HONDA,STEPWAGON SPADA HYBRID EHEV G,STEPWAGON SPADA HYBRID EHEV G,,pending,,,,auto-added from latest model data
-JAGUAR,I-PACE AWD S,I-PACE AWD S,,pending,,,,auto-added from latest model data
+JAGUAR,I-PACE AWD S,I-PACE AWD S,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 LAMBORGHINI,AVENTADOR S,AVENTADOR S,,pending,,,,auto-added from latest model data
 LAND ROVER,DEFENDER 90 HARD TOP HERITAGE,DEFENDER 90 HARD TOP HERITAGE,,pending,,,,auto-added from latest model data
 LAND ROVER,RANGE ROVER SPORT,RANGE ROVER SPORT,,pending,,,,auto-added from latest model data
@@ -1990,7 +1990,7 @@ PORSCHE,911 TARGA 4,911 TARGA 4,,pending,,,,auto-added from latest model data
 PORSCHE,911 TURBO S,911 TURBO S,,pending,,,,auto-added from latest model data
 PORSCHE,CAYENNE GTS COUPE,CAYENNE GTS COUPE,,pending,,,,auto-added from latest model data
 PORSCHE,PANAMERA 4S E-HYBRID,PANAMERA 4S E-HYBRID,,pending,,,,auto-added from latest model data
-PORSCHE,TAYCAN TURBO,TAYCAN TURBO,,pending,,,,auto-added from latest model data
+PORSCHE,TAYCAN TURBO,TAYCAN TURBO,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 RANGE ROVER,AUTOBIOGRAPHY P400E LWB,AUTOBIOGRAPHY P400E LWB,,pending,,,,auto-added from latest model data
 ROLLS-ROYCE,GHOST,GHOST,,pending,,,,auto-added from latest model data
 ROLLS-ROYCE,Ghost Extended Wheelbase,Ghost Extended Wheelbase,,pending,,,,auto-added from latest model data
@@ -2577,7 +2577,7 @@ Mercedes-Benz,S 500L MILD HYBRID,S 500L MILD HYBRID,,pending,,,,auto-added from 
 Mercedes-Benz,SL350 ROADSTER,SL350 ROADSTER,,pending,,,,auto-added from latest model data
 Mercedes-Benz,SLK200,SLK200,,pending,,,,auto-added from latest model data
 AUDI,A4 40 TFSI S line,A4 40 TFSI S line,,pending,,,,auto-added from latest model data
-BAOJUN,E300,E300,,pending,,,,auto-added from latest model data
+BAOJUN,E300,E300,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 BENTLEY,CONTINENTAL GT CONVERTIBLE,CONTINENTAL GT CONVERTIBLE,,pending,,,,auto-added from latest model data
 BENTLEY,MULSANNE EXTENDED WHEELBASE,MULSANNE EXTENDED WHEELBASE,,pending,,,,auto-added from latest model data
 BMW,320d M Performance,320d M Performance,,pending,,,,auto-added from latest model data
@@ -2625,8 +2625,8 @@ TOYOTA,LANDCRUISER70 30TH ANNIVERSARY,LANDCRUISER70 30TH ANNIVERSARY,,pending,,,
 TOYOTA,VELLFIRE 2.5ZG EDITION,VELLFIRE 2.5ZG EDITION,,pending,,,,auto-added from latest model data
 TOYOTA,VELLFIRE Z GOLDEN EYES 2.5L,VELLFIRE Z GOLDEN EYES 2.5L,,pending,,,,auto-added from latest model data
 TOYOTA,ZRE172R-GEXEGT A1,ZRE172R-GEXEGT A1,,pending,,,,auto-added from latest model data
-WULING,HONGGUANG,HONGGUANG,,pending,,,,auto-added from latest model data
-WULING,MULIN MINI,MULIN MINI,,pending,,,,auto-added from latest model data
+WULING,HONGGUANG,HONGGUANG,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+WULING,MULIN MINI,MULIN MINI,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 NISSAN,NISSAN ALMERA NISMO VL CVT,NISSAN ALMERA NISMO VL CVT,,pending,,,,auto-added from latest model data
 PORSCHE,911 CARERRA COUPE,911 CARERRA COUPE,,pending,,,,auto-added from latest model data
 MINI,John Cooper Works ALL4 Co,John Cooper Works ALL4 Co,,pending,,,,auto-added from latest model data
@@ -2832,14 +2832,14 @@ HONDA,N BOX CUSTOM G EX TURBO,N BOX CUSTOM G EX TURBO,,pending,,,,auto-added fro
 HONDA,ODYSSEY ABSOLUTE EX,ODYSSEY ABSOLUTE EX,,pending,,,,auto-added from latest model data
 HONDA,STEPWGN SPADA HYBRID G-EX,STEP WGN SPADA HYBRID G-EX,,pending,,,,auto-added from latest model data
 JAGUAR,F-TYPE 2.0 LITRE T/C PETROL,F-TYPE 2.0 LITRE T/C PETROL,,pending,,,,auto-added from latest model data
-JAGUAR,I-PACE AWD HSE,I-PACE AWD HSE,,pending,,,,auto-added from latest model data
+JAGUAR,I-PACE AWD HSE,I-PACE AWD HSE,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 JEEP,WRANGLER 2.2D 4DR OVERLAND,WRANGLER 2.2D 4DR OVERLAND,,pending,,,,auto-added from latest model data
 LAND ROVER,DEFENDER110TDCI XS DOUBLE CAB,DEFENDER110TDCI XS DOUBLE CAB,,pending,,,,auto-added from latest model data
 LAND ROVER,DISCOVERY SPORT 2.2L SD4,DISCOVERY SPORT 2.2L SD4,,pending,,,,auto-added from latest model data
 LEXUS,RX450h,RX450h,,pending,,,,auto-added from latest model data
-LEXUS,UX300E,UX300E,,pending,,,,auto-added from latest model data
+LEXUS,UX300E,UX300E,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 MASERATI,QUATTROPORTE S,QUATTROPORTE S,,pending,,,,auto-added from latest model data
-MINE MOBILITY,SPA1,SPA1,,pending,,,,auto-added from latest model data
+MINE MOBILITY,SPA1,SPA1,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 MINI,MINI COOPER S CABRIO RHD,MINI COOPER S CABRIO RHD,,pending,,,,auto-added from latest model data
 NISSAN,GTR TRACK EDITION,GTR TRACK EDITION,,pending,,,,auto-added from latest model data
 PORSCHE,718 BOXSTER CONVERTIBLE,718 BOXSTER CONVERTIBLE,,pending,,,,auto-added from latest model data
@@ -2849,7 +2849,7 @@ PORSCHE,997 C4S,997 C4S,,pending,,,,auto-added from latest model data
 PORSCHE,PANAMERA 4S,PANAMERA 4S,,pending,,,,auto-added from latest model data
 ROLLS-ROYCE,GHOST EWB,GHOST EWB,,pending,,,,auto-added from latest model data
 ROLLS-ROYCE,WRAITH,WRAITH,,pending,,,,auto-added from latest model data
-SMART,FORTWO EQ COUPE,FORTWO EQ COUPE,,pending,,,,auto-added from latest model data
+SMART,FORTWO EQ COUPE,FORTWO EQ COUPE,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 SUBARU,FORESTER 2.0i-P,FORESTER 2.0i-P,,pending,,,,auto-added from latest model data
 SUZUKI,JIMNY SIERRA 1.5L 4AT,JIMNY SIERRA 1.5L 4AT,,pending,,,,auto-added from latest model data
 SUZUKI,JIMNY XC MT 4WD,JIMNY XC MT 4WD,,pending,,,,auto-added from latest model data
@@ -3058,7 +3058,7 @@ CHEVROLET,CORVETTE ZR1 COUPE,CORVETTE ZR1 COUPE,,pending,,,,auto-added from late
 FORD,MUSTANG GT FASTBACK 5.0L,MUSTANG GT FASTBACK 5.0L,,pending,,,,auto-added from latest model data
 FORD,Territory,Territory,,pending,,,,auto-added from latest model data
 HONDA,CIVIC TYPE R LIMITED EDITION,CIVIC TYPE R LIMITED EDITION,,pending,,,,auto-added from latest model data
-JAGUAR,I-PACE AWD,I-PACE AWD,,pending,,,,auto-added from latest model data
+JAGUAR,I-PACE AWD,I-PACE AWD,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 LAMBORGHINI,GALLARDO LP 560-4,GALLARDO LP 560-4,,pending,,,,auto-added from latest model data
 LAND ROVER,RANGE ROVER EVOQUE 2.0,RANGE ROVER EVOQUE 2.0,,pending,,,,auto-added from latest model data
 PORSCHE,911 CARRERA S COUPE MT,911 CARRERA S COUPE MT,,pending,,,,auto-added from latest model data
@@ -3067,7 +3067,7 @@ TOYOTA,ALPHARD 2.5 SC PACKAGE,ALPHARD 2.5 SC PACKAGE,,pending,,,,auto-added from
 TOYOTA,ALPHARD HYBRID SRC,ALPHARD HYBRID SRC,,pending,,,,auto-added from latest model data
 TOYOTA,ALPHARD SC PACKAGE,ALPHARD SC PACKAGE,,pending,,,,auto-added from latest model data
 TOYOTA,ALPHARD SC PACKAGE 2.5L,ALPHARD SC PACKAGE 2.5L,,pending,,,,auto-added from latest model data
-TOYOTA,C+POD,C+POD,,pending,,,,auto-added from latest model data
+TOYOTA,C+POD,C+POD,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 TOYOTA,VELLFIRE 2.5V,VELLFIRE 2.5V,,pending,,,,auto-added from latest model data
 VOLKSWAGEN,TRANSPORTER(CARAVELLE)RHD 2.0,TRANSPORTER(CARAVELLE)RHD 2.0,,pending,,,,auto-added from latest model data
 BMW,320d Luxury,320d Luxury,,pending,,,,auto-added from latest model data
@@ -3187,7 +3187,7 @@ FERRARI,ROMA,ROMA,,pending,,,,auto-added from latest model data
 FIAT,500 HATCHBACK CONVERTIBLE,500 HATCHBACK CONVERTIBLE,,pending,,,,auto-added from latest model data
 FORD,MUSTANG 2.3L ECOBOOST FASTBACK,MUSTANG 2.3L ECOBOOST FASTBACK,,pending,,,,auto-added from latest model data
 HONDA,CIVIC TYPE R GT,CIVIC TYPE R GT,,pending,,,,auto-added from latest model data
-HONDA,E,E,,pending,,,,auto-added from latest model data
+HONDA,E,E,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 HONDA,NSX-R,NSX-R,,pending,,,,auto-added from latest model data
 HONDA,ODYSSEY e-HEV ABSOLUTE EX,ODYSSEY e-HEV ABSOLUTE EX,,pending,,,,auto-added from latest model data
 HONDA,STEPWGN e:HEV SPADA G EX,STEP WGN e-HEV SPADA G EX,,pending,,,,auto-added from latest model data
@@ -3202,8 +3202,8 @@ PORSCHE,718 BOXSTER S,718 BOXSTER S,,pending,,,,auto-added from latest model dat
 PORSCHE,911 GT3,911 GT3,,pending,,,,auto-added from latest model data
 PORSCHE,911 GT3 RS WEISSACH PACKAGE,911 GT3 RS WEISSACH PACKAGE,,pending,,,,auto-added from latest model data
 PORSCHE,PANAMERA 4 E-HYBRID S.T.,PANAMERA 4 E-HYBRID S.T.,,pending,,,,auto-added from latest model data
-PORSCHE,TAYCAN,TAYCAN,,pending,,,,auto-added from latest model data
-SMART,EQ FORTWO CABRIOLET,EQ FORTWO CABRIOLET,,pending,,,,auto-added from latest model data
+PORSCHE,TAYCAN,TAYCAN,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+SMART,EQ FORTWO CABRIOLET,EQ FORTWO CABRIOLET,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 SUZUKI,SWIFT RX 1.25L,SWIFT RX 1.25L,,pending,,,,auto-added from latest model data
 TOYOTA,ALPHARD 2.5 HYBRID SR C PACKAG,ALPHARD 2.5 HYBRID SR C PACKAG,,pending,,,,auto-added from latest model data
 TOYOTA,ALPHARD 2.5 HYBRID SR-C,ALPHARD 2.5 HYBRID SR-C,,pending,,,,auto-added from latest model data
@@ -3214,9 +3214,9 @@ TOYOTA,KUN61R-NKASYT  A8,KUN61R-NKASYT  A8,,pending,,,,auto-added from latest mo
 TOYOTA,VELLFIRE HYBRID V L EDITION,VELLFIRE HYBRID V L EDITION,,pending,,,,auto-added from latest model data
 VOLKSWAGEN,MULTIVAN 2.0 BI TDI,MULTIVAN 2.0 BI TDI,,pending,,,,auto-added from latest model data
 VOLVO,V90,V90,,pending,,,,auto-added from latest model data
-WELTMEISTER,EX5Z FUN,EX5Z FUN,,pending,,,,auto-added from latest model data
-WELTMEISTER,EX5Z PRO,EX5Z PRO,,pending,,,,auto-added from latest model data
-WELTMEISTER,EX6 NEXT,EX6 NEXT,,pending,,,,auto-added from latest model data
+WELTMEISTER,EX5Z FUN,EX5Z FUN,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+WELTMEISTER,EX5Z PRO,EX5Z PRO,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+WELTMEISTER,EX6 NEXT,EX6 NEXT,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 FIAT,ABARTH 595 COMPETIZIONE,ABARTH 595 COMPETIZIONE,,pending,,,,auto-added from latest model data
 MOTO GUZZI,ไม่ระบุ,ไม่ระบุ,,pending,,,,auto-added from latest model data
 Star8,HORUS,HORUS,,pending,,,,auto-added from latest model data
@@ -3341,7 +3341,7 @@ Mercedes-Benz,GLE 500 e 4MATIC,GLE 500 e 4MATIC,,pending,,,,auto-added from late
 Mercedes-Benz,S 500 Cabriolet,S 500 Cabriolet,,pending,,,,auto-added from latest model data
 Mercedes-Benz,S 500 L,S 500 L,,pending,,,,auto-added from latest model data
 BENTLEY,CONTINENTAL GT V8 CONVERTIBLE,CONTINENTAL GT V8 CONVERTIBLE,,pending,,,,auto-added from latest model data
-BLAVAL,FH-V7,FH-V7,,pending,,,,auto-added from latest model data
+BLAVAL,FH-V7,FH-V7,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 BMW,730Ld Limousine RHD,730Ld Limousine RHD,,pending,,,,auto-added from latest model data
 BMW,840D XDRIVE COUPE,840D XDRIVE COUPE,,pending,,,,auto-added from latest model data
 BMW,M850i xDrive Cabrio RHD,M850i xDrive Cabrio RHD,,pending,,,,auto-added from latest model data
@@ -3353,7 +3353,7 @@ HONDA,S660 6MT,S660 6MT,,pending,,,,auto-added from latest model data
 JAGUAR,MARK IX,MARK IX,,pending,,,,auto-added from latest model data
 LAMBORGHINI,AVENTADOR S ROADSTER,AVENTADOR S ROADSTER,,pending,,,,auto-added from latest model data
 LAND ROVER,DEFENDER 110XP400,DEFENDER 110XP400,,pending,,,,auto-added from latest model data
-LEVDEO,LITTLE PRINCE,LITTLE PRINCE,,pending,,,,auto-added from latest model data
+LEVDEO,LITTLE PRINCE,LITTLE PRINCE,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 LEXUS,IS300,IS300,,pending,,,,auto-added from latest model data
 MASERATI,GHIBLI MILD HYBRID GRANSPORT,GHIBLI MILD HYBRID GRANSPORT,,pending,,,,auto-added from latest model data
 MASERATI,LEVANTE DIESEL GRANSPORT,LEVANTE DIESEL GRANSPORT,,pending,,,,auto-added from latest model data
@@ -3525,7 +3525,7 @@ BMW,840D XDRIVE,840D XDRIVE,,pending,,,,auto-added from latest model data
 BMW,I8 HYBRID,I8 HYBRID,,pending,,,,auto-added from latest model data
 BYD,E6,E6,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 CHEVROLET,CORVETTE STINGRAY CONVERTIBLE,CORVETTE STINGRAY CONVERTIBLE,,pending,,,,auto-added from latest model data
-DSFK,DXK6450ECBEV,DXK6450ECBEV,,pending,,,,auto-added from latest model data
+DSFK,DXK6450ECBEV,DXK6450ECBEV,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 FERRARI,360CHALLEGE STRADALE,360CHALLEGE STRADALE,,pending,,,,auto-added from latest model data
 FERRARI,488 SPIDER,488 SPIDER,,pending,,,,auto-added from latest model data
 FIAT,BENIMAR MILEO 282,BENIMAR MILEO 282,,pending,,,,auto-added from latest model data
@@ -3668,7 +3668,7 @@ CASE,1107 EX-D,1107 EX-D,,pending,,,,auto-added from latest model data
 ไม่ระบุ,CHARISMA 550,CHARISMA 550,,pending,,,,auto-added from latest model data
 FORD,RANGER MODEL UR53RAA,RANGER MODEL UR53RAA,,pending,,,,auto-added from latest model data
 NISSAN,BDBGRTYD40EHG--A--,BDBGRTYD40EHG--A--,,pending,,,,auto-added from latest model data
-TAKANO,TTE-500L,TTE-500L,,pending,,,,auto-added from latest model data
+TAKANO,TTE-500L,TTE-500L,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 TOYOTA,A-Cab 2X4 2.5E VNT(Black),A-Cab 2X4 2.5E VNT(Black),,pending,,,,auto-added from latest model data
 TOYOTA,LN152R-CRMSSTA,LN152R-CRMSSTA,,pending,,,,auto-added from latest model data
 NISSAN,CGD21SFU1%,CGD21SFU1%,,pending,,,,auto-added from latest model data
@@ -3691,7 +3691,7 @@ BMW,M2 CS,M2 CS,,pending,,,,auto-added from latest model data
 BMW,M4 Competition Coupe RHD,M4 Competition Coupe RHD,,pending,,,,auto-added from latest model data
 FORD,EcoSport,EcoSport,,pending,,,,auto-added from latest model data
 FORD,MUSTANG MACH 1,MUSTANG MACH 1,,pending,,,,auto-added from latest model data
-FORD,MUSTANG MACH-E EXTENDED RANGE,MUSTANG MACH-E EXTENDED RANGE,,pending,,,,auto-added from latest model data
+FORD,MUSTANG MACH-E EXTENDED RANGE,MUSTANG MACH-E EXTENDED RANGE,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 HONDA,N BOX CUSTOM GL TURBO,N BOX CUSTOM GL TURBO,,pending,,,,auto-added from latest model data
 JAGUAR,F-TYPE S 3.0L V6 S/C RWD,F-TYPE S 3.0L V6 S/C RWD,,pending,,,,auto-added from latest model data
 LAND ROVER,DEFENDER 90 STATION WAGON,DEFENDER 90 STATION WAGON,,pending,,,,auto-added from latest model data
@@ -3847,7 +3847,7 @@ CASE,752EX,752EX,,pending,,,,auto-added from latest model data
 ไม่ระบุ,RALLYE GTE 50,RALLYE GTE 50,,pending,,,,auto-added from latest model data
 ไม่ระบุ,CCMC-F06-1A-FTL,CCMC-F06-1A-FTL,,pending,,,,auto-added from latest model data
 DFSK,ไม่ระบุ,ไม่ระบุ,,pending,,,,auto-added from latest model data
-MITSUBISHI,MINICAB MIEV,MINICAB MIEV,,pending,,,,auto-added from latest model data
+MITSUBISHI,MINICAB MIEV,MINICAB MIEV,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 SOKON,CRC5020CLS,CRC5020CLS,,pending,,,,auto-added from latest model data
 SOKON,CRC5023XXY,CRC5023XXY,,pending,,,,auto-added from latest model data
 TOYOTA,C-Cab 4x2 2.4J Plus,C-Cab 4x2 2.4J Plus,,pending,,,,auto-added from latest model data
@@ -3864,7 +3864,7 @@ BMW,420I GRAN COUPE RHD,420I GRAN COUPE RHD,,pending,,,,auto-added from latest m
 BMW,M3 COMPETITION,M3 COMPETITION,,pending,,,,auto-added from latest model data
 DAIHATSU,TAFT G TURBO,TAFT G TURBO,,pending,,,,auto-added from latest model data
 FERRARI,SF90 STRADALE,SF90 STRADALE,,pending,,,,auto-added from latest model data
-FIAT,500 LA PRIMA,500 LA PRIMA,,pending,,,,auto-added from latest model data
+FIAT,500 LA PRIMA,500 LA PRIMA,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 HONDA,N BOX L TURBO,N BOX L TURBO,,pending,,,,auto-added from latest model data
 JAGUAR,F-PACE R-SPORT 2.0 D,F-PACE R-SPORT 2.0 D,,pending,,,,auto-added from latest model data
 JAGUAR,MARK II 3.8 LITRE,MARK II 3.8 LITRE,,pending,,,,auto-added from latest model data
@@ -4019,14 +4019,14 @@ GWM,GOOD CAT,GOOD CAT,BEV,approved,https://www.headlightmag.com/2024-01-12-offic
 Mercedes-Benz,AMG E53 CABRIOLET,AMG E53 CABRIOLET,,pending,,,,auto-added from latest model data
 Mercedes-Benz,E400d CABRIOLET,E400d CABRIOLET,,pending,,,,auto-added from latest model data
 Mercedes-Benz,G 350 d AMG,G 350 d AMG,,pending,,,,auto-added from latest model data
-AUDI,RS e-tron GT quattro,RS e-tron GT quattro,,pending,,,,auto-added from latest model data
+AUDI,RS e-tron GT quattro,RS e-tron GT quattro,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 AUDI,S8 TFSI QUATTRO,S8 TFSI QUATTRO,,pending,,,,auto-added from latest model data
-AUDI,e-tron GT quattro PF,e-tron GT quattro PF,,pending,,,,auto-added from latest model data
+AUDI,e-tron GT quattro PF,e-tron GT quattro PF,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 BENTLEY,CONTINENTAL GT V8 AWD,CONTINENTAL GT V8 AWD,,pending,,,,auto-added from latest model data
 BMW,M8 Coupe RHD,M8 Coupe RHD,,pending,,,,auto-added from latest model data
 BMW,X4 M RHD,X4 M RHD,,pending,,,,auto-added from latest model data
-BMW,iX3 M Sport RHD,iX3 M Sport RHD,,pending,,,,auto-added from latest model data
-FORD,MUSTANG MACH-E RWD,MUSTANG MACH-E RWD,,pending,,,,auto-added from latest model data
+BMW,iX3 M Sport RHD,iX3 M Sport RHD,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+FORD,MUSTANG MACH-E RWD,MUSTANG MACH-E RWD,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 HONDA,S660 6AT,S660 6AT,,pending,,,,auto-added from latest model data
 JAGUAR,XF 2.0L T/C RWD AUTO PORTFOLIO,XF 2.0L T/C RWD AUTO PORTFOLIO,,pending,,,,auto-added from latest model data
 JEEP,WRANGLER SAHARA 4DR,WRANGLER SAHARA 4DR,,pending,,,,auto-added from latest model data
@@ -4037,7 +4037,7 @@ NISSAN,BDTARCFB172HA-----,BDTARCFB172HA-----,,pending,,,,auto-added from latest 
 NISSAN,GT-R RECARO 3.8L,GT-R RECARO 3.8L,,pending,,,,auto-added from latest model data
 PORSCHE,718 BOXSTER T,718 BOXSTER T,,pending,,,,auto-added from latest model data
 PORSCHE,CAYENNE TURBO,CAYENNE TURBO,,pending,,,,auto-added from latest model data
-PORSCHE,TAYCAN 4 CROSS TURISMO,TAYCAN 4 CROSS TURISMO,,pending,,,,auto-added from latest model data
+PORSCHE,TAYCAN 4 CROSS TURISMO,TAYCAN 4 CROSS TURISMO,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 TOYOTA,ALPHARD GF HYBRID 2.5L,ALPHARD GF HYBRID 2.5L,,pending,,,,auto-added from latest model data
 TOYOTA,FJ CRUISER,FJ CRUISER,,pending,,,,auto-added from latest model data
 TOYOTA,LAND CRUISER AX G SELECTION,LAND CRUISER AX G SELECTION,,pending,,,,auto-added from latest model data
@@ -4140,7 +4140,7 @@ BOMAG,BW211 D-40 SL,BW211 D-40 SL,,pending,,,,auto-added from latest model data
 ไม่ระบุ,RANGER 500/5,RANGER 500/5,,pending,,,,auto-added from latest model data
 NISSAN,BVL2RWLD23FHP----A,BVL2RWLD23FHP----A,,pending,,,,auto-added from latest model data
 TOYOTA,LAND CRUISER 79 PICK UP 4.2,LAND CRUISER 79 PICK UP 4.2,,pending,,,,auto-added from latest model data
-WULING,GXA5032XXYEV,GXA5032XXYEV,,pending,,,,auto-added from latest model data
+WULING,GXA5032XXYEV,GXA5032XXYEV,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 MUV,NEX1.5,NEX1.5,,pending,,,,auto-added from latest model data
 Mercedes-Benz,AMG GLE 53 4MATIC+,AMG GLE 53 4MATIC+,,pending,,,,auto-added from latest model data
 Mercedes-Benz,C180 SPORT COUPE,C180 SPORT COUPE,,pending,,,,auto-added from latest model data
@@ -4149,7 +4149,7 @@ ASTON MARTIN,DBS SUPERLEGGERA,DBS SUPERLEGGERA,,pending,,,,auto-added from lates
 AUDI,Q5 35 TDI q,Q5 35 TDI q,,pending,,,,auto-added from latest model data
 BENTLEY,FLYING SPUR V8,FLYING SPUR V8,,pending,,,,auto-added from latest model data
 BMW,520i,520i,,pending,,,,auto-added from latest model data
-DACIA,SPRING,SPRING,,pending,,,,auto-added from latest model data
+DACIA,SPRING,SPRING,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 HONDA,CITY'10,CITY'10,,pending,,,,auto-added from latest model data
 HONDA,S660 MODULO X SPECIAL VER.Z,S660 MODULO X SPECIAL VER.Z,,pending,,,,auto-added from latest model data
 JAGUAR,F-PACE 2.0L T/C AWD AUTO,F-PACE 2.0L T/C AWD AUTO,,pending,,,,auto-added from latest model data
@@ -4158,8 +4158,8 @@ JEEP,WRANGLER RUBICON 4dr 2.0,WRANGLER RUBICON 4dr 2.0,,pending,,,,auto-added fr
 MAZDA,MX-5 ROADSTER 30TH ANNIVERSARY,MX-5 ROADSTER 30TH ANNIVERSARY,,pending,,,,auto-added from latest model data
 MAZDA,MX-5 ROADSTER NR-A,MX-5 ROADSTER NR-A,,pending,,,,auto-added from latest model data
 PEUGEOT,2008 P24 BG,2008 P24 BG,,pending,,,,auto-added from latest model data
-PORSCHE,TAYCAN 4S CROSS TURISMO,TAYCAN 4S CROSS TURISMO,,pending,,,,auto-added from latest model data
-PORSCHE,TAYCAN TURBO S CROSS TURISMO,TAYCAN TURBO S CROSS TURISMO,,pending,,,,auto-added from latest model data
+PORSCHE,TAYCAN 4S CROSS TURISMO,TAYCAN 4S CROSS TURISMO,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+PORSCHE,TAYCAN TURBO S CROSS TURISMO,TAYCAN TURBO S CROSS TURISMO,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 TOYOTA,ACV40R-JEAGKT  A1,ACV40R-JEAGKT  A1,,pending,,,,auto-added from latest model data
 TOYOTA,GR YARIS RALLYE EDITION,GR YARIS RALLYE EDITION,,pending,,,,auto-added from latest model data
 TOYOTA,KUN15R-TRMDYT3 A3,KUN15R-TRMDYT3 A3,,pending,,,,auto-added from latest model data
@@ -4281,7 +4281,7 @@ FIAT,DUCATO 335XL PANEL VAN,DUCATO 335XL PANEL VAN,,pending,,,,auto-added from l
 FIAT,DUCATO SINGLE CAB,DUCATO SINGLE CAB,,pending,,,,auto-added from latest model data
 FORD,FORD RANGER iJBT9B4,FORD RANGER iJBT9B4,,pending,,,,auto-added from latest model data
 FORD,MUSTANG 2.3 ECOBOOST FASTBACK,MUSTANG 2.3 ECOBOOST FASTBACK,,pending,,,,auto-added from latest model data
-FORD,MUSTANG MACH-E STANDARD,MUSTANG MACH-E STANDARD,,pending,,,,auto-added from latest model data
+FORD,MUSTANG MACH-E STANDARD,MUSTANG MACH-E STANDARD,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 FORD,MUSTANG SHELBY GT500,MUSTANG SHELBY GT500,,pending,,,,auto-added from latest model data
 HONDA,N VAN,N VAN,,pending,,,,auto-added from latest model data
 JEEP,GLADIATOR RUBICON 4dr,GLADIATOR RUBICON 4dr,,pending,,,,auto-added from latest model data
@@ -4300,7 +4300,7 @@ PORSCHE,911 GT3 WITH T.P.,911 GT3 WITH T.P.,,pending,,,,auto-added from latest m
 PORSCHE,911 TARGA 4 GTS,911 TARGA 4 GTS,,pending,,,,auto-added from latest model data
 PORSCHE,911 TURBO,911 TURBO,,pending,,,,auto-added from latest model data
 SHINERAY,T22,T22,,pending,,,,auto-added from latest model data
-SMART,FORTWO EQ BLUEDAWN COUPE,FORTWO EQ BLUEDAWN COUPE,,pending,,,,auto-added from latest model data
+SMART,FORTWO EQ BLUEDAWN COUPE,FORTWO EQ BLUEDAWN COUPE,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 TOYOTA,ALPHARD HYBRID X 2.5 WELCAB,ALPHARD HYBRID X 2.5 WELCAB,,pending,,,,auto-added from latest model data
 TOYOTA,ALPHARD SC PACKAGE 3.5L,ALPHARD SC PACKAGE 3.5L,,pending,,,,auto-added from latest model data
 TOYOTA,ALPHARD X SIDE LIFT UP,ALPHARD X SIDE LIFT UP,,pending,,,,auto-added from latest model data
@@ -4568,7 +4568,7 @@ MITSUBISHI,KG4WGYPSRU,KG4WGYPSRU,,pending,,,,auto-added from latest model data
 NISSAN,VVLGRVYD40UHGLD-HT,VVLGRVYD40UHGLD-HT,,pending,,,,auto-added from latest model data
 PORSCHE,CAYENNE TURBO GT,CAYENNE TURBO GT,,pending,,,,auto-added from latest model data
 PORSCHE,CAYMAN PDK,CAYMAN PDK,,pending,,,,auto-added from latest model data
-SMART,FORTWO EQ EXCLUSIVE CABRIO,FORTWO EQ EXCLUSIVE CABRIO,,pending,,,,auto-added from latest model data
+SMART,FORTWO EQ EXCLUSIVE CABRIO,FORTWO EQ EXCLUSIVE CABRIO,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 SUBARU,NBR CHALLENGE S208 WRX STI,NBR CHALLENGE S208 WRX STI,,pending,,,,auto-added from latest model data
 SUBARU,WRX STI FINAL EDITION,WRX STI FINAL EDITION,,pending,,,,auto-added from latest model data
 SUBARU,XV 2.0i-P ES,XV 2.0i-P ES,,pending,,,,auto-added from latest model data
@@ -4586,7 +4586,7 @@ TOYOTA,ZVW30R-AHXEBT  CB,ZVW30R-AHXEBT  CB,,pending,,,,auto-added from latest mo
 VOLKSWAGEN,ID 3 PRO S,ID 3 PRO S,,pending,,,,auto-added from latest model data
 PORSCHE,CAYENNE E-HYBRID SUV,CAYENNE E-HYBRID SUV,,pending,,,,auto-added from latest model data
 TOYOTA,ACV41R-JEPNKT  AB,ACV41R-JEPNKT  AB,,pending,,,,auto-added from latest model data
-BMW,iX xDrive50 RHD,iX xDrive50 RHD,,pending,,,,auto-added from latest model data
+BMW,iX xDrive50 RHD,iX xDrive50 RHD,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 Mercedes-Benz,AMG GT Black Series,AMG GT Black Series,,pending,,,,auto-added from latest model data
 ALENDA-DARKON,ALENDA DARKON JAZZY,ALENDA DARKON JAZZY,,pending,,,,auto-added from latest model data
 BMW,R nineT Pure,R nineT Pure,,pending,,,,auto-added from latest model data
@@ -4597,7 +4597,7 @@ HAONAIQI,LION-Q1,LION-Q1,,pending,,,,auto-added from latest model data
 HARLEY DAVIDSON,FLHTP,FLHTP,,pending,,,,auto-added from latest model data
 HARLEY DAVIDSON,FLHXST,FLHXST,,pending,,,,auto-added from latest model data
 HARLEY DAVIDSON,FLTRXST,FLTRXST,,pending,,,,auto-added from latest model data
-HONDA,BENLY e,BENLY e,,pending,,,,auto-added from latest model data
+HONDA,BENLY e,BENLY e,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 NINEBOT,E100,E100,,pending,,,,auto-added from latest model data
 YADEA,X5,X5,,pending,,,,auto-added from latest model data
 YAMAHA,MT-09,MT-09,,pending,,,,auto-added from latest model data
@@ -4684,15 +4684,15 @@ BIZ NEX,P2,P2,,pending,,,,auto-added from latest model data
 BIZ NEX,NEX2.0,NEX2.0,,pending,,,,auto-added from latest model data
 TOYOTA,VOXY S-Z 2WD,VOXY S-Z 2WD,,pending,,,,auto-added from latest model data
 Mercedes-Benz,Maybach GLS 600 4MATIC,Maybach GLS 600 4MATIC,,pending,,,,auto-added from latest model data
-AUDI,e-tron GT quattro,e-tron GT quattro,,pending,,,,auto-added from latest model data
+AUDI,e-tron GT quattro,e-tron GT quattro,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 BENTLEY,CONTINENTAL GT SPEED,CONTINENTAL GT SPEED,,pending,,,,auto-added from latest model data
 BENTLEY,CONTINENTAL GT V8 COUPE,CONTINENTAL GT V8 COUPE,,pending,,,,auto-added from latest model data
 BENTLEY,FLYING SPUR W12,FLYING SPUR W12,,pending,,,,auto-added from latest model data
 BMW,X5 XDRIVE40E RHD,X5 XDRIVE40E RHD,,pending,,,,auto-added from latest model data
-BMW,i4 M50 Gran Coupe RHD,i4 M50 Gran Coupe RHD,,pending,,,,auto-added from latest model data
-BMW,i4 eDrive40 Gran Coupe RH,i4 eDrive40 Gran Coupe RH,,pending,,,,auto-added from latest model data
+BMW,i4 M50 Gran Coupe RHD,i4 M50 Gran Coupe RHD,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+BMW,i4 eDrive40 Gran Coupe RH,i4 eDrive40 Gran Coupe RH,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 CHEVROLET,CORVETTE STINGRAY RWD COUPE,CORVETTE STINGRAY RWD COUPE,,pending,,,,auto-added from latest model data
-EAGLE,EC01,EC01,,pending,,,,auto-added from latest model data
+EAGLE,EC01,EC01,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 FORD,FORD EVEREST zJAJ9BC,FORD EVEREST zJAJ9BC,,pending,,,,auto-added from latest model data
 HONDA,N-BOX L,N-BOX L,,pending,,,,auto-added from latest model data
 JAGUAR,F-TYPE 2.0 LITRE T/C RWD,F-TYPE 2.0 LITRE T/C RWD,,pending,,,,auto-added from latest model data
@@ -4717,7 +4717,7 @@ TOYOTA,LAND CRUISER PRADO 2.7 TX-L,LAND CRUISER PRADO 2.7 TX-L,,pending,,,,auto-
 TOYOTA,LANDCRUISER LC300 SAHARA ZX,LANDCRUISER LC300 SAHARA ZX,,pending,,,,auto-added from latest model data
 TOYOTA,NOAH SZ 2.0L,NOAH SZ 2.0L,,pending,,,,auto-added from latest model data
 TOYOTA,VELLFIRE HYBRID X,VELLFIRE HYBRID X,,pending,,,,auto-added from latest model data
-VOLKSWAGEN,ID.3 TOURER PRO S,ID.3 TOURER PRO S,,pending,,,,auto-added from latest model data
+VOLKSWAGEN,ID.3 TOURER PRO S,ID.3 TOURER PRO S,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 HONDA,CR-V'07,CR-V'07,,pending,,,,auto-added from latest model data
 CHEVROLET,SONIC,SONIC,,pending,,,,auto-added from latest model data
 TOYOTA,LAND CRUISER ACTIVE 2.8D,LAND CRUISER ACTIVE 2.8D,,pending,,,,auto-added from latest model data
@@ -4905,8 +4905,8 @@ BMW,M5 CS Limousine RHD,M5 CS Limousine RHD,,pending,,,,auto-added from latest m
 BMW,Z4 SDRIVE23I RHD,Z4 SDRIVE23I RHD,,pending,,,,auto-added from latest model data
 FERRARI,348 SPIDER,348 SPIDER,,pending,,,,auto-added from latest model data
 FERRARI,SF90 SPIDER,SF90 SPIDER,,pending,,,,auto-added from latest model data
-FIAT,500ELECTRIC HATCHBACK LA PRIMA,500ELECTRIC HATCHBACK LA PRIMA,,pending,,,,auto-added from latest model data
-FORD,MUSTANG MACH-E 5 DOOR GT,MUSTANG MACH-E 5 DOOR GT,,pending,,,,auto-added from latest model data
+FIAT,500ELECTRIC HATCHBACK LA PRIMA,500ELECTRIC HATCHBACK LA PRIMA,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+FORD,MUSTANG MACH-E 5 DOOR GT,MUSTANG MACH-E 5 DOOR GT,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 HONDA,N-ONE,N-ONE,,pending,,,,auto-added from latest model data
 HYUNDAI,PALISADE,PALISADE,,pending,,,,auto-added from latest model data
 LAND ROVER,DEFENDER 90 HERITAGE STATION,DEFENDER 90 HERITAGE STATION,,pending,,,,auto-added from latest model data
@@ -4918,7 +4918,7 @@ NISSAN,ELGRAND 350 HIGHWAY STAR,ELGRAND 350 HIGHWAY STAR,,pending,,,,auto-added 
 NISSAN,SERENA HYBRID E-POWER HIGHWAY,SERENA HYBRID E-POWER HIGHWAY,,pending,,,,auto-added from latest model data
 NISSAN,SYLPHY 1.6 V CVT,SYLPHY 1.6 V CVT,,pending,,,,auto-added from latest model data
 PORSCHE,911 GT3 PDK,911 GT3 PDK,,pending,,,,auto-added from latest model data
-PORSCHE,TAYCAN GTS,TAYCAN GTS,,pending,,,,auto-added from latest model data
+PORSCHE,TAYCAN GTS,TAYCAN GTS,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 ROLLS-ROYCE,CULLINAN RIGHT HAND DRIVE,CULLINAN RIGHT HAND DRIVE,,pending,,,,auto-added from latest model data
 TOYOTA,ALPHARD SR C PACKAGE,ALPHARD SR C PACKAGE,,pending,,,,auto-added from latest model data
 TOYOTA,GR 86 RZ,GR 86 RZ,,pending,,,,auto-added from latest model data
@@ -5035,7 +5035,7 @@ SAKAI,CV550D,CV550D,,pending,,,,auto-added from latest model data
 Mercedes-Benz,SPRINTER 2.2 DIESEL,SPRINTER 2.2 DIESEL,,pending,,,,auto-added from latest model data
 HINO,XZU720R-HKTQL3,XZU720R-HKTQL3,,pending,,,,auto-added from latest model data
 TOYOTA,KDH213R-KDPNYT D1,KDH213R-KDPNYT D1,,pending,,,,auto-added from latest model data
-DFSK,EC35,EC35,,pending,,,,auto-added from latest model data
+DFSK,EC35,EC35,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 FORD,FORD RANGER iFCS9AR,FORD RANGER iFCS9AR,,pending,,,,auto-added from latest model data
 FOTON,BJ1045V8JD3-FA,BJ1045V8JD3-FA,,pending,,,,auto-added from latest model data
 MITSUBISHI,L200 2.5 M-CAB GLX (STRADA 2WD,L200 2.5 M-CAB GLX (STRADA 2WD,,pending,,,,auto-added from latest model data
@@ -5045,12 +5045,12 @@ TO TUK TUK,TO,TO,,pending,,,,auto-added from latest model data
 Mercedes-Benz,S 560 Coupe,S 560 Coupe,,pending,,,,auto-added from latest model data
 Mercedes-Benz,S500L AMG SALOON,S500L AMG SALOON,,pending,,,,auto-added from latest model data
 Mercedes-Benz,TYPE S 580 4MATIC,TYPE S 580 4MATIC,,pending,,,,auto-added from latest model data
-AIWAYS,U5 LITE SAMPLE,U5 LITE SAMPLE,,pending,,,,auto-added from latest model data
-AIWAYS,U5 PRIME WITH,U5 PRIME WITH,,pending,,,,auto-added from latest model data
+AIWAYS,U5 LITE SAMPLE,U5 LITE SAMPLE,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+AIWAYS,U5 PRIME WITH,U5 PRIME WITH,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 BMW,M440i xDrive Coupe RHD,M440i xDrive Coupe RHD,,pending,,,,auto-added from latest model data
 CHEVROLET,CORVETTE STINGRAY COUPE 2LT,CORVETTE STINGRAY COUPE 2LT,,pending,,,,auto-added from latest model data
-FORD,MUSTANG MACH-E GT EXTENDED,MUSTANG MACH-E GT EXTENDED,,pending,,,,auto-added from latest model data
-FORD,MUSTANG MACH-E PREMIUM,MUSTANG MACH-E PREMIUM,,pending,,,,auto-added from latest model data
+FORD,MUSTANG MACH-E GT EXTENDED,MUSTANG MACH-E GT EXTENDED,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+FORD,MUSTANG MACH-E PREMIUM,MUSTANG MACH-E PREMIUM,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 HONDA,ACCORD HYBRID'15,ACCORD HYBRID'15,,pending,,,,auto-added from latest model data
 HONDA,STEP WGN e-HEV SPADA PREMIUM,STEP WGN e-HEV SPADA PREMIUM,,pending,,,,auto-added from latest model data
 HONDA,STEPWAGON SPADA 2.0 HYBRID,STEPWAGON SPADA 2.0 HYBRID,,pending,,,,auto-added from latest model data
@@ -5061,7 +5061,7 @@ PORSCHE,911 TURBO CABRIOLET,911 TURBO CABRIOLET,,pending,,,,auto-added from late
 PORSCHE,911 TURBO S EXC. SERIES,911 TURBO S EXC. SERIES,,pending,,,,auto-added from latest model data
 PORSCHE,CAYENNE,CAYENNE,,pending,,,,auto-added from latest model data
 PORSCHE,PANAMERA TURBO S,PANAMERA TURBO S,,pending,,,,auto-added from latest model data
-PORSCHE,TAYCAN 4S SPORT TURISMO,TAYCAN 4S SPORT TURISMO,,pending,,,,auto-added from latest model data
+PORSCHE,TAYCAN 4S SPORT TURISMO,TAYCAN 4S SPORT TURISMO,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 SUZUKI,ERTIGA DREZA 1.4L,ERTIGA DREZA 1.4L,,pending,,,,auto-added from latest model data
 TOYOTA,HARRIER 2.0 Z,HARRIER 2.0 Z,,pending,,,,auto-added from latest model data
 TOYOTA,NOAH HYBRID S-Z,NOAH HYBRID S-Z,,pending,,,,auto-added from latest model data
@@ -5172,7 +5172,7 @@ TOYOTA,LAND CRUISER ZX,LAND CRUISER ZX,,pending,,,,auto-added from latest model 
 TOYOTA,NOAH X,NOAH X,,pending,,,,auto-added from latest model data
 TOYOTA,VELLFIRE 2.5 HYBRID V,VELLFIRE 2.5 HYBRID V,,pending,,,,auto-added from latest model data
 VOLKSWAGEN,GOLF GTI,GOLF GTI,,pending,,,,auto-added from latest model data
-WULING,WULING MINI,WULING MINI,,pending,,,,auto-added from latest model data
+WULING,WULING MINI,WULING MINI,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 ALENDA-DARKON,ALENDA DARKON POPPY,ALENDA DARKON POPPY,,pending,,,,auto-added from latest model data
 BMW,G 310 GS,G 310 GS,,pending,,,,auto-added from latest model data
 BMW,G 310 R,G 310 R,,pending,,,,auto-added from latest model data
@@ -5247,8 +5247,8 @@ NISSAN,GT-R PURE EDITION,GT-R PURE EDITION,,pending,,,,auto-added from latest mo
 PORSCHE,718 CAYMAN GT4 RS,718 CAYMAN GT4 RS,,pending,,,,auto-added from latest model data
 PORSCHE,MACAN T,MACAN T,,pending,,,,auto-added from latest model data
 PORSCHE,PANAMERA GTS SPORT TURIS,PANAMERA GTS SPORT TURIS,,pending,,,,auto-added from latest model data
-PORSCHE,TAYCAN GTS SPORT TURISMO,TAYCAN GTS SPORT TURISMO,,pending,,,,auto-added from latest model data
-PORSCHE,TAYCAN SPORT TURISMO,TAYCAN SPORT TURISMO,,pending,,,,auto-added from latest model data
+PORSCHE,TAYCAN GTS SPORT TURISMO,TAYCAN GTS SPORT TURISMO,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+PORSCHE,TAYCAN SPORT TURISMO,TAYCAN SPORT TURISMO,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 SUBARU,BRZ,BRZ,,pending,,,,auto-added from latest model data
 SUBARU,WRX 4D 2.4 AWD 6MT,WRX 4D 2.4 AWD 6MT,,pending,,,,auto-added from latest model data
 SUBARU,WRX STI RA-R,WRX STI RA-R,,pending,,,,auto-added from latest model data
@@ -5262,7 +5262,7 @@ TOYOTA,LAND CRUISER 70 30TH,LAND CRUISER 70 30TH,,pending,,,,auto-added from lat
 TOYOTA,SUPRA RZ 3.0L,SUPRA RZ 3.0L,,pending,,,,auto-added from latest model data
 TOYOTA,VOXY HYBRID SZ 1.8L,VOXY HYBRID SZ 1.8L,,pending,,,,auto-added from latest model data
 VOLKSWAGEN,TOUAREG R 3.0 E-HYBRID,TOUAREG R 3.0 E-HYBRID,,pending,,,,auto-added from latest model data
-VOLVO,C40,C40,,pending,,,,auto-added from latest model data
+VOLVO,C40,C40,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 Mercedes-Benz,SPRINTER 319 CDI EURO,SPRINTER 319 CDI EURO,,pending,,,,auto-added from latest model data
 AUDI,RS Q8 TFSI QUATTRO,RS Q8 TFSI QUATTRO,,pending,,,,auto-added from latest model data
 TOYOTA,KUN15R-PRMDYT  A3,KUN15R-PRMDYT  A3,,pending,,,,auto-added from latest model data
@@ -5443,7 +5443,7 @@ HAMM,HD99,HD99,,pending,,,,auto-added from latest model data
 ไม่ระบุ,BAILEY PAGEANT MOSELLE,BAILEY PAGEANT MOSELLE,,pending,,,,auto-added from latest model data
 ไม่ระบุ,BAILEY UNICORN,BAILEY UNICORN,,pending,,,,auto-added from latest model data
 SUZUKI,SUPER CARRY X PICK UP,SUPER CARRY X PICK UP,,pending,,,,auto-added from latest model data
-HIGER,H5C EV CARGO,H5C EV CARGO,,pending,,,,auto-added from latest model data
+HIGER,H5C EV CARGO,H5C EV CARGO,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 S.T.TUK TUK,ไม่ระบุ,ไม่ระบุ,,pending,,,,auto-added from latest model data
 TKI,003EV TUK TUK,003EV TUK TUK,,pending,,,,auto-added from latest model data
 MG,MG4 ELECTRIC,MG4 ELECTRIC,BEV,approved,"paultan.org: 2026 MG4 Thailand, LFP battery BEV hatch https://paultan.org/2026/04/07/2026-mg4-in-thailand-same-rwd-ev-hatch-but-with-new-interior-lfp-batteries-around-460-km-wltp-range/",Claude-Google-review,7/30/2026,auto-added from latest model data
@@ -5454,7 +5454,7 @@ BENTLEY,MULSANNE SPEED,MULSANNE SPEED,,pending,,,,auto-added from latest model d
 BMW,840i M SPORT GRAN COUPE,840i M SPORT GRAN COUPE,,pending,,,,auto-added from latest model data
 BMW,I8,I8,,pending,,,,auto-added from latest model data
 BMW,M4 CSL Coupe RHD,M4 CSL Coupe RHD,,pending,,,,auto-added from latest model data
-DFSK,EC36,EC36,,pending,,,,auto-added from latest model data
+DFSK,EC36,EC36,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 HONDA,N-BOX G SLOPE L SENSING,N-BOX G SLOPE L SENSING,,pending,,,,auto-added from latest model data
 HONDA,S660 7AT,S660 7AT,,pending,,,,auto-added from latest model data
 JEEP,WRANGLER RUBICON 2 DOOR,WRANGLER RUBICON 2 DOOR,,pending,,,,auto-added from latest model data
@@ -5529,15 +5529,15 @@ SAKAI,R2H-2K,R2H-2K,,pending,,,,auto-added from latest model data
 ไม่ระบุ,ADRIA ADORA,ADRIA ADORA,,pending,,,,auto-added from latest model data
 ไม่ระบุ,BEAT BOX 123X200 CM,BEAT BOX 123X200 CM,,pending,,,,auto-added from latest model data
 NISSAN,URVAN,URVAN,,pending,,,,auto-added from latest model data
-HIGER,H5C EV VAN,H5C EV VAN,,pending,,,,auto-added from latest model data
+HIGER,H5C EV VAN,H5C EV VAN,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 TOYOTA,YN85R-TRMRST,YN85R-TRMRST,,pending,,,,auto-added from latest model data
 MITSUBISHI,L200 2.5 STD. P/S (STRADA 2WD),L200 2.5 STD. P/S (STRADA 2WD),,pending,,,,auto-added from latest model data
 E-TUK,LIMO GT,LIMO GT,,pending,,,,auto-added from latest model data
 Mercedes-Benz,A 180,A 180,,pending,,,,auto-added from latest model data
 AUDI,A8 L 55 TFSI q Pg S line,A8 L 55 TFSI q Pg S line,,pending,,,,auto-added from latest model data
 BENTLEY,FLYING SPUR MULLINER HYBRID,FLYING SPUR MULLINER HYBRID,,pending,,,,auto-added from latest model data
-BMW,i7 xDrive60 Limousine RHD,i7 xDrive60 Limousine RHD,,pending,,,,auto-added from latest model data
-BMW,iX xDrive40 RHD,iX xDrive40 RHD,,pending,,,,auto-added from latest model data
+BMW,i7 xDrive60 Limousine RHD,i7 xDrive60 Limousine RHD,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+BMW,iX xDrive40 RHD,iX xDrive40 RHD,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 FORD,MUSTANG HIGH PERFORMANCE,MUSTANG HIGH PERFORMANCE,,pending,,,,auto-added from latest model data
 FORD,MUSTANG HIGH PERFORMANCE 2.3L,MUSTANG HIGH PERFORMANCE 2.3L,,pending,,,,auto-added from latest model data
 JAGUAR,F-PACE 2.0 LITRE T/C PETROL,F-PACE 2.0 LITRE T/C PETROL,,pending,,,,auto-added from latest model data
@@ -5546,14 +5546,14 @@ LAND ROVER,RANGE ROVER 3.0 LITRE T/C,RANGE ROVER 3.0 LITRE T/C,,pending,,,,auto-
 LEXUS,LX600 EXECUTIVE,LX600 EXECUTIVE,,pending,,,,auto-added from latest model data
 LEXUS,LX600 F SPORT,LX600 F SPORT,,pending,,,,auto-added from latest model data
 LEXUS,RX450H+,RX450H+,,pending,,,,auto-added from latest model data
-LUMIN,CHANGAN LUMIN SWEET,LUMIN,,pending,,,,auto-added from latest model data
+LUMIN,CHANGAN LUMIN SWEET,LUMIN,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 NISSAN,BDWARBZN17XHAY114Z,BDWARBZN17XHAY114Z,,pending,,,,auto-added from latest model data
 NISSAN,GT-R BLACK EDITION,GT-R BLACK EDITION,,pending,,,,auto-added from latest model data
 NISSAN,GTR BLACK EDITION,GTR BLACK EDITION,,pending,,,,auto-added from latest model data
 NISSAN,GTR NISMO SPECIAL EDITION,GTR NISMO SPECIAL EDITION,,pending,,,,auto-added from latest model data
 PORSCHE,CAYENNE GTS,CAYENNE GTS,,pending,,,,auto-added from latest model data
 PORSCHE,MACAN T 2.0,MACAN T 2.0,,pending,,,,auto-added from latest model data
-TOYOTA,BZ4X,BZ4X,,pending,,,,auto-added from latest model data
+TOYOTA,BZ4X,BZ4X,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 TOYOTA,CROWN RS LIMITED II,CROWN RS LIMITED II,,pending,,,,auto-added from latest model data
 TOYOTA,GR COROLLA,GR COROLLA,,pending,,,,auto-added from latest model data
 TOYOTA,LAND CRUISER PRADO TX,LAND CRUISER PRADO TX,,pending,,,,auto-added from latest model data
@@ -5625,7 +5625,7 @@ Mercedes-Benz,PONTON 220S,PONTON 220S,,pending,,,,auto-added from latest model d
 BMW,X3 xDrive20d Celebration Editi,X3 xDrive20d Celebration Editi,,pending,,,,auto-added from latest model data
 CITROEN,DS5 1.6,DS5 1.6,,pending,,,,auto-added from latest model data
 DAIHATSU,MOVE CANBUS STRIPES G TURBO,MOVE CANBUS STRIPES G TURBO,,pending,,,,auto-added from latest model data
-HOMIDA,PICKMAN-KAI,PICKMAN-KAI,,pending,,,,auto-added from latest model data
+HOMIDA,PICKMAN-KAI,PICKMAN-KAI,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 HONDA,ACCORD'15,ACCORD'15,,pending,,,,auto-added from latest model data
 HONDA,S660 MODULO X VERSION Z,S660 MODULO X VERSION Z,,pending,,,,auto-added from latest model data
 HONDA,STEP WGN SPADA HYBRID,STEP WGN SPADA HYBRID,,pending,,,,auto-added from latest model data
@@ -5748,7 +5748,7 @@ MCLAREN,765LT SPIDER V8 4.0L,765LT SPIDER V8 4.0L,,pending,,,,auto-added from la
 MG,ES,ES,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 MINI,COOPER SD RHD,COOPER SD RHD,,pending,,,,auto-added from latest model data
 NISSAN,FAIRLADY Z,FAIRLADY Z,,pending,,,,auto-added from latest model data
-POCCO,DD L2,DD L2,,pending,,,,auto-added from latest model data
+POCCO,DD L2,DD L2,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 PORSCHE,911 SPORT CLASSIC,911 SPORT CLASSIC,,pending,,,,auto-added from latest model data
 SUZUKI,CELERIO GL UP 1.0L CVT,CELERIO GL UP 1.0L CVT,,pending,,,,auto-added from latest model data
 SUZUKI,CELERIO GX 1.0L CVT,CELERIO GX 1.0L CVT,,pending,,,,auto-added from latest model data
@@ -5760,7 +5760,7 @@ TOYOTA,GR86 10TH ANNIVERSARY,GR86 10TH ANNIVERSARY,,pending,,,,auto-added from l
 TOYOTA,GR86 RC,GR86 RC,,pending,,,,auto-added from latest model data
 TOYOTA,HARRIER 2.0 S,HARRIER 2.0 S,,pending,,,,auto-added from latest model data
 TOYOTA,YARIS GR CIRCUIT PACK,YARIS GR CIRCUIT PACK,,pending,,,,auto-added from latest model data
-PORSCHE,TAYCAN TURBO CROSS TURIS,TAYCAN TURBO CROSS TURIS,,pending,,,,auto-added from latest model data
+PORSCHE,TAYCAN TURBO CROSS TURIS,TAYCAN TURBO CROSS TURIS,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 MOTO GUZZI,V7 III STONE,V7 III STONE,,pending,,,,auto-added from latest model data
 AJ,MINE PLUS,MINE PLUS,,pending,,,,auto-added from latest model data
 DUCATI,SUPERBIKE 1199,SUPERBIKE 1199,,pending,,,,auto-added from latest model data
@@ -5813,7 +5813,7 @@ SAKAI,TS-7409,TS-7409,,pending,,,,auto-added from latest model data
 CASE,1107EX-D,1107EX-D,,pending,,,,auto-added from latest model data
 ไม่ระบุ,CARAVELAIR A496,CARAVELAIR A496,,pending,,,,auto-added from latest model data
 NISSAN,TDB4RTFE25EWAY27BY,TDB4RTFE25EWAY27BY,,pending,,,,auto-added from latest model data
-DFSK,EVO-P3,EVO-P3,,pending,,,,auto-added from latest model data
+DFSK,EVO-P3,EVO-P3,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 Deepal + Changan,STAR TRUCK 1.3 5MT,STAR TRUCK,,pending,,,,auto-added from latest model data
 FORD,FORD RANGER zFEA9GD,FORD RANGER zFEA9GD,,pending,,,,auto-added from latest model data
 BENTLEY,FLYING SPUR AZURE HYBRID,FLYING SPUR AZURE HYBRID,,pending,,,,auto-added from latest model data
@@ -5898,7 +5898,7 @@ ASTON MARTIN,DB11 V12 COUPE,DB11 V12 COUPE,,pending,,,,auto-added from latest mo
 ASTON MARTIN,DBS SUPERLEGGERA VOLANTE,DBS SUPERLEGGERA VOLANTE,,pending,,,,auto-added from latest model data
 ASTON MARTIN,VANTAGE F1 ROADSTER,VANTAGE F1 ROADSTER,,pending,,,,auto-added from latest model data
 AUDI,A4 40 TFSI S line IB,A4 40 TFSI S line IB,,pending,,,,auto-added from latest model data
-BLAVAL,FHV7-A,FHV7-A,,pending,,,,auto-added from latest model data
+BLAVAL,FHV7-A,FHV7-A,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 BMW,750e xDrive M Sport,750e xDrive M Sport,,pending,,,,auto-added from latest model data
 BMW,M240i xDrive Coupe RHD MX,M240i xDrive Coupe RHD MX,,pending,,,,auto-added from latest model data
 BMW,M3 Competition Limousine,M3 Competition Limousine,,pending,,,,auto-added from latest model data
@@ -5926,7 +5926,7 @@ TOYOTA,AYGO 1.0 X-CLUSIV,AYGO 1.0 X-CLUSIV,,pending,,,,auto-added from latest mo
 TOYOTA,HARRIER 2.5L HYBRID,HARRIER 2.5L HYBRID,,pending,,,,auto-added from latest model data
 VOLKSWAGEN,ID4 CROZZ PURE PLUS,ID4 CROZZ PURE PLUS,,pending,,,,auto-added from latest model data
 VOLT,VOLT FOR FOUR,VOLT FOR FOUR,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
-VOLT,VOLT FOR TWO,VOLT FOR TWO,,pending,,,,auto-added from latest model data
+VOLT,VOLT FOR TWO,VOLT FOR TWO,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 SUBARU,WRX Wagon 2.4 EyeSight AWD CVT,WRX Wagon 2.4 EyeSight AWD CVT,,pending,,,,auto-added from latest model data
 LAND ROVER,DISCOVERY 3.0L T/C AWD,DISCOVERY 3.0L T/C AWD,,pending,,,,auto-added from latest model data
 TOYOTA,ALPHARD HYBRID X SIDE LIFT UP,ALPHARD HYBRID X SIDE LIFT UP,,pending,,,,auto-added from latest model data
@@ -5996,24 +5996,24 @@ FURUKAWA,FT25W,FT25W,,pending,,,,auto-added from latest model data
 ไม่ระบุ,CHALLENGER 490SE,CHALLENGER 490SE,,pending,,,,auto-added from latest model data
 ไม่ระบุ,RALLYE 534,RALLYE 534,,pending,,,,auto-added from latest model data
 ไม่ระบุ,VOGUE GTS 517,VOGUE GTS 517,,pending,,,,auto-added from latest model data
-CHTC,HTK6600BEVK,HTK6600BEVK,,pending,,,,auto-added from latest model data
+CHTC,HTK6600BEVK,HTK6600BEVK,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 DEVA,HERCULES KMC1048D3,HERCULES KMC1048D3,,pending,,,,auto-added from latest model data
-JUST,J2-P,J2-P,,pending,,,,auto-added from latest model data
+JUST,J2-P,J2-P,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 MAN,TGL 12.250 4X2 BB CH,TGL 12.250 4X2 BB CH,,pending,,,,auto-added from latest model data
 MINE MOBILITY,MTS-MT30,MTS-MT30,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
-SHANGCH,ZQK5027XXYEV1R,ZQK5027XXYEV1R,,pending,,,,auto-added from latest model data
+SHANGCH,ZQK5027XXYEV1R,ZQK5027XXYEV1R,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 AUDI,A3 SALOON 35 TFSI,A3 SALOON 35 TFSI,,pending,,,,auto-added from latest model data
 AUDI,Q3 SPORTBACK 35 TFSI S LINE,Q3 SPORTBACK 35 TFSI S LINE,,pending,,,,auto-added from latest model data
 BMW,X1 xDrive30e,X1 xDrive30e,,pending,,,,auto-added from latest model data
 BMW,X4 xDrive20d,X4 xDrive20d,,pending,,,,auto-added from latest model data
-BMW,i4 eDrive35 Gran Coupe RH,i4 eDrive35 Gran Coupe RH,,pending,,,,auto-added from latest model data
+BMW,i4 eDrive35 Gran Coupe RH,i4 eDrive35 Gran Coupe RH,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 DODGE,RAM 1500,RAM 1500,,pending,,,,auto-added from latest model data
-FORD,MUSTANG MACH-E,MUSTANG MACH-E,,pending,,,,auto-added from latest model data
+FORD,MUSTANG MACH-E,MUSTANG MACH-E,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 HONDA,STEP WGN e-HEV AIR,STEP WGN e-HEV AIR,,pending,,,,auto-added from latest model data
 JAGUAR,XF 2.0 LITRE T/C RWD AUTO,XF 2.0 LITRE T/C RWD AUTO,,pending,,,,auto-added from latest model data
 LAMBORGHINI,HURACAN TECNICA,HURACAN TECNICA,,pending,,,,auto-added from latest model data
 MAZDA,ROADSTER BROWN TOP,ROADSTER BROWN TOP,,pending,,,,auto-added from latest model data
-POCCO,MM YX,MM YX,,pending,,,,auto-added from latest model data
+POCCO,MM YX,MM YX,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 PORSCHE,718 CAYMAN S,718 CAYMAN S,,pending,,,,auto-added from latest model data
 PORSCHE,911 CARRERA S COUPE 3.0,911 CARRERA S COUPE 3.0,,pending,,,,auto-added from latest model data
 PORSCHE,911 CARRERA T,911 CARRERA T,,pending,,,,auto-added from latest model data
@@ -6158,14 +6158,14 @@ TOYOTA,"HILUX TIGER C-CAB / 2L,P/S","HILUX TIGER C-CAB / 2L,P/S",,pending,,,,aut
 AION,AION Y PLUS,AION Y,BEV,approved,MarkLines: GAC officially launches Aion Y Plus EV in Thailand https://www.marklines.com/en/news/294310,Claude-Google-review,7/30/2026,auto-added from latest model data
 AUDI,RS 7 SB q performance,RS 7 SB q performance,,pending,,,,auto-added from latest model data
 BENTLEY,BENTAYGA AZURE HYBRID,BENTAYGA AZURE HYBRID,,pending,,,,auto-added from latest model data
-BLAVAL,EQ,EQ,,pending,,,,auto-added from latest model data
+BLAVAL,EQ,EQ,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 BMW,320Li,320Li,,pending,,,,auto-added from latest model data
 BMW,M2 Coupe RHD MX,M2 Coupe RHD MX,,pending,,,,auto-added from latest model data
 BMW,M3 Competition M xDrive T,M3 Competition M xDrive T,,pending,,,,auto-added from latest model data
 JAC,EVO-T8,EVO-T8,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 JAGUAR,XE 2.0L I4P PETROL RWD,XE 2.0L I4P PETROL RWD,,pending,,,,auto-added from latest model data
 KIA,EV6,EV6,BEV,approved,Official Kia page: dedicated E-GMP EV platform https://www.kia.com/us/en/ev6,Claude-Google-review,7/30/2026,auto-added from latest model data
-KYC,V5EV,V5EV,,pending,,,,auto-added from latest model data
+KYC,V5EV,V5EV,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 LAMBORGHINI,URUS S,URUS S,,pending,,,,auto-added from latest model data
 LAND ROVER,DEFENDER 110 D300 75TH LIMITED,DEFENDER 110 D300 75TH LIMITED,,pending,,,,auto-added from latest model data
 LAND ROVER,DEFENDER 90 75TH  LIMITED,DEFENDER 90 75TH  LIMITED,,pending,,,,auto-added from latest model data
@@ -6249,7 +6249,7 @@ DFM,EQ1020TF,EQ1020TF,,pending,,,,auto-added from latest model data
 HINO,FL8JT1A-SGT,FL8JT1A-SGT,,pending,,,,auto-added from latest model data
 VOLVO,VOLKAN M24,VOLKAN M24,,pending,,,,auto-added from latest model data
 Mercedes-Benz,GLC 350 e 4MATIC,GLC 350 e 4MATIC,,pending,,,,auto-added from latest model data
-AUDI,Q8 etron 55 q BE,Q8 etron 55 q BE,,pending,,,,auto-added from latest model data
+AUDI,Q8 etron 55 q BE,Q8 etron 55 q BE,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 AUDI,RS3 SPORTBACK,RS3 SPORTBACK,,pending,,,,auto-added from latest model data
 AUDI,TT RS Heritage Edition,TT RS Heritage Edition,,pending,,,,auto-added from latest model data
 BENTLEY,BENTAYGA EWB AZURE V8,BENTAYGA EWB AZURE V8,,pending,,,,auto-added from latest model data
@@ -6356,7 +6356,7 @@ BASSCAT,ไม่ระบุ,ไม่ระบุ,,pending,,,,auto-added from 
 GEORGE SMITH,ไม่ระบุ,ไม่ระบุ,,pending,,,,auto-added from latest model data
 VEXUS,ไม่ระบุ,ไม่ระบุ,,pending,,,,auto-added from latest model data
 ROSENBAUER,PANTHER 6X6,PANTHER 6X6,,pending,,,,auto-added from latest model data
-SKYWELL,T05,T05,,pending,,,,auto-added from latest model data
+SKYWELL,T05,T05,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 VOLVO,FM1164R49370AASI-TH,FM1164R49370AASI-TH,,pending,,,,auto-added from latest model data
 UD TRUCKS,PKE250HLRM,PKE250HLRM,,pending,,,,auto-added from latest model data
 NKT,G130,G130,,pending,,,,auto-added from latest model data
@@ -6367,8 +6367,8 @@ Mercedes-Benz,SL 55 4MATIC+,SL 55 4MATIC+,,pending,,,,auto-added from latest mod
 HONDA,N VAN TEN STYLE FUN,N VAN TEN STYLE FUN,,pending,,,,auto-added from latest model data
 JEEP,WRANGLER V6 3-DOOR,WRANGLER V6 3-DOOR,,pending,,,,auto-added from latest model data
 LAND ROVER,RANGE ROVER 4.4 LITRE  T/C,RANGE ROVER 4.4 LITRE  T/C,,pending,,,,auto-added from latest model data
-NEX,DYQ1030BEV1R-HE,DYQ1030BEV1R-HE,,pending,,,,auto-added from latest model data
-POCCO,DD K,DD K,,pending,,,,auto-added from latest model data
+NEX,DYQ1030BEV1R-HE,DYQ1030BEV1R-HE,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+POCCO,DD K,DD K,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 PORSCHE,911 GT3 WITH TOURING PACKAGE,911 GT3 WITH TOURING PACKAGE,,pending,,,,auto-added from latest model data
 PORSCHE,911 TECHART GT STREET R,911 TECHART GT STREET R,,pending,,,,auto-added from latest model data
 SUBARU,BRZ CUP CAR BASIC,BRZ CUP CAR BASIC,,pending,,,,auto-added from latest model data
@@ -6436,9 +6436,9 @@ DYNAPAC,CC142C2,CC142C2,,pending,,,,auto-added from latest model data
 ไม่ระบุ,CLASSIC DUETTE,CLASSIC DUETTE,,pending,,,,auto-added from latest model data
 ไม่ระบุ,HURRICANE EX2000,HURRICANE EX2000,,pending,,,,auto-added from latest model data
 ไม่ระบุ,PAGEANT MONARCH,PAGEANT MONARCH,,pending,,,,auto-added from latest model data
-JOYLONG,HKL6540RBEV,HKL6540RBEV,,pending,,,,auto-added from latest model data
-NEX,XML6593JEVJ0,XML6593JEVJ0,,pending,,,,auto-added from latest model data
-NEX,DYQ1031BEV1R,DYQ1031BEV1R,,pending,,,,auto-added from latest model data
+JOYLONG,HKL6540RBEV,HKL6540RBEV,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+NEX,XML6593JEVJ0,XML6593JEVJ0,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+NEX,DYQ1031BEV1R,DYQ1031BEV1R,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 TOYOTA,A-Cab 4x2 2.7J,A-Cab 4x2 2.7J,,pending,,,,auto-added from latest model data
 EVT,EV6,EV6,,pending,,,,auto-added from latest model data
 GWM,ORA 07,ORA 07,BEV,approved,https://www.headlightmag.com/2023-11-12-official-price-ora-07-special-deal/,antigravity-agent,7/30/2026,Reviewed in Batch 2
@@ -6448,10 +6448,10 @@ BENTLEY,FLYING SPUR MULLINER HYB,FLYING SPUR MULLINER HYB,,pending,,,,auto-added
 BMW,630I COUPE RHD,630I COUPE RHD,,pending,,,,auto-added from latest model data
 BMW,M8 Gran Coupe RHD,M8 Gran Coupe RHD,,pending,,,,auto-added from latest model data
 BMW,X5 xDrive50e RHD,X5 xDrive50e RHD,,pending,,,,auto-added from latest model data
-BMW,i5 M60 xDrive RHD,i5 M60 xDrive RHD,,pending,,,,auto-added from latest model data
-BMW,i5 eDrive40 RHD,i5 eDrive40 RHD,,pending,,,,auto-added from latest model data
+BMW,i5 M60 xDrive RHD,i5 M60 xDrive RHD,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+BMW,i5 eDrive40 RHD,i5 eDrive40 RHD,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 DAIHATSU,MOVE CANBUS,MOVE CANBUS,,pending,,,,auto-added from latest model data
-FIAT,500 ABARTH ELECTRIC HATCHBACK,500 ABARTH ELECTRIC HATCHBACK,,pending,,,,auto-added from latest model data
+FIAT,500 ABARTH ELECTRIC HATCHBACK,500 ABARTH ELECTRIC HATCHBACK,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 MANGIA,ไม่ระบุ,ไม่ระบุ,,pending,,,,auto-added from latest model data
 TOYOTA,ALPHARD 2.5S G PACKAGE,ALPHARD 2.5S G PACKAGE,,pending,,,,auto-added from latest model data
 TOYOTA,ALPHARD HYBRID Z,ALPHARD HYBRID Z,,pending,,,,auto-added from latest model data
@@ -6526,17 +6526,17 @@ ETAN4U,S-1000+4WD,S-1000+4WD,,pending,,,,auto-added from latest model data
 ไม่ระบุ,BEAT WAGON ALU 123X245 CM,BEAT WAGON ALU 123X245 CM,,pending,,,,auto-added from latest model data
 ไม่ระบุ,HOBBY,HOBBY,,pending,,,,auto-added from latest model data
 DAIHATSU,HIJET CARGO CRUISE TURBO,HIJET CARGO CRUISE TURBO,,pending,,,,auto-added from latest model data
-DFSK,DFSK EC31,DFSK EC31,,pending,,,,auto-added from latest model data
+DFSK,DFSK EC31,DFSK EC31,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 POER,SAHAR,SAHAR,,pending,,,,auto-added from latest model data
 SERES,EC31,EC31,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 HINO,FG1JGRD,FG1JGRD,,pending,,,,auto-added from latest model data
 Deepal + Changan,L07,L07,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 Deepal + Changan,S07,S07,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 AION,AION ES,AION ES,BEV,approved,Official GAC page: 'High-Quality Pure Electric Sedan' https://www.gacgroup.com/en/sedan/aion-es,Claude-Google-review,7/30/2026,auto-added from latest model data
-Mercedes-Benz,AMG EQE 53 4MATIC+,AMG EQE 53 4MATIC+,,pending,,,,auto-added from latest model data
+Mercedes-Benz,AMG EQE 53 4MATIC+,AMG EQE 53 4MATIC+,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 ASTON MARTIN,VANTAGE F1 COUPE,VANTAGE F1 COUPE,,pending,,,,auto-added from latest model data
 AUDI,A5,A5,,pending,,,,auto-added from latest model data
-AUDI,Q8 SB etron 55 q Sline BE,Q8 SB etron 55 q Sline BE,,pending,,,,auto-added from latest model data
+AUDI,Q8 SB etron 55 q Sline BE,Q8 SB etron 55 q Sline BE,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 AUDI,RS 4 Avant q competition,RS 4 Avant q competition,,pending,,,,auto-added from latest model data
 AUDI,RS 5 Coupe q competition,RS 5 Coupe q competition,,pending,,,,auto-added from latest model data
 BENTLEY,BENTAYGA ODYSSEAN EDITION,BENTAYGA ODYSSEAN EDITION,,pending,,,,auto-added from latest model data
@@ -6646,7 +6646,7 @@ GMC,YUKON XL,YUKON XL,,pending,,,,auto-added from latest model data
 HONDA,STEPWAGON e:HEV SPADA PREMIUM,STEPWAGON e:HEV SPADA PREMIUM,,pending,,,,auto-added from latest model data
 HYUNDAI,IONIQ5,IONIQ5,BEV,approved,HeadlightMag: Hyundai IONIQ 5 launch https://www.headlightmag.com/2023-11-29-official-price-hyundai-ioniq-5-thailand/,claude-code,8/7/2026,approved per user request
 JEEP,WRANGLER RUBICON V6 3-DOOR,WRANGLER RUBICON V6 3-DOOR,,pending,,,,auto-added from latest model data
-KINZAN,RHD620 EU COMFORT,RHD620 EU COMFORT,,pending,,,,auto-added from latest model data
+KINZAN,RHD620 EU COMFORT,RHD620 EU COMFORT,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 LOTUS,ELETRE R,ELETRE R,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 MASERATI,GRECALE MODENA,GRECALE MODENA,,pending,,,,auto-added from latest model data
 NEX,NPD,NPD,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
@@ -6712,7 +6712,7 @@ BECK,SPYDER,SPYDER,,pending,,,,auto-added from latest model data
 BMW,525d Celebration Edition,525d Celebration Edition,,pending,,,,auto-added from latest model data
 BMW,750e xDrive,750e xDrive,,pending,,,,auto-added from latest model data
 CATERHAM,SEVEN 420R,SEVEN 420R,,pending,,,,auto-added from latest model data
-FENGCHI,DYQ1030BEV1-H,DYQ1030BEV1-H,,pending,,,,auto-added from latest model data
+FENGCHI,DYQ1030BEV1-H,DYQ1030BEV1-H,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 FERRARI,PUROSANGUE,PUROSANGUE,,pending,,,,auto-added from latest model data
 HYUNDAI,SONATA2.4GLSEXECUTIV,SONATA2.4GLSEXECUTIV,,pending,,,,auto-added from latest model data
 LAMBORGHINI,AVENTADOR SVJ 63 COUPE,AVENTADOR SVJ 63 COUPE,,pending,,,,auto-added from latest model data
@@ -6722,7 +6722,7 @@ MITSUBISHI,XPANDER HEV,XPANDER HEV,,pending,,,,auto-added from latest model data
 NISSAN,VVLGRXND40UHG-P--3,VVLGRXND40UHG-P--3,,pending,,,,auto-added from latest model data
 PORSCHE,911 CARRERA T COUPE PDK,911 CARRERA T COUPE PDK,,pending,,,,auto-added from latest model data
 PORSCHE,911 DAKAR,911 DAKAR,,pending,,,,auto-added from latest model data
-ROLLS-ROYCE,Spectre,Spectre,,pending,,,,auto-added from latest model data
+ROLLS-ROYCE,Spectre,Spectre,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 SUZUKI,LANDY HYBRID G 2WD,LANDY HYBRID G 2WD,,pending,,,,auto-added from latest model data
 TOYOTA,ALPHARD 2.5 HYBRID SR SIDE,ALPHARD 2.5 HYBRID SR SIDE,,pending,,,,auto-added from latest model data
 TOYOTA,ALPHARD HYBRID Z 2.5L E-FOUR,ALPHARD HYBRID Z 2.5L E-FOUR,,pending,,,,auto-added from latest model data
@@ -6769,14 +6769,14 @@ INGERSOLL,DD130,DD130,,pending,,,,auto-added from latest model data
 KING TONI,FHR-2000C,FHR-2000C,,pending,,,,auto-added from latest model data
 DYNAPAC,CP201,CP201,,pending,,,,auto-added from latest model data
 SAKAI,SW770ND,SW770ND,,pending,,,,auto-added from latest model data
-KYC,X5EV,X5EV,,pending,,,,auto-added from latest model data
-NEX,DYQ1033BEV1R,DYQ1033BEV1R,,pending,,,,auto-added from latest model data
-NEXTEM,ORCA,ORCA,,pending,,,,auto-added from latest model data
+KYC,X5EV,X5EV,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+NEX,DYQ1033BEV1R,DYQ1033BEV1R,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+NEXTEM,ORCA,ORCA,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 HINO,XZU650R-HKMRLT3,XZU650R-HKMRLT3,,pending,,,,auto-added from latest model data
 VOLVO,FMX1364R56480ALHI-TH,FMX1364R56480ALHI-TH,,pending,,,,auto-added from latest model data
 TUKTUK,SD,SD,,pending,,,,auto-added from latest model data
 ABARTH,595 COMPETIZIONE,595 COMPETIZIONE,,pending,,,,auto-added from latest model data
-AIWAYS,U6,U6,,pending,,,,auto-added from latest model data
+AIWAYS,U6,U6,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 ALPINE,A110 S,A110 S,,pending,,,,auto-added from latest model data
 AUDI,A8 L TFSI E QUATTRO,A8 L TFSI E QUATTRO,,pending,,,,auto-added from latest model data
 AUDI,TT COUPE 2.0 TFSI,TT COUPE 2.0 TFSI,,pending,,,,auto-added from latest model data
@@ -6784,7 +6784,7 @@ BENTLEY,CONTINENTAL GTC AZURE V8,CONTINENTAL GTC AZURE V8,,pending,,,,auto-added
 BMW,520d M Sport Pro,520d M Sport Pro,,pending,,,,auto-added from latest model data
 BMW,530e M Sport Pro,530e M Sport Pro,,pending,,,,auto-added from latest model data
 BMW,M850i xDrive RHD,M850i xDrive RHD,,pending,,,,auto-added from latest model data
-HONDA,e:N1,e:N1,,pending,,,,auto-added from latest model data
+HONDA,e:N1,e:N1,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 JAGUAR,XF PRESTIGE 2.0 DIESEL,XF PRESTIGE 2.0 DIESEL,,pending,,,,auto-added from latest model data
 LAMBORGHINI,HURACAN STERRATO,HURACAN STERRATO,,pending,,,,auto-added from latest model data
 LEXUS,RX350H,RX350H,,pending,,,,auto-added from latest model data
@@ -6830,13 +6830,13 @@ Mercedes-Benz,GLS 450 d 4MATIC,GLS 450 d 4MATIC,,pending,,,,auto-added from late
 AUDI,A5 SB 40 TFSI S line eo,A5 SB 40 TFSI S line eo,,pending,,,,auto-added from latest model data
 AUDI,RS Q3 SB edition 10 years,RS Q3 SB edition 10 years,,pending,,,,auto-added from latest model data
 AUDI,S3 2.0 TFSI QUATTRO,S3 2.0 TFSI QUATTRO,,pending,,,,auto-added from latest model data
-BMW,iX2 xDrive30 RHD,iX2 xDrive30 RHD,,pending,,,,auto-added from latest model data
+BMW,iX2 xDrive30 RHD,iX2 xDrive30 RHD,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 HONDA,CIVIC TYPE R SPOON,CIVIC TYPE R SPOON,,pending,,,,auto-added from latest model data
 LAND ROVER,DEFENDER 3.0 LITRE T/C MHEV,DEFENDER 3.0 LITRE T/C MHEV,,pending,,,,auto-added from latest model data
 LEXUS,LC500 5.0 V8 CONVERTIBLE,LC500 5.0 V8 CONVERTIBLE,,pending,,,,auto-added from latest model data
 LEXUS,LM350H 2.5L,LM350H 2.5L,,pending,,,,auto-added from latest model data
 LOTUS,ELETRE S,ELETRE S,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
-MINI,ELECTRIC CONVERTIBLE,ELECTRIC CONVERTIBLE,,pending,,,,auto-added from latest model data
+MINI,ELECTRIC CONVERTIBLE,ELECTRIC CONVERTIBLE,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 PORSCHE,911 TARGA 4 GTS EDITION,911 TARGA 4 GTS EDITION,,pending,,,,auto-added from latest model data
 SUZUKI,HUSTLER HYBRID J STYLE II,HUSTLER HYBRID J STYLE II,,pending,,,,auto-added from latest model data
 TOYOTA,ALPHARD 2.5 HYBRID Z E-FOUR,ALPHARD 2.5 HYBRID Z E-FOUR,,pending,,,,auto-added from latest model data
@@ -6849,7 +6849,7 @@ TOYOTA,HARRIER S,HARRIER S,,pending,,,,auto-added from latest model data
 TOYOTA,LAND CRUISER 70 AX,LAND CRUISER 70 AX,,pending,,,,auto-added from latest model data
 VOLKSWAGEN,PASSAT ESTATE 2.0 TDI,PASSAT ESTATE 2.0 TDI,,pending,,,,auto-added from latest model data
 VOLVO,EX30,EX30,BEV,approved,google,P_pop,31/7/2569,auto-added from latest model data
-WEIAO BOMA,STANDARD,STANDARD,,pending,,,,auto-added from latest model data
+WEIAO BOMA,STANDARD,STANDARD,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 Deepal + Changan,LUMIN,LUMIN,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 SUZUKI,CIAZ GL 1.25L MT,CIAZ GL 1.25L MT,,pending,,,,auto-added from latest model data
 CHEVROLET,OPTRA,OPTRA,,pending,,,,auto-added from latest model data
@@ -6898,7 +6898,7 @@ KOMATSU,JV40CW-3,JV40CW-3,,pending,,,,auto-added from latest model data
 SUMITOMO,HW41VW-5,HW41VW-5,,pending,,,,auto-added from latest model data
 ไม่ระบุ,CCMC-F11-2A-FTL,CCMC-F11-2A-FTL,,pending,,,,auto-added from latest model data
 ไม่ระบุ,MTV-STL580,MTV-STL580,,pending,,,,auto-added from latest model data
-SKYWELL,BVCH1041,BVCH1041,,pending,,,,auto-added from latest model data
+SKYWELL,BVCH1041,BVCH1041,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 TKI,004EV TUK TUK,004EV TUK TUK,,pending,,,,auto-added from latest model data
 STRON,ไม่ระบุ,ไม่ระบุ,,pending,,,,auto-added from latest model data
 Mercedes-Benz,G400 D PROFESSIONAL,G400 D PROFESSIONAL,,pending,,,,auto-added from latest model data
@@ -6976,7 +6976,7 @@ HONDA,NSX TYPE S,NSX TYPE S,,pending,,,,auto-added from latest model data
 HONGQI,H9 2.0L,H9 2.0L,,pending,,,,auto-added from latest model data
 HYUNDAI,SANTA FE,SANTA FE,,pending,,,,auto-added from latest model data
 HYUNDAI,SANTA FE HYBRID,SANTA FE HYBRID,,pending,,,,auto-added from latest model data
-JIAYUAN,JY7252-ZQR,JY7252-ZQR,,pending,,,,auto-added from latest model data
+JIAYUAN,JY7252-ZQR,JY7252-ZQR,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 KIA,SORENTO,SORENTO,,pending,,,,auto-added from latest model data
 NETA,NETA V-II,NETA V-II,BEV,approved,"Official Neta Thailand: 'Introducing NETA V-II, a 100% electric city car' https://www.headlightmag.com/2024-03-26-official-price-neta-v-ll/",Claude-Google-review,7/30/2026,auto-added from latest model data
 NISSAN,SKYLINE R32 V-SPEC II N1,SKYLINE R32 V-SPEC II N1,,pending,,,,auto-added from latest model data
@@ -7056,7 +7056,7 @@ ETAN4U,PD-2000,PD-2000,,pending,,,,auto-added from latest model data
 ไม่ระบุ,LUNAR QUASAR,LUNAR QUASAR,,pending,,,,auto-added from latest model data
 ไม่ระบุ,CHARISMA 220,CHARISMA 220,,pending,,,,auto-added from latest model data
 TOYOTA,KDH202R-RDMDYE A1,KDH202R-RDMDYE A1,,pending,,,,auto-added from latest model data
-NEX,DYX1040,DYX1040,,pending,,,,auto-added from latest model data
+NEX,DYX1040,DYX1040,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 Deepal + Changan,LUMIN L DC,LUMIN,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 Mercedes-Benz,S 350D LWB SALOON,S 350D LWB SALOON,,pending,,,,auto-added from latest model data
 JEEP,COMPASS LIMITED,COMPASS LIMITED,,pending,,,,auto-added from latest model data
@@ -7071,9 +7071,9 @@ PORSCHE,911 CARRERA GTS CAB.,911 CARRERA GTS CAB.,,pending,,,,auto-added from la
 SUZUKI,SPACIA GEAR HYBRID MY STYLE,SPACIA GEAR HYBRID MY STYLE,,pending,,,,auto-added from latest model data
 TOYOTA,GR YARIS RALLYE,GR YARIS RALLYE,,pending,,,,auto-added from latest model data
 VOLKSWAGEN,ID BUZZ FIRST EDITION,ID BUZZ FIRST EDITION,,pending,,,,auto-added from latest model data
-VOLVO,EC40,EC40,,pending,,,,auto-added from latest model data
-VOLVO,EX40,EX40,,pending,,,,auto-added from latest model data
-XEV,YOYO PLUS,YOYO PLUS,,pending,,,,auto-added from latest model data
+VOLVO,EC40,EC40,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+VOLVO,EX40,EX40,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+XEV,YOYO PLUS,YOYO PLUS,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 WULING,Bingou SRD,Bingou,BEV,approved,https://autolifethailand.tv/official-price-wuling-binguo-ev-thailand-assembly/,claude-code,8/7/2026,approved per user request
 TOYOTA,LAND CRUISER 250 ZX FIRST,LAND CRUISER 250 ZX FIRST,,pending,,,,auto-added from latest model data
 BMW,K 1600 GTL,K 1600 GTL,,pending,,,,auto-added from latest model data
@@ -7134,7 +7134,7 @@ Mercedes-Benz,G500 4X4 SQUARED,G500 4X4 SQUARED,,pending,,,,auto-added from late
 BMW,ALPINA B5 TOURING,ALPINA B5 TOURING,,pending,,,,auto-added from latest model data
 BMW,X1 xDrive30e M Sport,X1 xDrive30e M Sport,,pending,,,,auto-added from latest model data
 HONDA,CR-V'16,CR-V'16,,pending,,,,auto-added from latest model data
-KEYTON,M70L EV,M70L EV,,pending,,,,auto-added from latest model data
+KEYTON,M70L EV,M70L EV,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 LAND ROVER,DEFENDER WORKS V8 TROPHY,DEFENDER WORKS V8 TROPHY,,pending,,,,auto-added from latest model data
 LAND ROVER,RANGE ROVER VELAR 2.0 LITRE,RANGE ROVER VELAR 2.0 LITRE,,pending,,,,auto-added from latest model data
 LEXUS,LX 500D,LX 500D,,pending,,,,auto-added from latest model data
@@ -7279,10 +7279,10 @@ JAC,HFC1040EV3,HFC1040EV3,BEV,approved,Reconciled against the fuel grain: this b
 TOYOTA,GUN120R-CTTSXT,GUN120R-CTTSXT,,pending,,,,auto-added from latest model data
 UD TRUCKS,CWE08N43R350SS9,CWE08N43R350SS9,,pending,,,,auto-added from latest model data
 PANTHERA,TL,TL,,pending,,,,auto-added from latest model data
-LEVC,TX5,TX5,,pending,,,,auto-added from latest model data
+LEVC,TX5,TX5,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 AION,HYPTEC HT 620 LUXURY,HYPTEC HT,BEV,approved,https://www.headlightmag.com/2024-09-19-official-price-aion-hyptec-ht/,antigravity-agent,7/30/2026,Reviewed in Batch 2
 AION,HYPTEC HT 620 PREMIUM,HYPTEC HT,BEV,approved,https://www.headlightmag.com/2024-09-19-official-price-aion-hyptec-ht/,antigravity-agent,7/30/2026,Reviewed in Batch 2
-AUDI,Q8 e-tron 50 q,Q8 e-tron 50 q,,pending,,,,auto-added from latest model data
+AUDI,Q8 e-tron 50 q,Q8 e-tron 50 q,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 BENTLEY,CONTINENTAL GTC S V8,CONTINENTAL GTC S V8,,pending,,,,auto-added from latest model data
 BMW,430D CONVERTIBLE Mild-hybrid,430D CONVERTIBLE Mild-hybrid,,pending,,,,auto-added from latest model data
 BMW,ALPINA B3 S BI-TURBO TOURING,ALPINA B3 S BI-TURBO TOURING,,pending,,,,auto-added from latest model data
@@ -7405,8 +7405,8 @@ BOMAG,BW226 DH-5,BW226 DH-5,,pending,,,,auto-added from latest model data
 ไม่ระบุ,CHALLENGER 530,CHALLENGER 530,,pending,,,,auto-added from latest model data
 ไม่ระบุ,CONQUEROR 630,CONQUEROR 630,,pending,,,,auto-added from latest model data
 ไม่ระบุ,PEGASUS GT65,PEGASUS GT65,,pending,,,,auto-added from latest model data
-DAE,HYK1020BEYO2,HYK1020BEYO2,,pending,,,,auto-added from latest model data
-NEOMOR,D01,D01,,pending,,,,auto-added from latest model data
+DAE,HYK1020BEYO2,HYK1020BEYO2,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+NEOMOR,D01,D01,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 MITSUBISHI,K14TUNSRUX,K14TUNSRUX,,pending,,,,auto-added from latest model data
 YUCHAI,NZ5162GSS,NZ5162GSS,,pending,,,,auto-added from latest model data
 AION,AION V 602 LUXURY,AION V,BEV,approved,"paultan.org: GAC Aion V EV SUV, 204 PS, 75kWh LFP https://paultan.org/2024/11/11/gac-aion-v-open-for-booking-in-thailand-ev-suv-with-204-ps-up-to-602-km-range-below-rm141k/",Claude-Google-review,7/30/2026,auto-added from latest model data
@@ -7415,7 +7415,7 @@ BENTLEY,FLYING SPUR A HYBRID,FLYING SPUR A HYBRID,,pending,,,,auto-added from la
 DENZA,DENZA D9 AWD,DENZA D9,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 DENZA,DENZA D9 FWD,DENZA D9,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 FORD,MUSTANG 2.3L ECOBOOST PREMIUM,MUSTANG 2.3L ECOBOOST PREMIUM,,pending,,,,auto-added from latest model data
-HYUNDAI,GENESIS G80 EV,GENESIS G80 EV,,pending,,,,auto-added from latest model data
+HYUNDAI,GENESIS G80 EV,GENESIS G80 EV,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 LAND ROVER,DEFENDER 110 FIRST EDITION,DEFENDER 110 FIRST EDITION,,pending,,,,auto-added from latest model data
 LAND ROVER,RANGE ROVER P440E PHEV,RANGE ROVER P440E PHEV,,pending,,,,auto-added from latest model data
 LAND ROVER,RANGE ROVER SV P615 LWB,RANGE ROVER SV P615 LWB,,pending,,,,auto-added from latest model data
@@ -7434,7 +7434,7 @@ TOYOTA,LAND CRUISER 71 HARDTOP 4.0L,LAND CRUISER 71 HARDTOP 4.0L,,pending,,,,aut
 TOYOTA,LAND CRUISER GX 3.5L,LAND CRUISER GX 3.5L,,pending,,,,auto-added from latest model data
 WULING,Binguo SRDTH,Bingou,BEV,approved,https://autolifethailand.tv/official-price-wuling-binguo-ev-thailand-assembly/,antigravity-agent,7/30/2026,Reviewed in Batch 2
 JAGUAR,F-PACE 5.0L S/C PETROL AWD,F-PACE 5.0L S/C PETROL AWD,,pending,,,,auto-added from latest model data
-AUDI,Q8 SB e-tron 50 q S line,Q8 SB e-tron 50 q S line,,pending,,,,auto-added from latest model data
+AUDI,Q8 SB e-tron 50 q S line,Q8 SB e-tron 50 q S line,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 Mercedes-Benz,G 450 D AMG-Line,G 450 D AMG-Line,,pending,,,,auto-added from latest model data
 Star8,GOGO,GOGO,,pending,,,,auto-added from latest model data
 BMW,F 900 GS,F 900 GS,,pending,,,,auto-added from latest model data
@@ -7482,7 +7482,7 @@ TOYOTA,COMUTER,COMUTER,,pending,,,,auto-added from latest model data
 VOLKSWAGEN,CARAVELLE 2.0 L,CARAVELLE 2.0 L,,pending,,,,auto-added from latest model data
 TOYOTA,TR TRANSFORMER MAXI,TR TRANSFORMER MAXI,,pending,,,,auto-added from latest model data
 CHASE,ARFF 60/60-6+P250,ARFF 60/60-6+P250,,pending,,,,auto-added from latest model data
-SOKON,EC31,EC31,,pending,,,,auto-added from latest model data
+SOKON,EC31,EC31,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 UD TRUCKS,CWE08N43R350CSS9,CWE08N43R350CSS9,,pending,,,,auto-added from latest model data
 MAN,TGS 33.480 6x4 BB CH,TGS 33.480 6x4 BB CH,,pending,,,,auto-added from latest model data
 Deepal + Changan,E07 PERFORMANCE AWD,E07,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
@@ -7490,7 +7490,7 @@ Deepal + Changan,E07 PLUS,E07,BEV,approved,Reconciled against the fuel grain: th
 Mercedes-Benz,C 200 SEDAN,C 200 SEDAN,,pending,,,,auto-added from latest model data
 Mercedes-Benz,G400 D PROFESSIONAL EDITION,G400 D PROFESSIONAL EDITION,,pending,,,,auto-added from latest model data
 Mercedes-Benz,V 300 d,V 300 d,,pending,,,,auto-added from latest model data
-ABARTH,500e,500e,,pending,,,,auto-added from latest model data
+ABARTH,500e,500e,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 BENTLEY,CONTINENTAL GT AZURE V8,CONTINENTAL GT AZURE V8,,pending,,,,auto-added from latest model data
 BMW,220I COUPE RHD,220I COUPE RHD,,pending,,,,auto-added from latest model data
 BYD,BYD SEALION 6 DM-i DYNAMIC,BYD SEALION 6,PHEV,approved,https://www.reverautomotive.com/en/model/sealion6_dm-i/tech-spec,antigravity-agent,7/30/2026,Reviewed in Batch 2
@@ -7500,7 +7500,7 @@ LEXUS,GX550,GX550,,pending,,,,auto-added from latest model data
 MCLAREN,ARTURA COUPE,ARTURA COUPE,,pending,,,,auto-added from latest model data
 MINI,Countryman S ALL4,Countryman S ALL4,ICE,rejected,Fuel-grain reconciliation: MINI BEV units are reproduced exactly by Cooper SE / Aceman SE / Countryman SE / JCW E / JCW Aceman E in all 12 months to Aug 2569; this trim sits in the petrol remainder. Flagged only by first-token similarity to an approved BEV name.,claude-code,9/6/2026,rejected per user review - petrol trim; false match on shared first token
 PORSCHE,911 CARRERA 4 GTS CABRIOLET,911 CARRERA 4 GTS CABRIOLET,,pending,,,,auto-added from latest model data
-PORSCHE,MACAN 4,MACAN 4,,pending,,,,auto-added from latest model data
+PORSCHE,MACAN 4,MACAN 4,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 RIDDARA,RD6 2WD,RD6,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 SUBARU,WRX S4 STI SPORT R EX AWD,WRX S4 STI SPORT R EX AWD,,pending,,,,auto-added from latest model data
 TOYOTA,CROWN 2.5L SPORT Z HYBRID,CROWN 2.5L SPORT Z HYBRID,,pending,,,,auto-added from latest model data
@@ -7537,12 +7537,12 @@ DYNAPAC,F1250CS,F1250CS,,pending,,,,auto-added from latest model data
 HAMM,HD 13 VV,HD 13 VV,,pending,,,,auto-added from latest model data
 BOMAG,BW225-3,BW225-3,,pending,,,,auto-added from latest model data
 ไม่ระบุ,MERLIN61,MERLIN61,,pending,,,,auto-added from latest model data
-HIGER,H5F EV CARGO,H5F EV CARGO,,pending,,,,auto-added from latest model data
+HIGER,H5F EV CARGO,H5F EV CARGO,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 VOLVO,FMX1364R56420CLHI,FMX1364R56420CLHI,,pending,,,,auto-added from latest model data
 JUNEYAO,JY AIR Standard,JY AIR,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 Mercedes-Benz,E300 AMG LINE CONVERTIBLE,E300 AMG LINE CONVERTIBLE,,pending,,,,auto-added from latest model data
 BENTLEY,BENTAYGA A V8,BENTAYGA A V8,,pending,,,,auto-added from latest model data
-BMW,i5 eDrive40 Touring RHD,i5 eDrive40 Touring RHD,,pending,,,,auto-added from latest model data
+BMW,i5 eDrive40 Touring RHD,i5 eDrive40 Touring RHD,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 BYD,BYD SEALION 6,BYD SEALION 6,ambiguous,ambiguous,Model family contains both PHEV and BEV variants globally; unresolved generic nameplate.,antigravity-agent,7/30/2026,Reviewed in Batch 2
 FORD,MUSTANG DARK HORSE,MUSTANG DARK HORSE,,pending,,,,auto-added from latest model data
 JAECOO,ไม่ระบุ,ไม่ระบุ,,pending,,,,auto-added from latest model data
@@ -7612,25 +7612,25 @@ GWM,POER,POER,,pending,,,,auto-added from latest model data
 VOLVO,FM1342R52420CLSI (EURO 5) CBU,FM1342R52420CLSI (EURO 5) CBU,,pending,,,,auto-added from latest model data
 VOLVO,FM1364R49420CLSI-TH,FM1364R49420CLSI-TH,,pending,,,,auto-added from latest model data
 GWM,GRAND CAT,ORA 07,BEV,approved,https://www.headlightmag.com/2023-11-12-official-price-ora-07-special-deal/,antigravity-agent,7/30/2026,Reviewed in Batch 2
-Mercedes-Benz,G 580,G 580,,pending,,,,auto-added from latest model data
+Mercedes-Benz,G 580,G 580,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 Mercedes-Benz,MAYBACH GLS600,MAYBACH GLS600,,pending,,,,auto-added from latest model data
 AUDI,Q8 TFSI e q S line edition one,Q8 TFSI e q S line edition one,,pending,,,,auto-added from latest model data
 AUDI,R8 SPYDER V10,R8 SPYDER V10,,pending,,,,auto-added from latest model data
 BMW,M4 COMPETITION COUPE WITH M,M4 COMPETITION COUPE WITH M,,pending,,,,auto-added from latest model data
 BMW,X3 20d xDrive M Sport Pro,X3 20d xDrive M Sport Pro,,pending,,,,auto-added from latest model data
-BMW,i7 M70 xDrive RHD,i7 M70 xDrive RHD,,pending,,,,auto-added from latest model data
-FOTON,E-TUNLAND,E-TUNLAND,,pending,,,,auto-added from latest model data
+BMW,i7 M70 xDrive RHD,i7 M70 xDrive RHD,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+FOTON,E-TUNLAND,E-TUNLAND,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 GEELY,EX5,EX5,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 HONDA,N-BOX CUSTOM TURBO,N-BOX CUSTOM TURBO,,pending,,,,auto-added from latest model data
 LOTUS,EMEYA R,EMEYA R,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 LOTUS,EMIRA I4 FIRST EDITION,EMIRA I4 FIRST EDITION,,pending,,,,auto-added from latest model data
-PORSCHE,MACAN 4 ELECTRIC,MACAN 4 ELECTRIC,,pending,,,,auto-added from latest model data
-PORSCHE,MACAN TURBO,MACAN TURBO,,pending,,,,auto-added from latest model data
+PORSCHE,MACAN 4 ELECTRIC,MACAN 4 ELECTRIC,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+PORSCHE,MACAN TURBO,MACAN TURBO,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 TOYOTA,CROWN Z,CROWN Z,,pending,,,,auto-added from latest model data
 TOYOTA,LAND CRUISER 300 SAHARA ZX,LAND CRUISER 300 SAHARA ZX,,pending,,,,auto-added from latest model data
 TOYOTA,VELLFIRE HYBRID Z E-FOUR,VELLFIRE HYBRID Z E-FOUR,,pending,,,,auto-added from latest model data
-VOLVO,EX90,EX90,,pending,,,,auto-added from latest model data
-XIAOMI,SU7 MAX,SU7 MAX,,pending,,,,auto-added from latest model data
+VOLVO,EX90,EX90,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+XIAOMI,SU7 MAX,SU7 MAX,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 AJ,GODDESS,GODDESS,,pending,,,,auto-added from latest model data
 BMW,R 18 B,R 18 B,,pending,,,,auto-added from latest model data
 DUCATI,Panigale V4 Replica Bagnaia,Panigale V4 Replica Bagnaia,,pending,,,,auto-added from latest model data
@@ -7670,9 +7670,9 @@ MYZG,ZL953,ZL953,,pending,,,,auto-added from latest model data
 ETAN4U,ET-500 4WD,ET-500 4WD,,pending,,,,auto-added from latest model data
 ไม่ระบุ,BEAT BOX 140X258 CM,BEAT BOX 140X258 CM,,pending,,,,auto-added from latest model data
 ไม่ระบุ,STERLING BELVOIR,STERLING BELVOIR,,pending,,,,auto-added from latest model data
-FOTON,E-VIEW CS2 PASSENGER,E-VIEW CS2 PASSENGER,,pending,,,,auto-added from latest model data
+FOTON,E-VIEW CS2 PASSENGER,E-VIEW CS2 PASSENGER,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 FOTON,BJ1044V9JB3-R1,BJ1044V9JB3-R1,,pending,,,,auto-added from latest model data
-FOTON,E-VIEW CS2 CARGO,E-VIEW CS2 CARGO,,pending,,,,auto-added from latest model data
+FOTON,E-VIEW CS2 CARGO,E-VIEW CS2 CARGO,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 VOLVO,FM1364R52420CLSI,FM1364R52420CLSI,,pending,,,,auto-added from latest model data
 SAGASONIC,SA-31,SA-31,,pending,,,,auto-added from latest model data
 GWM,GWM TANK 300,GWM TANK 300,,pending,,,,auto-added from latest model data
@@ -7686,13 +7686,13 @@ BMW,X3 M50 xDrive,X3 M50 xDrive,,pending,,,,auto-added from latest model data
 CHEVROLET,CORVETTE Z06,CORVETTE Z06,,pending,,,,auto-added from latest model data
 DAIHATSU,MOVE CANBUS THEORY G,MOVE CANBUS THEORY G,,pending,,,,auto-added from latest model data
 FERRARI,812 COMPETIZIONE A,812 COMPETIZIONE A,,pending,,,,auto-added from latest model data
-GEELY,GALAXY E5,GALAXY E5,,pending,,,,auto-added from latest model data
+GEELY,GALAXY E5,GALAXY E5,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 HONDA,CR-V'14,CR-V'14,,pending,,,,auto-added from latest model data
 HONDA,N-BOX JOY TURBO,N-BOX JOY TURBO,,pending,,,,auto-added from latest model data
 HYUNDAI,ELANTRA N,ELANTRA N,,pending,,,,auto-added from latest model data
 LAMBORGHINI,URUS PERFORMANTE V8,URUS PERFORMANTE V8,,pending,,,,auto-added from latest model data
 LAND ROVER,RANGE ROVER P460E PHEV,RANGE ROVER P460E PHEV,,pending,,,,auto-added from latest model data
-MASERATI,GRECALE FOLGORE,GRECALE FOLGORE,,pending,,,,auto-added from latest model data
+MASERATI,GRECALE FOLGORE,GRECALE FOLGORE,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 MAZDA,MX-5,MX-5,,pending,,,,auto-added from latest model data
 MAZDA,ROADSTER RF 35TH ANNIVERSARY,ROADSTER RF 35TH ANNIVERSARY,,pending,,,,auto-added from latest model data
 MINI,JCW Aceman E,JCW Aceman E,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
@@ -7700,7 +7700,7 @@ MINI,JCW E,JCW E,BEV,approved,Reconciled against the fuel grain: this brand's BE
 MITSUBISHI,XFORCE HEV,XFORCE HEV,,pending,,,,auto-added from latest model data
 NISSAN,SERENA e-POWER,SERENA e-POWER,,pending,,,,auto-added from latest model data
 PORSCHE,PANAMERA S HYBRID,PANAMERA S HYBRID,,pending,,,,auto-added from latest model data
-PORSCHE,TAYCAN TURBO GT,TAYCAN TURBO GT,,pending,,,,auto-added from latest model data
+PORSCHE,TAYCAN TURBO GT,TAYCAN TURBO GT,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 TOYOTA,1.6G,1.6G,,pending,,,,auto-added from latest model data
 TOYOTA,CENTURY 5.0L,CENTURY 5.0L,,pending,,,,auto-added from latest model data
 TOYOTA,CROWN HYBRID SPORT Z,CROWN HYBRID SPORT Z,,pending,,,,auto-added from latest model data
@@ -7762,17 +7762,17 @@ FAW,CA1040P40K50E5A84,CA1040P40K50E5A84,,pending,,,,auto-added from latest model
 TOYOTA,"HILUX TIGER B-CAB / 2L,P/S","HILUX TIGER B-CAB / 2L,P/S",,pending,,,,auto-added from latest model data
 UD TRUCKS,CWE11N43R410CSSI,CWE11N43R410CSSI,,pending,,,,auto-added from latest model data
 UD TRUCKS,CWE11N43R370CSS9,CWE11N43R370CSS9,,pending,,,,auto-added from latest model data
-CHENGLONG,LZ5180XXYM3AZBEV12T,LZ5180XXYM3AZBEV12T,,pending,,,,auto-added from latest model data
+CHENGLONG,LZ5180XXYM3AZBEV12T,LZ5180XXYM3AZBEV12T,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 MG,S5 EV,S5 EV,BEV,approved,"MarkLines: BIMS 2025 MG S5 EV launched in Thailand, locally assembled https://www.marklines.com/en/news/323891",Claude-Google-review,7/30/2026,auto-added from latest model data
 GWM,H6 HYBRID,H6 HYBRID,,pending,,,,auto-added from latest model data
 BENTLEY,FLYING SPUR HYBRID S,FLYING SPUR HYBRID S,,pending,,,,auto-added from latest model data
-BMW,iX xDrive50,iX xDrive50,,pending,,,,auto-added from latest model data
+BMW,iX xDrive50,iX xDrive50,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 JEEP,RENEGADE SUMMIT E-HYBRID MHEV,RENEGADE SUMMIT E-HYBRID MHEV,,pending,,,,auto-added from latest model data
 LAND ROVER,DEFENDER 4.4 LITRE T/C PETROL,DEFENDER 4.4 LITRE T/C PETROL,,pending,,,,auto-added from latest model data
 MCLAREN,ARTURA SPIDER,ARTURA SPIDER,,pending,,,,auto-added from latest model data
 MG,IM6,IM6,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 MINI,Cooper S Convertible RHD,Cooper S Convertible RHD,ICE,rejected,Fuel-grain cross-check: MINI models named SE/E account for exactly the BEV units in all 12 months to Aug 2569 while this trim sits in the petrol remainder. MINI Thailand lineup: https://www.mini.co.th/en_TH/home/serv/special-offers/the_new_mini_family.html,claude-code,9/4/2026,rejected per user review - petrol trim; false match on shared first token Cooper
-STELATO,S9,S9,,pending,,,,auto-added from latest model data
+STELATO,S9,S9,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 SUZUKI,JIMNY ALPHA 4WD,JIMNY ALPHA 4WD,,pending,,,,auto-added from latest model data
 TOYOTA,ALPHARD HYBRID Z EXECUTIVE,ALPHARD HYBRID Z EXECUTIVE,,pending,,,,auto-added from latest model data
 TOYOTA,CROWN Z 2.5L,CROWN Z 2.5L,,pending,,,,auto-added from latest model data
@@ -7865,12 +7865,12 @@ AION,AION UT 500 PREMIUM,AION UT,BEV,approved,thedriven.io: GAC opens orders for
 Mercedes-Benz,CLS 250 CDI BE COUPE,CLS 250 CDI BE COUPE,,pending,,,,auto-added from latest model data
 AUDI,A5 CP 45 TFSI q S line eo,A5 CP 45 TFSI q S line eo,,pending,,,,auto-added from latest model data
 BMW,X7 M60i xDrive,X7 M60i xDrive,,pending,,,,auto-added from latest model data
-CHERY,EQ1,EQ1,,pending,,,,auto-added from latest model data
+CHERY,EQ1,EQ1,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 CHEVROLET,CAMARO COUPE,CAMARO COUPE,,pending,,,,auto-added from latest model data
-DONGFENG,S73,S73,,pending,,,,auto-added from latest model data
+DONGFENG,S73,S73,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 HONDA,N BOX CUSTOM,N BOX CUSTOM,,pending,,,,auto-added from latest model data
 JAECOO,7 SHS Max,7 SHS Max,,pending,,,,auto-added from latest model data
-JIAYUAN,JY7222-ZQR,JY7222-ZQR,,pending,,,,auto-added from latest model data
+JIAYUAN,JY7222-ZQR,JY7222-ZQR,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 MAZDA,CX-3,CX-3,,pending,,,,auto-added from latest model data
 RIDDARA,HORIZON PRO 4WD SUNROOF,HORIZON,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 RIDDARA,RD6 86KWH 2WD,RD6,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
@@ -7926,18 +7926,18 @@ MITSUBISHI,MR20,MR20,,pending,,,,auto-added from latest model data
 SAKAI,SW652ND,SW652ND,,pending,,,,auto-added from latest model data
 ไม่ระบุ,BEAT BOX 150X300 CM,BEAT BOX 150X300 CM,,pending,,,,auto-added from latest model data
 BAILEY,SENATOR,SENATOR,,pending,,,,auto-added from latest model data
-KAMA,ESP7,ESP7,,pending,,,,auto-added from latest model data
-JIAYUAN,JY1320-ZLH,JY1320-ZLH,,pending,,,,auto-added from latest model data
+KAMA,ESP7,ESP7,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+JIAYUAN,JY1320-ZLH,JY1320-ZLH,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 KING LONG,VENUS 3,VENUS 3,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 SCANIA,P 420 B6X4NZ,P 420 B6X4NZ,,pending,,,,auto-added from latest model data
 TKI,003EV TUK TUK SCT,003EV TUK TUK SCT,,pending,,,,auto-added from latest model data
 AION,AION UT 420 STANDARD,AION UT,BEV,approved,thedriven.io: GAC opens orders for Aion UT electric hatchback https://thedriven.io/2026/03/13/gac-opens-orders-for-aion-ut-electric-hatchback-with-initial-driveway-price-under-31000/,Claude-Google-review,7/30/2026,auto-added from latest model data
 Deepal + Changan,S05 REEV MAX,S05 REEV,,pending,,,,auto-added from latest model data
 GWM,GWM TANK 500,GWM TANK 500,,pending,,,,auto-added from latest model data
-ZX Auto,FP3A,FP3A,,pending,,,,auto-added from latest model data
-DONGFENG,NAMMI 06,NAMMI 06,,pending,,,,auto-added from latest model data
+ZX Auto,FP3A,FP3A,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+DONGFENG,NAMMI 06,NAMMI 06,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 JAC,T8EV,T8EV,BEV,approved,https://www.springnews.co.th/digital-tech/auto/836706,antigravity-agent,7/30/2026,Reviewed in Batch 2
-MAXUS,MIFA9,MIFA9,,pending,,,,auto-added from latest model data
+MAXUS,MIFA9,MIFA9,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 PORSCHE,911 TURBO 50 YEARS,911 TURBO 50 YEARS,,pending,,,,auto-added from latest model data
 SUZUKI,FRONX 1.5L,FRONX 1.5L,,pending,,,,auto-added from latest model data
 ASTON MARTIN,DBS SUPERLEGGERA COUPE,DBS SUPERLEGGERA COUPE,,pending,,,,auto-added from latest model data
@@ -7983,9 +7983,9 @@ DYNAPAC,CC1300,CC1300,,pending,,,,auto-added from latest model data
 SAKAI,SW654,SW654,,pending,,,,auto-added from latest model data
 SAKAI,SV521T,SV521T,,pending,,,,auto-added from latest model data
 BAILEY,ไม่ระบุ,ไม่ระบุ,,pending,,,,auto-added from latest model data
-EVT,E-VAN,E-VAN,,pending,,,,auto-added from latest model data
-ZX Auto,FP3B,FP3B,,pending,,,,auto-added from latest model data
-WULING,E10,E10,,pending,,,,auto-added from latest model data
+EVT,E-VAN,E-VAN,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+ZX Auto,FP3B,FP3B,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+WULING,E10,E10,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 DAIHATSU,HIJET TRUCK JUMBO 4WD,HIJET TRUCK JUMBO 4WD,,pending,,,,auto-added from latest model data
 AION,M8 PHEV PREMIUM,M8,,pending,,,,auto-added from latest model data
 Mercedes-Benz,MERCEDES-AMG CLE 53,MERCEDES-AMG CLE 53,,pending,,,,auto-added from latest model data
@@ -7995,7 +7995,7 @@ BMW,220 Gran Coupe M Sport Pr,220 Gran Coupe M Sport Pr,,pending,,,,auto-added f
 BMW,328I M SPORT,328I M SPORT,,pending,,,,auto-added from latest model data
 BMW,840I M SPORT COUPE,840I M SPORT COUPE,,pending,,,,auto-added from latest model data
 BMW,X3 20d xDrive RHD,X3 20d xDrive RHD,,pending,,,,auto-added from latest model data
-BMW,iX1 eDrive20L,iX1 eDrive20L,,pending,,,,auto-added from latest model data
+BMW,iX1 eDrive20L,iX1 eDrive20L,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 BYD,BYD SEAL U (DMI-PREMIUM),BYD SEAL U,PHEV,approved,https://autolifethailand.tv/photo-byd-sealion6-phev-dmi-thailand-spec/,antigravity-agent,7/30/2026,Reviewed in Batch 2; model2 corrected from BYD SEAL to BYD SEAL U
 BYD,BYD SEAL 5 DM-i PREMIUM,BYD SEAL 5 DM-i,PHEV,approved,https://www.reverautomotive.com/en/model/seal5-dm-i/tech-spec,antigravity-agent,7/30/2026,Reviewed in Batch 2
 FERRARI,SF90 XX STRADALE,SF90 XX STRADALE,,pending,,,,auto-added from latest model data
@@ -8005,7 +8005,7 @@ NISSAN,FAIRLADY Z NISMO,FAIRLADY Z NISMO,,pending,,,,auto-added from latest mode
 NISSAN,SKYLINE GT-R NISMO,SKYLINE GT-R NISMO,,pending,,,,auto-added from latest model data
 PORSCHE,911 CARRERA TURBO S,911 CARRERA TURBO S,,pending,,,,auto-added from latest model data
 PORSCHE,911 TURBO 50 YEARS ANV,911 TURBO 50 YEARS ANV,,pending,,,,auto-added from latest model data
-PORSCHE,MACAN 4S,MACAN 4S,,pending,,,,auto-added from latest model data
+PORSCHE,MACAN 4S,MACAN 4S,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 ROVER,MINI,MINI,,pending,,,,auto-added from latest model data
 SUBARU,FORESTER 2.5i-S AWD CVT,FORESTER 2.5i-S AWD CVT,,pending,,,,auto-added from latest model data
 TOYOTA,CROWN SPORT RS,CROWN SPORT RS,,pending,,,,auto-added from latest model data
@@ -8063,10 +8063,10 @@ TOYOTA,GUN135R-CTFHXT,GUN135R-CTFHXT,,pending,,,,auto-added from latest model da
 ROSENBAUER,AERIAL LADDER L64P,AERIAL LADDER L64P,,pending,,,,auto-added from latest model data
 Mercedes-Benz,MERCEDES-AMG GLE 53,MERCEDES-AMG GLE 53,,pending,,,,auto-added from latest model data
 AUDI,RS Q8 quattro performance,RS Q8 quattro performance,,pending,,,,auto-added from latest model data
-AXION,T5,T5,,pending,,,,auto-added from latest model data
+AXION,T5,T5,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 BENTLEY,GT SPEED CONVERTIBLE,GT SPEED CONVERTIBLE,,pending,,,,auto-added from latest model data
 DAIHATSU,ATRAI RS 2WD,ATRAI RS 2WD,,pending,,,,auto-added from latest model data
-GMC,HUMMER EV2X,HUMMER EV2X,,pending,,,,auto-added from latest model data
+GMC,HUMMER EV2X,HUMMER EV2X,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 HONDA,S660 BETA,S660 BETA,,pending,,,,auto-added from latest model data
 HYUNDAI,IONIQ HEV,IONIQ HEV,,pending,,,,auto-added from latest model data
 JAC,T9EV,T9EV,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
@@ -8078,7 +8078,7 @@ TOYOTA,ROOMY CUSTOM GT,ROOMY CUSTOM GT,,pending,,,,auto-added from latest model 
 TOYOTA,SIENTA HYBRID G 2WD,SIENTA HYBRID G 2WD,,pending,,,,auto-added from latest model data
 VOLKSWAGEN,TIGUAN ALLSPACE ESTATE 1.5 TSI,TIGUAN ALLSPACE ESTATE 1.5 TSI,,pending,,,,auto-added from latest model data
 VOLKSWAGEN,TIGUAN LIFE 2.0 TDI,TIGUAN LIFE 2.0 TDI,,pending,,,,auto-added from latest model data
-XEV,YOYO PRO,YOYO PRO,,pending,,,,auto-added from latest model data
+XEV,YOYO PRO,YOYO PRO,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 Mercedes-Benz,G450 D AMG PREMIUM LINE PLUS,G450 D AMG PREMIUM LINE PLUS,,pending,,,,auto-added from latest model data
 MITSUBISHI,A03AXTHHRU,A03AXTHHRU,,pending,,,,auto-added from latest model data
 TOYOTA,LAND CRUISER 250 VX 2.8L,LAND CRUISER 250 VX 2.8L,,pending,,,,auto-added from latest model data
@@ -8125,7 +8125,7 @@ HITACHI,CC150C-3A,CC150C-3A,,pending,,,,auto-added from latest model data
 HAMM,HC268D,HC268D,,pending,,,,auto-added from latest model data
 SAKAI,SV510D(T),SV510D(T),,pending,,,,auto-added from latest model data
 FOTON,BJ1031EVJA4,BJ1031EVJA4,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
-JONWAY,IONAXS,IONAXS,,pending,,,,auto-added from latest model data
+JONWAY,IONAXS,IONAXS,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 ROSENBAUER,TURNTABLE LADDER L42A-XS,TURNTABLE LADDER L42A-XS,,pending,,,,auto-added from latest model data
 ROSENBAUER,TURNTABLE LADDER L64,TURNTABLE LADDER L64,,pending,,,,auto-added from latest model data
 ASM,ATT6EV,ATT6EV,,pending,,,,auto-added from latest model data
@@ -8142,13 +8142,13 @@ HONDA,FIT RS,FIT RS,,pending,,,,auto-added from latest model data
 KIA,CARNIVAL HEV 7P LUXURY,CARNIVAL HEV 7P LUXURY,HEV,approved,https://www.kia.com/th/th/cars/carnival-hev/specification.html,antigravity-agent,7/30/2026,Reviewed in Batch 2
 LAND ROVER,DEFENDER 75TH LIMITED EDITION,DEFENDER 75TH LIMITED EDITION,,pending,,,,auto-added from latest model data
 LAND ROVER,RANGE ROVER VELAR DYNAMIC HSE,RANGE ROVER VELAR DYNAMIC HSE,,pending,,,,auto-added from latest model data
-MASERATI,GRANTURISMO FOLGORE,GRANTURISMO FOLGORE,,pending,,,,auto-added from latest model data
+MASERATI,GRANTURISMO FOLGORE,GRANTURISMO FOLGORE,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 MASERATI,GRECALE MODENA HYBRID,GRECALE MODENA HYBRID,,pending,,,,auto-added from latest model data
 MAZDA,MX-5 ROADSTER S,MX-5 ROADSTER S,,pending,,,,auto-added from latest model data
 MINI,JCW Convertible RHD,JCW Convertible RHD,ICE,rejected,Fuel-grain reconciliation: MINI BEV units are reproduced exactly by Cooper SE / Aceman SE / Countryman SE / JCW E / JCW Aceman E in all 12 months to Aug 2569; this trim sits in the petrol remainder. Flagged only by first-token similarity to an approved BEV name.,claude-code,9/6/2026,rejected per user review - petrol trim; false match on shared first token
 PORSCHE,911 CARRERA C2,911 CARRERA C2,,pending,,,,auto-added from latest model data
-PORSCHE,TAYCAN 4,TAYCAN 4,,pending,,,,auto-added from latest model data
-PORSCHE,TAYCAN TURBO CROSS TURISMO,TAYCAN TURBO CROSS TURISMO,,pending,,,,auto-added from latest model data
+PORSCHE,TAYCAN 4,TAYCAN 4,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+PORSCHE,TAYCAN TURBO CROSS TURISMO,TAYCAN TURBO CROSS TURISMO,BEV,approved,Electric-only nameplate; the brand's fuel-grain BEV count covers these units in every month they appear (fuel-grain reconciliation 2564-2569).,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 RUF,GT COUPE,GT COUPE,,pending,,,,auto-added from latest model data
 TOYOTA,ALPHARD HYBRID Z 2WD,ALPHARD HYBRID Z 2WD,,pending,,,,auto-added from latest model data
 TOYOTA,GR SUPRA RZ PLASMA ORANGE 100,GR SUPRA RZ PLASMA ORANGE 100,,pending,,,,auto-added from latest model data
@@ -8211,17 +8211,17 @@ SAKAI,TW352,TW352,,pending,,,,auto-added from latest model data
 ไม่ระบุ,GREEN BOAT 10-14FT,GREEN BOAT 10-14FT,,pending,,,,auto-added from latest model data
 HINO,XZU600R-WKMLST3,XZU600R-WKMLST3,,pending,,,,auto-added from latest model data
 HINO,XZU600R-WKTLST3,XZU600R-WKTLST3,,pending,,,,auto-added from latest model data
-LINXYS,G100P-R,G100P-R,,pending,,,,auto-added from latest model data
+LINXYS,G100P-R,G100P-R,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 ZIEGLER,Z6-FLF 80/125-15+250P,Z6-FLF 80/125-15+250P,,pending,,,,auto-added from latest model data
 DAIHATSU,HIJET TRUCK,HIJET TRUCK,,pending,,,,auto-added from latest model data
-Mercedes-Benz,MAYBACH EQS 680 SUV,MAYBACH EQS 680 SUV,,pending,,,,auto-added from latest model data
+Mercedes-Benz,MAYBACH EQS 680 SUV,MAYBACH EQS 680 SUV,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 ASTON MARTIN,RAPIDE S,RAPIDE S,,pending,,,,auto-added from latest model data
 AUDI,A5 SB e-hybrid q Tech Pro,A5 SB e-hybrid q Tech Pro,,pending,,,,auto-added from latest model data
 BENTLEY,BENTAYGA ATELIER HYBRID,BENTAYGA ATELIER HYBRID,,pending,,,,auto-added from latest model data
 BENTLEY,CONTINENTAL GT S V8,CONTINENTAL GT S V8,,pending,,,,auto-added from latest model data
 CHERY,V23 2WD PLAY,V23,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 CHEVROLET,CORVETTE Z06 CONVERTIBLE 3LZ,CORVETTE Z06 CONVERTIBLE 3LZ,,pending,,,,auto-added from latest model data
-GMC,HUMMER EV EDITION 1,HUMMER EV EDITION 1,,pending,,,,auto-added from latest model data
+GMC,HUMMER EV EDITION 1,HUMMER EV EDITION 1,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 KIA,CARNIVAL HEV 7P PREMIUM,CARNIVAL HEV 7P PREMIUM,HEV,approved,https://www.kia.com/th/th/cars/carnival-hev/specification.html,antigravity-agent,7/30/2026,Reviewed in Batch 2
 NISSAN,X-TRIAL e-POWER,X-TRIAL e-POWER,,pending,,,,auto-added from latest model data
 RIDDARA,RD6 ECON,RD6,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
@@ -8266,15 +8266,15 @@ DYNAPAC,DRS200D,DRS200D,,pending,,,,auto-added from latest model data
 SANY,SSR220C-10S,SSR220C-10S,,pending,,,,auto-added from latest model data
 ETAN4U,S-2000L 4WD,S-2000L 4WD,,pending,,,,auto-added from latest model data
 ไม่ระบุ,CLASSIC CARAVAN,CLASSIC CARAVAN,,pending,,,,auto-added from latest model data
-ZX Auto,FIREBRIGHT YDYX,FIREBRIGHT YDYX,,pending,,,,auto-added from latest model data
+ZX Auto,FIREBRIGHT YDYX,FIREBRIGHT YDYX,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 FOTON,eTUNLAND,eTUNLAND,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
-SRM,T3EV,T3EV,,pending,,,,auto-added from latest model data
+SRM,T3EV,T3EV,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 HINO,FC9JJ1A-CBAHF,FC9JJ1A-CBAHF,,pending,,,,auto-added from latest model data
 YUCHAI,NZ5161ZYSH,NZ5161ZYSH,,pending,,,,auto-added from latest model data
 AION,AION V 505 PREMIUM,AION V,BEV,approved,"paultan.org: GAC Aion V EV SUV, 204 PS, 75kWh LFP https://paultan.org/2024/11/11/gac-aion-v-open-for-booking-in-thailand-ev-suv-with-204-ps-up-to-602-km-range-below-rm141k/",Claude-Google-review,7/30/2026,auto-added from latest model data
 Mercedes-Benz,G450 D AMG,G450 D AMG,,pending,,,,auto-added from latest model data
 BMW,X3 M50 xDrive RHD,X3 M50 xDrive RHD,,pending,,,,auto-added from latest model data
-BMW,i7 eDrive50 RHD,i7 eDrive50 RHD,,pending,,,,auto-added from latest model data
+BMW,i7 eDrive50 RHD,i7 eDrive50 RHD,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 LEXUS,LX600 7 SEAT,LX600 7 SEAT,,pending,,,,auto-added from latest model data
 MASERATI,LEVANTE,LEVANTE,,pending,,,,auto-added from latest model data
 MCLAREN,GTS,GTS,,pending,,,,auto-added from latest model data
@@ -8330,7 +8330,7 @@ MITSUBISHI,LB2TCLDJCRU,LB2TCLDJCRU,,pending,,,,auto-added from latest model data
 STRON,CG1-C01-WT,CG1-C01-WT,,pending,,,,auto-added from latest model data
 Mercedes-Benz,MAYBACH S580,MAYBACH S580,,pending,,,,auto-added from latest model data
 ASTON MARTIN,VANTAGE S COUPE,VANTAGE S COUPE,,pending,,,,auto-added from latest model data
-AUDI,Q6 e-tron Performance,Q6 e-tron Performance,,pending,,,,auto-added from latest model data
+AUDI,Q6 e-tron Performance,Q6 e-tron Performance,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 BENTLEY,CONTINENTAL GT PHEV,CONTINENTAL GT PHEV,,pending,,,,auto-added from latest model data
 GEELY,EX2,EX2,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 HONDA,PRELUDE e:HEV,PRELUDE e:HEV,,pending,,,,auto-added from latest model data
@@ -8346,7 +8346,7 @@ MITSUBISHI,CY4ASTXHRU,CY4ASTXHRU,,pending,,,,auto-added from latest model data
 NISSAN,BDTARCZB172HA-----,BDTARCZB172HA-----,,pending,,,,auto-added from latest model data
 NISSAN,GT-R TRACK EDITION ENGINEERED,GT-R TRACK EDITION ENGINEERED,,pending,,,,auto-added from latest model data
 PORSCHE,911 CARRERA S CABRIOLET PDK,911 CARRERA S CABRIOLET PDK,,pending,,,,auto-added from latest model data
-ROLLS-ROYCE,Black Badge Spectre,Black Badge Spectre,,pending,,,,auto-added from latest model data
+ROLLS-ROYCE,Black Badge Spectre,Black Badge Spectre,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 ROLLS-ROYCE,GHOST SWB,GHOST SWB,,pending,,,,auto-added from latest model data
 TOYOTA,GR YARIS RS 4WD,GR YARIS RS 4WD,,pending,,,,auto-added from latest model data
 TOYOTA,LAND CRUISER 76 AX 4WD,LAND CRUISER 76 AX 4WD,,pending,,,,auto-added from latest model data
@@ -8398,23 +8398,23 @@ SANY,SSR260,SSR260,,pending,,,,auto-added from latest model data
 FURD,FYL-900CC,FYL-900CC,,pending,,,,auto-added from latest model data
 JUNMA,JM612H,JM612H,,pending,,,,auto-added from latest model data
 FARIZON,SUPERVAN SV9,SUPERVAN SV9,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
-HIGER,KLQ6540EVN3R,KLQ6540EVN3R,,pending,,,,auto-added from latest model data
+HIGER,KLQ6540EVN3R,KLQ6540EVN3R,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 DAIHATSU,HIJET CARGO 4WD,HIJET CARGO 4WD,,pending,,,,auto-added from latest model data
 FARIZON,SUPERVAN SV,SUPERVAN SV,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
-JONWAY,T21,T21,,pending,,,,auto-added from latest model data
+JONWAY,T21,T21,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 CHENGLONG,LZ3240M3CC2,LZ3240M3CC2,,pending,,,,auto-added from latest model data
 FAW,CA1040P40K58LE5YZA84,CA1040P40K58LE5YZA84,,pending,,,,auto-added from latest model data
 GWM,WEY G9 PLUG-IN HYBRID,WEY G9 PLUG-IN HYBRID,PHEV,approved,https://autolifethailand.tv/official-price-gwm-wey-g9-hi4-phev-thailand/,antigravity-agent,7/30/2026,Reviewed in Batch 2
 Mercedes-Benz,G450D AMG LINE,G450D AMG LINE,,pending,,,,auto-added from latest model data
 Mercedes-Benz,V300D,V300D,,pending,,,,auto-added from latest model data
 AUDI,A5 Avant e-hybrid q Tech Plus,A5 Avant e-hybrid q Tech Plus,,pending,,,,auto-added from latest model data
-BMW,i5 eDrive40 M Sport,i5 eDrive40 M Sport,,pending,,,,auto-added from latest model data
+BMW,i5 eDrive40 M Sport,i5 eDrive40 M Sport,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 FORD,MUSTANG GT PREMIUM FASTBACK,MUSTANG GT PREMIUM FASTBACK,,pending,,,,auto-added from latest model data
 HONDA,AMAZE,AMAZE,,pending,,,,auto-added from latest model data
-HONDA,e:N2,e:N2,,pending,,,,auto-added from latest model data
-MAXUS,EPC1A,EPC1A,,pending,,,,auto-added from latest model data
+HONDA,e:N2,e:N2,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+MAXUS,EPC1A,EPC1A,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 MAZDA,ROADSTER S SPECIAL PACKAGE,ROADSTER S SPECIAL PACKAGE,,pending,,,,auto-added from latest model data
-SOLARKY,MODEL C11A,MODEL C11A,,pending,,,,auto-added from latest model data
+SOLARKY,MODEL C11A,MODEL C11A,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 SUBARU,BRZ STI SPORT,BRZ STI SPORT,,pending,,,,auto-added from latest model data
 SUZUKI,JIMNY ALPHA,JIMNY ALPHA,,pending,,,,auto-added from latest model data
 TOYOTA,ALPHARD 2.5L HYBRID X,ALPHARD 2.5L HYBRID X,,pending,,,,auto-added from latest model data
@@ -8424,7 +8424,7 @@ TOYOTA,GR YARIS RC 8AT 4WD,GR YARIS RC 8AT 4WD,,pending,,,,auto-added from lates
 TOYOTA,GR YARIS RC AERO PERFORMANCE,GR YARIS RC AERO PERFORMANCE,,pending,,,,auto-added from latest model data
 TOYOTA,GR86 RZ YELLOW LIMITED,GR86 RZ YELLOW LIMITED,,pending,,,,auto-added from latest model data
 TOYOTA,ROOMY CUSTOM G T 1.0L,ROOMY CUSTOM G T 1.0L,,pending,,,,auto-added from latest model data
-VOLVO,ES90,ES90,,pending,,,,auto-added from latest model data
+VOLVO,ES90,ES90,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 BYD,BYD SEAL 5 DM-i STANDARD,BYD SEAL 5 DM-i,PHEV,approved,https://www.reverautomotive.com/en/model/seal5-dm-i/tech-spec,antigravity-agent,7/30/2026,Reviewed in Batch 2
 BAOSHIMA,SU8,SU8,,pending,,,,auto-added from latest model data
 BAOSHIMA,Vmax3.0,Vmax3.0,,pending,,,,auto-added from latest model data
@@ -8494,7 +8494,7 @@ KARBA,NEW TBS FIREFIGHTING TRUCK,NEW TBS FIREFIGHTING TRUCK,,pending,,,,auto-add
 JAC,HFC1040EV2,HFC1040EV2,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 ASM,ATT3,ATT3,,pending,,,,auto-added from latest model data
 ASM,ATT3EV,ATT3EV,,pending,,,,auto-added from latest model data
-AUDI,S6 Sportback e-tron quattro,S6 Sportback e-tron quattro,,pending,,,,auto-added from latest model data
+AUDI,S6 Sportback e-tron quattro,S6 Sportback e-tron quattro,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 BMW,X6 M50D,X6 M50D,,pending,,,,auto-added from latest model data
 BYD,BYD SEAL 5 DM-i DYNAMIC,BYD SEAL 5 DM-i,PHEV,approved,https://www.reverautomotive.com/en/model/seal5-dm-i/tech-spec,antigravity-agent,7/30/2026,Reviewed in Batch 2
 CHERY,TIGGO8 PHEV 2WD ESTEEM,TIGGO8 PHEV,,pending,,,,auto-added from latest model data
@@ -8543,12 +8543,12 @@ VOLVO,SD120C,SD120C,,pending,,,,auto-added from latest model data
 BOMAG,BW 220 D-5,BW 220 D-5,,pending,,,,auto-added from latest model data
 SAKAI,TW502S-1,TW502S-1,,pending,,,,auto-added from latest model data
 CASE,1110EX-D,1110EX-D,,pending,,,,auto-added from latest model data
-SANY,SYM1030T1BEVH3,SYM1030T1BEVH3,,pending,,,,auto-added from latest model data
+SANY,SYM1030T1BEVH3,SYM1030T1BEVH3,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 TKI,004-1 TUK TUK,004-1 TUK TUK,,pending,,,,auto-added from latest model data
-EVEASY,GSE,GSE,,pending,,,,auto-added from latest model data
+EVEASY,GSE,GSE,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 AION,AION V 500 PREMIUM,AION V,BEV,approved,"paultan.org: GAC Aion V EV SUV, 204 PS, 75kWh LFP https://paultan.org/2024/11/11/gac-aion-v-open-for-booking-in-thailand-ev-suv-with-204-ps-up-to-602-km-range-below-rm141k/",Claude-Google-review,7/30/2026,auto-added from latest model data
 Mercedes-Benz,AMG GT R PRO,AMG GT R PRO,,pending,,,,auto-added from latest model data
-Mercedes-Benz,G580 EQ Edition One,G580 EQ Edition One,,pending,,,,auto-added from latest model data
+Mercedes-Benz,G580 EQ Edition One,G580 EQ Edition One,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 BMW,M3 COMPETITION TOURING WITH M,M3 COMPETITION TOURING WITH M,,pending,,,,auto-added from latest model data
 BMW,M3 CS Touring,M3 CS Touring,,pending,,,,auto-added from latest model data
 BMW,M4 CS RHD,M4 CS RHD,,pending,,,,auto-added from latest model data
@@ -8561,7 +8561,7 @@ LOTUS,ELETRE 600 SPORT SE,ELETRE 600 SPORT SE,BEV,approved,Reconciled against th
 LOTUS,EMEYA 900 SPORT CARBON,EMEYA 900 SPORT CARBON,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 MAZDA,ROADSTER SPIRIT RACING 12R,ROADSTER SPIRIT RACING 12R,,pending,,,,auto-added from latest model data
 MG,IM5,IM5,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
-NIO,firefly,firefly,,pending,,,,auto-added from latest model data
+NIO,firefly,firefly,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 NISSAN,X-TRAIL e-POWER,X-TRAIL e-POWER,,pending,,,,auto-added from latest model data
 SUBARU,WRX S4 S210,WRX S4 S210,,pending,,,,auto-added from latest model data
 TOYOTA,ALPHARD PHEV EXECUTIVE LOUNGE,ALPHARD PHEV EXECUTIVE LOUNGE,,pending,,,,auto-added from latest model data
@@ -8629,7 +8629,7 @@ DAIHATSU,HIJET CARGO DELUXE,HIJET CARGO DELUXE,,pending,,,,auto-added from lates
 AION,AION Y PLUS 410 PREMIUM,AION Y,BEV,approved,MarkLines: GAC officially launches Aion Y Plus EV in Thailand https://www.marklines.com/en/news/294310,Claude-Google-review,7/30/2026,auto-added from latest model data
 BYD,BYD ATTO 1 DYNAMIC,BYD ATTO 1 DYNAMIC,BEV,approved,"Official BYD brochure, Blade Battery BEV https://www.byd.com/material/byd-site/np/atto1/atto1.pdf",Claude-Google-review,7/30/2026,auto-added from latest model data
 BYD,BYD SEALION5 DM-i DYNAMIC,BYD SEALION5 DM-i DYNAMIC,,pending,,,,auto-added from latest model data
-GWM,ORA 5,ORA 5,BEV,approved,https://www.carexpert.com.au/car-news/gwm-ora-5-small-suv-locked-in-for-australia-electric-and-hybrid-powertrains-on-the-cards,antigravity-agent,7/31/2026,Thai market launched in BEV and HEV variants; approved as BEV per operator decision
+GWM,ORA 5,ORA 5,BEV,ambiguous,https://www.carexpert.com.au/car-news/gwm-ora-5-small-suv-locked-in-for-australia-electric-and-hybrid-powertrains-on-the-cards,antigravity-agent,7/31/2026,mixed nameplate: EV and HEV filed under one name; BEV share split per cell via config/model_powertrain_mixed.csv (2026-09-21)
 Mercedes-Benz,Mercedes-Maybach S 580 e,Mercedes-Maybach S 580 e,,pending,,,,auto-added from latest model data
 Mercedes-Benz,SPRINTER HYMER CAMPER VAN,SPRINTER HYMER CAMPER VAN,,pending,,,,auto-added from latest model data
 BYD,BYD SEALION5 DM-i PREMIUM,BYD SEALION5 DM-i PREMIUM,,pending,,,,auto-added from latest model data
@@ -8644,7 +8644,7 @@ MAZDA,ROADSTER SPIRIT RACING,ROADSTER SPIRIT RACING,,pending,,,,auto-added from 
 MORGAN,PLUS SIX SUPERSPORT,PLUS SIX SUPERSPORT,,pending,,,,auto-added from latest model data
 OMODA,C5 EV MAX+,C5 EV MAX+,BEV,approved,googel,p_pop,07/31/2026,auto-added from latest model data
 PORSCHE,PANAMERA TURBO S E-HYBRID,PANAMERA TURBO S E-HYBRID,,pending,,,,auto-added from latest model data
-SUZUKI,e VITARA,e VITARA,,pending,,,,auto-added from latest model data
+SUZUKI,e VITARA,e VITARA,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 TESLA,Model Y,Model Y,BEV,approved,Autolifethailand: TESLA Model Y Thailand launch https://autolifethailand.tv/official-price-tesla-model-y-thailand/,Claude-Google-review,7/30/2026,auto-added from latest model data
 TOYOTA,CROWN SPORT Z THE 70TH,CROWN SPORT Z THE 70TH,,pending,,,,auto-added from latest model data
 TOYOTA,PRIUS HYBRID X 2WD,PRIUS HYBRID X 2WD,,pending,,,,auto-added from latest model data
@@ -8706,8 +8706,8 @@ MITSUBISHI,U20,U20,,pending,,,,auto-added from latest model data
 SAKAI,TZ703,TZ703,,pending,,,,auto-added from latest model data
 LIUGONG,CLG6622E,CLG6622E,,pending,,,,auto-added from latest model data
 ETAN4U,S-20004WD,S-20004WD,,pending,,,,auto-added from latest model data
-DAYUN,DYQ1033BEV1R-H,DYQ1033BEV1R-H,,pending,,,,auto-added from latest model data
-DONGFENG,E-STAR T,E-STAR T,,pending,,,,auto-added from latest model data
+DAYUN,DYQ1033BEV1R-H,DYQ1033BEV1R-H,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
+DONGFENG,E-STAR T,E-STAR T,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 CATERPILLAR,306E2,306E2,,pending,,,,auto-added from latest model data
 VOGELE,6-83,6-83,,pending,,,,auto-added from latest model data
 CATERPILLAR,312E-2,312E-2,,pending,,,,auto-added from latest model data
@@ -8723,7 +8723,7 @@ LAMBORGHINI,TEMERARIO,TEMERARIO,,pending,,,,auto-added from latest model data
 MAZDA,MAZDA6e,MAZDA6e,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 MG,URBAN,URBAN,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 PORSCHE,CAYENNE E-HYBRID BLACK EDITION,CAYENNE E-HYBRID BLACK EDITION,,pending,,,,auto-added from latest model data
-SMART,EQ FORTWO COUPE BRABUS 92R,EQ FORTWO COUPE BRABUS 92R,,pending,,,,auto-added from latest model data
+SMART,EQ FORTWO COUPE BRABUS 92R,EQ FORTWO COUPE BRABUS 92R,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 TOYOTA,ALPHARD 2.5 PHEV EXECUTIVE,ALPHARD 2.5 PHEV EXECUTIVE,,pending,,,,auto-added from latest model data
 TOYOTA,CROWN CROSSOVER HYBRID G ADV,CROWN CROSSOVER HYBRID G ADV,,pending,,,,auto-added from latest model data
 TOYOTA,GR86 CUP CAR BASIC HKS,GR86 CUP CAR BASIC HKS,,pending,,,,auto-added from latest model data
@@ -8779,12 +8779,12 @@ DYNAPAC,CA152D,CA152D,,pending,,,,auto-added from latest model data
 ไม่ระบุ,ABBEY SAFARI 520,ABBEY SAFARI 520,,pending,,,,auto-added from latest model data
 KIA,PV5 CARGO,PV5 CARGO,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 HINO,FG8JJ3A-ACDMH,FG8JJ3A-ACDMH,,pending,,,,auto-added from latest model data
-LINXYS,G100-R CARGO,G100-R CARGO,,pending,,,,auto-added from latest model data
+LINXYS,G100-R CARGO,G100-R CARGO,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 AION,GN8 PHEV PREMIUM,GN8 PHEV PREMIUM,,pending,,,,auto-added from latest model data
 Mercedes-Benz,AMG SL 55 4MATIC+,AMG SL 55 4MATIC+,,pending,,,,auto-added from latest model data
 AUDI,A6 2.0 TDI,A6 2.0 TDI,,pending,,,,auto-added from latest model data
 AVATR,AVATR 11 ULTRA,AVATR 11 ULTRA,BEV,approved,Official AVATR Thailand brochure: Avatr 11 https://www.avatr.co.th/cd23266c-7032-4c10-b746-ff8b4822ad27/E-leaflet_EN_website.pdf,claude-code,9/4/2026,approved per user request
-BMW,iX3 50 xDrive,iX3 50 xDrive,,pending,,,,auto-added from latest model data
+BMW,iX3 50 xDrive,iX3 50 xDrive,BEV,approved,Fuel-grain reconciliation 2564-2569: approved rows plus this row reproduce the brand's monthly BEV totals exactly in every month; the name identifies an electric-only nameplate.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 CHERY,Q QOOL,Q QOOL,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 CHERY,Q QUINT,Q QUINT,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 FERRARI,296 SPECIALE,296 SPECIALE,,pending,,,,auto-added from latest model data
@@ -8847,7 +8847,7 @@ XCMG,XP165S,XP165S,,pending,,,,auto-added from latest model data
 VOLVO,DD70,DD70,,pending,,,,auto-added from latest model data
 ไม่ระบุ,HOBBIE CATAMARANS 19 FT,HOBBIE CATAMARANS 19 FT,,pending,,,,auto-added from latest model data
 ไม่ระบุ,CCMC-F12-2A-FTL,CCMC-F12-2A-FTL,,pending,,,,auto-added from latest model data
-CAVAN,VANTASTIC,VANTASTIC,,pending,,,,auto-added from latest model data
+CAVAN,VANTASTIC,VANTASTIC,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_reconcile): this brand's monthly BEV totals are reproduced exactly by these model rows and by no other subset of its models.,Kamon (via bev reconciliation review),9/21/2026,approved 2026-09-21 to reconcile Deep-Dive BEV with Manual Report
 FOTON,eVIEWCONNECT,eVIEWCONNECT,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 VOLKAN,VOLKAN 6X6 ARFF,VOLKAN 6X6 ARFF,,pending,,,,auto-added from latest model data
 YUCHAI,NZ5250GSS,NZ5250GSS,,pending,,,,auto-added from latest model data

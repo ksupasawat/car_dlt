@@ -3,7 +3,8 @@ from collections import Counter
 
 import pandas as pd
 
-from model_map import approved_bev_model_keys, normalize_key
+from model_map import approved_bev_model_keys, load_model_powertrain_review, normalize_key
+from bev_attribution import UNATTRIBUTED_MODEL, load_mixed_keys
 from schema import validate_fuel, validate_model
 
 
@@ -85,9 +86,11 @@ def validate_public_model_tree(models_data: dict):
             if _monthly_cells(series.get("monthly", {})) != _sum_monthly(segments):
                 raise ValueError(f"public series segments do not reconcile: {brand.get('brand')} / {series.get('name')}")
 
-            if powertrains != ["N/A"]:
+            # Model grain carries only BEV (approved rows, split mixed nameplates, or the
+            # per-brand unattributed line) and N/A; ICE/HEV/PHEV never reach a model.
+            if not set(powertrains) <= {"BEV", "N/A"}:
                 raise ValueError(
-                    f"public model must have only an N/A Powertrain segment: "
+                    f"public model may only carry BEV/N/A Powertrain segments: "
                     f"{brand.get('brand')} / {series.get('name')} / {powertrains}"
                 )
     if not series_count:
@@ -95,9 +98,26 @@ def validate_public_model_tree(models_data: dict):
     return series_count
 
 
+def _mixed_model_keys() -> set:
+    raw = load_mixed_keys()
+    return {
+        normalize_key(v.get("brand2"), v.get("model2"))
+        for k, v in load_model_powertrain_review().items() if k in raw
+    }
+
+
+def _row_brands(rows) -> set:
+    return {r.get("brand") or r.get("group") for r in rows if r.get("level") == "model"}
+
+
 def validate_bev_report_sheets(sheets: dict, approved=None):
     """Validate Sheets 7-8 against approved canonical BEV model keys."""
     approved = approved_bev_model_keys() if approved is None else approved
+    # Mixed nameplates (config/model_powertrain_mixed.csv) and the unattributed line are
+    # the other two legitimate sources of model-grain BEV (see bev_attribution.py).
+    approved = set(approved) | _mixed_model_keys() | {
+        normalize_key(b, UNATTRIBUTED_MODEL) for b in _row_brands(sheets["sheet7_bev_by_model"])
+    }
     observed = []
     for row in sheets["sheet7_bev_by_model"]:
         if row.get("level") == "model":

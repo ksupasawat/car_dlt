@@ -74,7 +74,7 @@ def test_validator_rejects_classified_or_unreconciled_segments():
     ]))
 
     tree[0]["models"][0]["segments"][0]["powertrain"] = "HEV"
-    with pytest.raises(ValueError, match="only an N/A Powertrain segment"):
+    with pytest.raises(ValueError, match="only carry BEV/N/A Powertrain"):
         validate_public_model_tree(tree_payload(tree))
 
     tree[0]["models"][0]["segments"][0]["powertrain"] = "N/A"
