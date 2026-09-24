@@ -219,9 +219,17 @@ export default function ModelsPage() {
       const XLSX = await import("xlsx");
 
       // The workbook is built from the very rows the table renders, so "Filtered View" is
-      // always exactly what was on screen -- filters, active years and all -- and it is the
-      // sheet Excel opens on. "All Data" stays as the unfiltered reference.
-      const filteredRows = buildDeepDiveExportRows(data.brand_model_tree, filters, latestYear);
+      // always exactly what was on screen -- filters, active years, and which brands are
+      // expanded -- and it is the sheet Excel opens on. Collapse a brand and its series stay
+      // out of the workbook too; "Hide all models" therefore exports brand lines only.
+      // "All Data" stays as the unfiltered reference, at the same level of detail.
+      const filteredRows = buildDeepDiveExportRows(
+        data.brand_model_tree,
+        filters,
+        latestYear,
+        "Filtered Total",
+        expandedBrands
+      );
       const fullRows = buildDeepDiveExportRows(
         data.brand_model_tree,
         {
@@ -234,13 +242,15 @@ export default function ModelsPage() {
           selectedSegments: [],
         },
         latestYear,
-        "Grand Total"
+        "Grand Total",
+        expandedBrands
       );
 
       const wb = XLSX.utils.book_new();
       XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(filteredRows), "Filtered View");
       XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(fullRows), "All Data");
-      XLSX.writeFile(wb, `Thailand_EV_Model_DeepDive${hasActiveFilters ? "_filtered" : ""}.xlsx`);
+      const detail = expandedBrands.size === 0 ? "_brands" : "";
+      XLSX.writeFile(wb, `Thailand_EV_Model_DeepDive${hasActiveFilters ? "_filtered" : ""}${detail}.xlsx`);
     } catch (e) {
       console.error(e);
       alert("Excel export failed");

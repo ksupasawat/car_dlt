@@ -484,6 +484,27 @@ test("Export rows are the table's rows: same brands, same totals, under every fi
   });
 });
 
+test("Export follows the table's expand state: a collapsed brand exports without its series", () => {
+  const table = buildDeepDiveMatrixRows(segmentedTree, deepDiveBase, "2569", new Set());
+  const brandNames = table.map((b) => b.brand);
+
+  // Hide all models: brand lines only, and the total line still leads.
+  const collapsed = buildDeepDiveExportRows(segmentedTree, deepDiveBase, "2569", "Filtered Total", new Set());
+  assert.deepEqual(collapsed.map((row) => row["Brand / Model"]), ["Filtered Total", ...brandNames]);
+  assert.equal(collapsed[0]["Grand Total"], filteredGrandTotal(table));
+
+  // One brand open: only that brand's series come with it.
+  const open = new Set([table[0].toggleKey]);
+  const partial = buildDeepDiveExportRows(segmentedTree, deepDiveBase, "2569", "Filtered Total", open);
+  assert.equal(partial.length, collapsed.length + table[0].models.length);
+  const series = partial.filter((row) => String(row["Brand / Model"]).startsWith("  "));
+  assert.deepEqual(series.map((row) => String(row["Brand / Model"]).trim()), table[0].models.map((m) => m.name));
+
+  // Omitting the expand state keeps the old behaviour: every series is exported.
+  const everything = buildDeepDiveExportRows(segmentedTree, deepDiveBase, "2569");
+  assert.equal(everything.length, 1 + table.length + table.reduce((n, b) => n + b.models.length, 0));
+});
+
 test("Export leads with the filtered total the table shows, not the market total", () => {
   const filters = { ...deepDiveBase, selectedPowertrains: ["BEV"] };
   const table = buildDeepDiveMatrixRows(segmentedTree, filters, "2569", new Set());

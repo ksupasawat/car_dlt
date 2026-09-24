@@ -154,11 +154,15 @@ const MONTHS_EN = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"
 // The Excel export and the on-screen table are the same rows: this builds its lines from
 // buildDeepDiveMatrixRows, so a workbook can never show a wider market than the table the
 // operator was looking at when they pressed Export. The first line is that view's total.
+// `expandedBrands` is the table's own expand state: a collapsed brand exports as one brand
+// line with no series under it, exactly as it reads on screen. Omit it to export every
+// series regardless of what the screen has open.
 export function buildDeepDiveExportRows(
   tree: BrandNode[] | undefined,
   filters: DeepDiveFilters,
   latestYear: string | null,
   totalLabel = "Filtered Total",
+  expandedBrands: ReadonlySet<string> | null = null,
   monthLabels: string[] = MONTHS_EN
 ): DeepDiveExportRow[] {
   const brands = buildDeepDiveMatrixRows(tree, filters, latestYear, new Set());
@@ -204,6 +208,7 @@ export function buildDeepDiveExportRows(
 
   brands.forEach((brand) => {
     rows.push(line(brand.brand, "", (year) => brandMonthly(brand, year), brand.totals));
+    if (expandedBrands && !expandedBrands.has(brand.toggleKey)) return;
     brand.models.forEach((model) => {
       rows.push(line(
         `  ${model.name}`,
