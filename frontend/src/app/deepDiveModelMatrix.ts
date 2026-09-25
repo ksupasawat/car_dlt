@@ -147,6 +147,26 @@ export function buildDeepDiveMatrixRows(
     .sort((a, b) => b.totals.grandTotal - a.totals.grandTotal);
 }
 
+export type ModelRankRow = SeriesRow & { brand: string; rank: number };
+
+// The same filtered facts as the matrix, with the brand grouping dropped: every series that
+// survives the filters, ranked by its own volume. Built from buildDeepDiveMatrixRows so a
+// ranking can never contain a series the matrix would have filtered out, and the two views
+// always add up to the same filtered total.
+export function buildDeepDiveModelRanking(
+  tree: BrandNode[] | undefined,
+  filters: DeepDiveFilters,
+  latestYear: string | null
+): ModelRankRow[] {
+  const rows: ModelRankRow[] = [];
+  buildDeepDiveMatrixRows(tree, filters, latestYear, new Set()).forEach((brand) => {
+    brand.models.forEach((model) => rows.push({ ...model, brand: brand.brand, rank: 0 }));
+  });
+  rows.sort((a, b) => b.totals.grandTotal - a.totals.grandTotal || a.name.localeCompare(b.name));
+  rows.forEach((row, index) => { row.rank = index + 1; });
+  return rows;
+}
+
 export type DeepDiveExportRow = Record<string, string | number>;
 
 const MONTHS_EN = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -217,6 +237,65 @@ export function buildDeepDiveExportRows(
         model.totals
       ));
     });
+  });
+
+  return rows;
+}
+
+// The ranking view's workbook: one line per model, in the order the table ranks them, led by
+// the same filtered total the brand view exports.
+export function buildDeepDiveModelExportRows(
+  tree: BrandNode[] | undefined,
+  filters: DeepDiveFilters,
+  latestYear: string | null,
+  totalLabel = "Filtered Total",
+  monthLabels: string[] = MONTHS_EN
+): DeepDiveExportRow[] {
+  const models = buildDeepDiveModelRanking(tree, filters, latestYear);
+
+  const line = (
+    rank: string | number,
+    model: string,
+    brand: string,
+    segment: string,
+    monthlyFor: (year: string) => number[],
+    totals: { grandTotal: number; ytdTotal: number }
+  ): DeepDiveExportRow => {
+    const row: DeepDiveExportRow = { Rank: rank, Model: model, Brand: brand, Segment: segment };
+    filters.activeYears.forEach((year) => {
+      const monthly = monthlyFor(year);
+      monthly.forEach((value, idx) => { row[`${year} ${monthLabels[idx]}`] = value || ""; });
+      row[`${year} Total`] = monthly.reduce((sum, value) => sum + value, 0) || "";
+    });
+    row["YTD"] = totals.ytdTotal || "";
+    row["Grand Total"] = totals.grandTotal || "";
+    return row;
+  };
+
+  const monthly = (model: SeriesRow, year: string) =>
+    seriesMonthlyValues(model, year, filters.selectedPowertrains, filters.selectedVehicleTypes, filters.selectedProvinces);
+
+  const totals = models.reduce(
+    (acc, model) => ({
+      grandTotal: acc.grandTotal + model.totals.grandTotal,
+      ytdTotal: acc.ytdTotal + model.totals.ytdTotal,
+    }),
+    { grandTotal: 0, ytdTotal: 0 }
+  );
+
+  const rows: DeepDiveExportRow[] = [
+    line("", totalLabel, "", "", (year) => {
+      const acc = Array(12).fill(0) as number[];
+      models.forEach((model) => {
+        const values = monthly(model, year);
+        for (let i = 0; i < 12; i++) acc[i] += values[i];
+      });
+      return acc;
+    }, totals),
+  ];
+
+  models.forEach((model) => {
+    rows.push(line(model.rank, model.name, model.brand, model.market_segment ?? "", (year) => monthly(model, year), model.totals));
   });
 
   return rows;

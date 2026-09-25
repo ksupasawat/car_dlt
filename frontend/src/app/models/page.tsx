@@ -14,6 +14,8 @@ import {
 import {
   buildDeepDiveExportRows,
   buildDeepDiveMatrixRows,
+  buildDeepDiveModelExportRows,
+  buildDeepDiveModelRanking,
   deepDiveFilterKey,
   referenceDeepDiveTotal,
   selectDeepDiveMatrixOptions,
@@ -37,6 +39,9 @@ export default function ModelsPage() {
   const [selectedSegments, setSelectedSegments] = useState<string[]>([]);
 
   const [expandedBrands, setExpandedBrands] = useState<Set<string>>(new Set());
+  // "brands" groups series under their brand; "models" drops the grouping and ranks every
+  // series against every other, biggest first.
+  const [viewMode, setViewMode] = useState<"brands" | "models">("brands");
 
   // Pagination State
   const [currentPage, setCurrentPage] = useState(1);
@@ -54,7 +59,7 @@ export default function ModelsPage() {
     selectedPowertrains,
     selectedSegments,
   }), [activeYears, selectedBrands, selectedModels, selectedProvinces, selectedVehicleTypes, selectedPowertrains, selectedSegments]);
-  const currentFilterKey = deepDiveFilterKey(filters);
+  const currentFilterKey = `${viewMode}|${deepDiveFilterKey(filters)}`;
   if (currentFilterKey !== prevFilterKey) {
     setPrevFilterKey(currentFilterKey);
     setCurrentPage(1);
@@ -183,6 +188,20 @@ export default function ModelsPage() {
     return out;
   }, [filteredTree, activeYears, selectedPowertrains, selectedVehicleTypes, selectedProvinces]);
 
+  // Ranking Rows Assembly — the same filtered series, ungrouped and ranked by volume.
+  const modelRanking = useMemo(
+    () => buildDeepDiveModelRanking(data?.brand_model_tree, filters, latestYear),
+    [data?.brand_model_tree, filters, latestYear]
+  );
+
+  const rowCount = viewMode === "models" ? modelRanking.length : filteredTree.length;
+  const rowNoun = viewMode === "models" ? "models" : "brands";
+
+  const paginatedModels = useMemo(() => {
+    const start = (currentPage - 1) * pageSize;
+    return modelRanking.slice(start, start + pageSize);
+  }, [modelRanking, currentPage, pageSize]);
+
   // Paginated Rows Assembly
   const paginatedTree = useMemo(() => {
     const start = (currentPage - 1) * pageSize;
@@ -223,33 +242,27 @@ export default function ModelsPage() {
       // expanded -- and it is the sheet Excel opens on. Collapse a brand and its series stay
       // out of the workbook too; "Hide all models" therefore exports brand lines only.
       // "All Data" stays as the unfiltered reference, at the same level of detail.
-      const filteredRows = buildDeepDiveExportRows(
-        data.brand_model_tree,
-        filters,
-        latestYear,
-        "Filtered Total",
-        expandedBrands
-      );
-      const fullRows = buildDeepDiveExportRows(
-        data.brand_model_tree,
-        {
-          activeYears,
-          selectedBrands: [],
-          selectedModels: [],
-          selectedProvinces: [],
-          selectedVehicleTypes: [],
-          selectedPowertrains: [],
-          selectedSegments: [],
-        },
-        latestYear,
-        "Grand Total",
-        expandedBrands
-      );
+      const unfiltered = {
+        activeYears,
+        selectedBrands: [],
+        selectedModels: [],
+        selectedProvinces: [],
+        selectedVehicleTypes: [],
+        selectedPowertrains: [],
+        selectedSegments: [],
+      };
+      const ranking = viewMode === "models";
+      const filteredRows = ranking
+        ? buildDeepDiveModelExportRows(data.brand_model_tree, filters, latestYear)
+        : buildDeepDiveExportRows(data.brand_model_tree, filters, latestYear, "Filtered Total", expandedBrands);
+      const fullRows = ranking
+        ? buildDeepDiveModelExportRows(data.brand_model_tree, unfiltered, latestYear, "Grand Total")
+        : buildDeepDiveExportRows(data.brand_model_tree, unfiltered, latestYear, "Grand Total", expandedBrands);
 
       const wb = XLSX.utils.book_new();
       XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(filteredRows), "Filtered View");
       XLSX.utils.book_append_sheet(wb, XLSX.utils.json_to_sheet(fullRows), "All Data");
-      const detail = expandedBrands.size === 0 ? "_brands" : "";
+      const detail = viewMode === "models" ? "_modelrank" : expandedBrands.size === 0 ? "_brands" : "";
       XLSX.writeFile(wb, `Thailand_EV_Model_DeepDive${hasActiveFilters ? "_filtered" : ""}${detail}.xlsx`);
     } catch (e) {
       console.error(e);
@@ -370,6 +383,29 @@ export default function ModelsPage() {
           </div>
 
           <div className="mt-3 flex flex-wrap items-center gap-2 border-t border-slate-800 pt-3 text-xs text-slate-400">
+            <div role="tablist" aria-label="Table view" className="flex items-center gap-1 rounded-sm border border-slate-700 p-0.5">
+              {([
+                { id: "brands", label: "By brand" },
+                { id: "models", label: "Model ranking" },
+              ] as const).map((tab) => (
+                <button
+                  key={tab.id}
+                  type="button"
+                  role="tab"
+                  aria-selected={viewMode === tab.id}
+                  onClick={() => setViewMode(tab.id)}
+                  className={`rounded-sm px-2.5 py-1 font-medium transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-brand-light ${
+                    viewMode === tab.id ? "bg-teal-650/20 text-teal-300" : "text-slate-400 hover:text-slate-200"
+                  }`}
+                >
+                  {tab.label}
+                </button>
+              ))}
+            </div>
+            {viewMode === "models" ? (
+              <span>Every model matching the filters, ranked by volume — no brand grouping.</span>
+            ) : (
+            <>
             <span>Model rows are hidden by default.</span>
             <button
               type="button"
@@ -387,6 +423,8 @@ export default function ModelsPage() {
             >
               Hide all models
             </button>
+            </>
+            )}
           </div>
         </div>
 
@@ -396,7 +434,7 @@ export default function ModelsPage() {
             <table className="min-w-full w-max text-left border-collapse text-xs whitespace-nowrap">
               <thead>
                 <tr className="bg-slate-800/80 border-b border-slate-700 text-slate-300 font-semibold align-middle">
-                  <th scope="col" className="px-3 py-2.5 min-w-[220px] sticky top-0 left-0 bg-slate-800 z-40 border-r border-slate-700">Brand / Model</th>
+                  <th scope="col" className="px-3 py-2.5 min-w-[220px] sticky top-0 left-0 bg-slate-800 z-40 border-r border-slate-700">{viewMode === "models" ? "Rank / Model" : "Brand / Model"}</th>
 
                   {activeYears.map((year) => (
                     <Fragment key={year}>
@@ -412,10 +450,10 @@ export default function ModelsPage() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-800/70">
-                {filteredTree.length === 0 ? (
+                {rowCount === 0 ? (
                   <tr>
                     <td colSpan={40} className="p-12 text-center text-slate-500 font-medium">
-                      No matching brand or model registrations found for current selection.
+                      No matching {viewMode === "models" ? "model" : "brand or model"} registrations found for current selection.
                     </td>
                   </tr>
                 ) : (
@@ -424,7 +462,7 @@ export default function ModelsPage() {
                   <tr className="bg-slate-800/60 border-b-2 border-slate-600 font-semibold">
                     <th scope="row" className="px-3 py-2.5 text-left sticky left-0 bg-slate-800 z-20 border-r border-slate-700">
                       <span className="text-xs font-bold tracking-wide text-slate-100">Filtered Total</span>
-                      <span className="ml-2 text-[10px] font-normal text-slate-400">{filteredTree.length.toLocaleString()} brands</span>
+                      <span className="ml-2 text-[10px] font-normal text-slate-400">{rowCount.toLocaleString()} {rowNoun}</span>
                     </th>
 
                     {activeYears.map((year) => {
@@ -452,7 +490,48 @@ export default function ModelsPage() {
                     </td>
                   </tr>
 
-                  {paginatedTree.map((brandNode) => (
+                  {viewMode === "models" ? paginatedModels.map((model) => (
+                    <tr
+                      key={`${model.brand}-${model.name}`}
+                      className="bg-slate-900/95 hover:bg-slate-850 border-b border-slate-800/90 transition-colors"
+                    >
+                      <td className="px-3 py-2.5 sticky left-0 bg-slate-900 z-10 border-r border-slate-800/90">
+                        <div className="flex items-center gap-2">
+                          <span aria-hidden="true" className="w-8 text-right text-[10px] font-mono text-slate-500">{model.rank}</span>
+                          <span className="flex flex-col">
+                            <span className="font-bold text-xs tracking-wide text-slate-100">{model.name}</span>
+                            <span className="text-[10px] font-normal text-teal-400">
+                              {model.brand}{model.market_segment ? ` · ${model.market_segment}` : ""}
+                            </span>
+                          </span>
+                        </div>
+                      </td>
+
+                      {activeYears.map((year) => {
+                        const monthly = seriesMonthlyValues(model, year, selectedPowertrains, selectedVehicleTypes, selectedProvinces);
+                        const total = monthly.reduce((s, v) => s + v, 0);
+                        return (
+                          <Fragment key={year}>
+                            {monthly.map((val, idx) => (
+                              <td key={`rank-val-${model.brand}-${model.name}-${year}-${idx}`} className="px-2 py-2.5 border-l border-slate-800/70 text-center font-mono text-slate-300">
+                                {val ? val.toLocaleString() : "—"}
+                              </td>
+                            ))}
+                            <td className="px-3 py-2.5 border-l-2 border-slate-700/80 bg-slate-800/30 text-center font-mono font-bold text-teal-400">
+                              {total ? total.toLocaleString() : "—"}
+                            </td>
+                          </Fragment>
+                        );
+                      })}
+
+                      <td className="px-3 py-2.5 border-l-2 border-slate-800 text-right font-mono font-bold text-emerald-400 bg-emerald-950/10">
+                        {model.totals.ytdTotal ? model.totals.ytdTotal.toLocaleString() : "—"}
+                      </td>
+                      <td className="px-3 py-2.5 border-l border-slate-800 text-right font-mono font-bold text-amber-400 bg-slate-950">
+                        {model.totals.grandTotal ? model.totals.grandTotal.toLocaleString() : "—"}
+                      </td>
+                    </tr>
+                  )) : paginatedTree.map((brandNode) => (
                     <Fragment key={brandNode.toggleKey}>
                       {/* Brand Row */}
                       <tr
@@ -545,7 +624,7 @@ export default function ModelsPage() {
           </div>
 
           {/* Pagination Controls */}
-          {filteredTree.length > 0 && (
+          {rowCount > 0 && (
             <div className="bg-slate-900 px-5 py-3 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-slate-400">
               <div className="flex items-center gap-4">
                 <div className="flex items-center gap-1.5">
@@ -562,10 +641,10 @@ export default function ModelsPage() {
                     <option value={50}>50</option>
                     <option value={100}>100</option>
                   </select>
-                  <span>brands per page</span>
+                  <span>{rowNoun} per page</span>
                 </div>
                 <span>
-                  Showing {Math.min(filteredTree.length, (currentPage - 1) * pageSize + 1)}-{Math.min(filteredTree.length, currentPage * pageSize)} of {filteredTree.length} brands
+                  Showing {Math.min(rowCount, (currentPage - 1) * pageSize + 1)}-{Math.min(rowCount, currentPage * pageSize)} of {rowCount.toLocaleString()} {rowNoun}
                 </span>
               </div>
               <div className="flex items-center gap-2">
@@ -577,11 +656,11 @@ export default function ModelsPage() {
                   Previous
                 </button>
                 <span className="font-semibold text-slate-200 px-1">
-                  Page {currentPage} of {Math.ceil(filteredTree.length / pageSize) || 1}
+                  Page {currentPage} of {Math.ceil(rowCount / pageSize) || 1}
                 </span>
                 <button
-                  onClick={() => setCurrentPage(prev => Math.min(Math.ceil(filteredTree.length / pageSize), prev + 1))}
-                  disabled={currentPage >= Math.ceil(filteredTree.length / pageSize)}
+                  onClick={() => setCurrentPage(prev => Math.min(Math.ceil(rowCount / pageSize), prev + 1))}
+                  disabled={currentPage >= Math.ceil(rowCount / pageSize)}
                   className="bg-slate-800 hover:bg-slate-700 disabled:opacity-30 disabled:hover:bg-slate-800 text-slate-100 px-3 py-1.5 rounded transition-colors disabled:cursor-not-allowed"
                 >
                   Next

@@ -19,6 +19,8 @@ import {
 } from "./selectors.ts";
 import {
   buildDeepDiveExportRows,
+  buildDeepDiveModelExportRows,
+  buildDeepDiveModelRanking,
   buildDeepDiveMatrixRows,
   deepDiveFilterKey,
   referenceDeepDiveTotal,
@@ -454,6 +456,45 @@ test("Deep Dive filter key changes when Powertrain or Segment changes", () => {
   assert.notEqual(
     deepDiveFilterKey(deepDiveBase),
     deepDiveFilterKey({ ...deepDiveBase, selectedSegments: ["B-SUV"] }),
+  );
+});
+
+// --- Model ranking view: the same facts, ungrouped ---
+
+test("Model ranking lists every filtered series biggest first and totals the same as the brand view", () => {
+  const cases = [deepDiveBase, { ...deepDiveBase, selectedPowertrains: ["BEV"] }, { ...deepDiveBase, selectedSegments: ["B-SUV"] }];
+
+  cases.forEach((filters) => {
+    const table = buildDeepDiveMatrixRows(segmentedTree, filters, "2569", new Set());
+    const ranked = buildDeepDiveModelRanking(segmentedTree, filters, "2569");
+
+    // Same series as the matrix shows, no more and no fewer.
+    assert.equal(ranked.length, table.reduce((n, b) => n + b.models.length, 0));
+    assert.deepEqual(
+      [...ranked].map((r) => `${r.brand}/${r.name}`).sort(),
+      table.flatMap((b) => b.models.map((m) => `${b.brand}/${m.name}`)).sort(),
+    );
+
+    // Ranked by volume, numbered from 1, and adding up to the brand view's filtered total.
+    ranked.forEach((row, i) => {
+      assert.equal(row.rank, i + 1);
+      if (i > 0) assert.ok(ranked[i - 1].totals.grandTotal >= row.totals.grandTotal);
+    });
+    assert.equal(ranked.reduce((n, r) => n + r.totals.grandTotal, 0), filteredGrandTotal(table));
+  });
+});
+
+test("Model ranking export carries the rank, the brand and the same filtered total", () => {
+  const filters = { ...deepDiveBase, selectedPowertrains: ["BEV"] };
+  const ranked = buildDeepDiveModelRanking(segmentedTree, filters, "2569");
+  const exported = buildDeepDiveModelExportRows(segmentedTree, filters, "2569");
+
+  assert.equal(exported.length, ranked.length + 1);
+  assert.equal(exported[0]["Model"], "Filtered Total");
+  assert.equal(exported[0]["Grand Total"], filteredGrandTotal(buildDeepDiveMatrixRows(segmentedTree, filters, "2569", new Set())));
+  assert.deepEqual(
+    exported.slice(1).map((row) => [row["Rank"], row["Model"], row["Brand"], row["Grand Total"]]),
+    ranked.map((r) => [r.rank, r.name, r.brand, r.totals.grandTotal || ""]),
   );
 });
 
