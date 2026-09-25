@@ -70,8 +70,8 @@ MINI,Cooper SE,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment 
 MINI,Countryman S ALL4,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
 MINI,Countryman SE,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
 Mercedes-Benz,CLA 250+ electric,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
-NETA,NETA V,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
-NETA,NETA V-II,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+NETA,NETA V,B-Segment,Operator override 2026-09-25 (was B-SUV); Autolifethailand segment naming
+NETA,NETA V-II,B-Segment,Operator override 2026-09-25 (was B-SUV); Autolifethailand segment naming
 NETA,NETA X,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
 OMODA,C5 EV,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
 OMODA,C5 EV MAX+,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
