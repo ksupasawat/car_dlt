@@ -1,7 +1,7 @@
 ﻿brand2,model2,market_segment,source
 AION,AION ES,C-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
 AION,AION UT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
-AION,AION V,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+AION,AION V,B-SUV,Operator override 2026-09-25 (was C-SUV); Autolifethailand segment naming
 AION,AION Y,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
 AION,HYPTEC HT,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
 AION,M8,MPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
@@ -29,8 +29,8 @@ Deepal + Changan,NEVO Q05,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-S
 Deepal + Changan,S05 BEV,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
 Deepal + Changan,S05 REEV,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
 Deepal + Changan,S07,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
-GEELY,EX2,B-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
-GEELY,EX5,C-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
+GEELY,EX2,B-Segment,Operator override 2026-09-25 (was B-SUV); Autolifethailand segment naming
+GEELY,EX5,B-SUV,Operator override 2026-09-25 (was C-SUV); Autolifethailand segment naming
 GWM,300 HYBRID,PPV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
 GWM,500 HYBRID,D-SUV,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
 GWM,GOOD CAT,B-Segment,Autolifethailand segment naming (B-SUV/C-SUV/D-Segment convention); assigned by body class and price band
