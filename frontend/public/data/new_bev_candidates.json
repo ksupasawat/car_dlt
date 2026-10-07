@@ -1,17 +1,27 @@
 {
   "meta": {
     "year": 2569,
-    "month": 8,
-    "generated_at": "2026-09-22T09:05:12.654113",
+    "month": 9,
+    "generated_at": "2026-10-07T12:14:29.132909",
     "candidate_count": 16,
-    "total_units": 48
+    "total_units": 60
   },
   "candidates": [
     {
       "brand": "Mercedes-Benz",
+      "raw_model": "AMG CLE 53 4MATIC coupe",
+      "model": "AMG CLE 53 4MATIC coupe",
+      "units": 19,
+      "confidence": "high",
+      "reason_code": "approved_model_match",
+      "reason": "Raw model name closely resembles the approved BEV raw model 'AMG EQE 53 4MATIC+'.",
+      "review_status": "pending"
+    },
+    {
+      "brand": "Mercedes-Benz",
       "raw_model": "G 450 d",
       "model": "G 450 d",
-      "units": 15,
+      "units": 11,
       "confidence": "high",
       "reason_code": "approved_model_match",
       "reason": "Raw model name closely resembles the approved BEV raw model 'G 580'.",
@@ -21,7 +31,7 @@
       "brand": "Mercedes-Benz",
       "raw_model": "Maybach S 580 e",
       "model": "Maybach S 580 e",
-      "units": 11,
+      "units": 8,
       "confidence": "high",
       "reason_code": "approved_model_match",
       "reason": "Raw model name closely resembles the approved BEV raw model 'MAYBACH EQS 680 SUV'.",
@@ -39,8 +49,8 @@
     },
     {
       "brand": "Mercedes-Benz",
-      "raw_model": "AMG SL 43",
-      "model": "AMG SL 43",
+      "raw_model": "AMG G63",
+      "model": "AMG G63",
       "units": 3,
       "confidence": "high",
       "reason_code": "approved_model_match",
@@ -49,22 +59,22 @@
     },
     {
       "brand": "Mercedes-Benz",
-      "raw_model": "G 450 D AMG-Line",
-      "model": "G 450 D AMG-Line",
+      "raw_model": "AMG C43 4MATIC Coupe",
+      "model": "AMG C43 4MATIC Coupe",
       "units": 2,
       "confidence": "high",
       "reason_code": "approved_model_match",
-      "reason": "Raw model name closely resembles the approved BEV raw model 'G 580'.",
+      "reason": "Raw model name closely resembles the approved BEV raw model 'AMG EQE 53 4MATIC+'.",
       "review_status": "pending"
     },
     {
-      "brand": "AUDI",
-      "raw_model": "Q8 60 TFSI e q S line BE",
-      "model": "Q8 60 TFSI e q S line BE",
-      "units": 1,
+      "brand": "Mercedes-Benz",
+      "raw_model": "AMG G 63",
+      "model": "AMG G 63",
+      "units": 2,
       "confidence": "high",
       "reason_code": "approved_model_match",
-      "reason": "Raw model name closely resembles the approved BEV raw model 'Q8 etron 55 q BE'.",
+      "reason": "Raw model name closely resembles the approved BEV raw model 'AMG EQE 53 4MATIC+'.",
       "review_status": "pending"
     },
     {
@@ -78,13 +88,23 @@
       "review_status": "pending"
     },
     {
-      "brand": "AUDI",
-      "raw_model": "RS 4 AV q",
-      "model": "RS 4 AV q",
+      "brand": "BYD",
+      "raw_model": "BYD SEAL 6 STANDARD",
+      "model": "BYD SEAL 6 STANDARD",
       "units": 1,
       "confidence": "high",
       "reason_code": "approved_model_match",
-      "reason": "Raw model name closely resembles the approved BEV raw model 'RS e-tron GT quattro'.",
+      "reason": "Raw model name closely resembles the approved BEV raw model 'BYD SEAL EXD AWD'.",
+      "review_status": "pending"
+    },
+    {
+      "brand": "FORD",
+      "raw_model": "MUSTANG ECOBOOST PREMIUM",
+      "model": "MUSTANG ECOBOOST PREMIUM",
+      "units": 1,
+      "confidence": "high",
+      "reason_code": "approved_model_match",
+      "reason": "Raw model name closely resembles the approved BEV raw model 'MUSTANG MACH-E AWD'.",
       "review_status": "pending"
     },
     {
@@ -98,43 +118,23 @@
       "review_status": "pending"
     },
     {
-      "brand": "Mercedes-Benz",
-      "raw_model": "AMG C43 4MATIC Coupe",
-      "model": "AMG C43 4MATIC Coupe",
+      "brand": "MINI",
+      "raw_model": "Cooper S Cabrio RHD",
+      "model": "Cooper S Cabrio RHD",
       "units": 1,
       "confidence": "high",
       "reason_code": "approved_model_match",
-      "reason": "Raw model name closely resembles the approved BEV raw model 'AMG EQE 53 4MATIC+'.",
+      "reason": "Raw model name closely resembles the approved BEV raw model 'COOPER SE HATCH RHD'.",
       "review_status": "pending"
     },
     {
-      "brand": "Mercedes-Benz",
-      "raw_model": "AMG CLE 53 4MATIC coupe",
-      "model": "AMG CLE 53 4MATIC coupe",
+      "brand": "MINI",
+      "raw_model": "Cooper S Clubman RHD",
+      "model": "Cooper S Clubman RHD",
       "units": 1,
       "confidence": "high",
       "reason_code": "approved_model_match",
-      "reason": "Raw model name closely resembles the approved BEV raw model 'AMG EQE 53 4MATIC+'.",
-      "review_status": "pending"
-    },
-    {
-      "brand": "Mercedes-Benz",
-      "raw_model": "AMG G 63",
-      "model": "AMG G 63",
-      "units": 1,
-      "confidence": "high",
-      "reason_code": "approved_model_match",
-      "reason": "Raw model name closely resembles the approved BEV raw model 'AMG EQE 53 4MATIC+'.",
-      "review_status": "pending"
-    },
-    {
-      "brand": "Mercedes-Benz",
-      "raw_model": "AMG G63",
-      "model": "AMG G63",
-      "units": 1,
-      "confidence": "high",
-      "reason_code": "approved_model_match",
-      "reason": "Raw model name closely resembles the approved BEV raw model 'AMG EQE 53 4MATIC+'.",
+      "reason": "Raw model name closely resembles the approved BEV raw model 'COOPER SE HATCH RHD'.",
       "review_status": "pending"
     },
     {
@@ -149,8 +149,8 @@
     },
     {
       "brand": "Mercedes-Benz",
-      "raw_model": "AMG GLC 43 4MATIC Coupe",
-      "model": "AMG GLC 43 4MATIC Coupe",
+      "raw_model": "AMG GLE 53 4MATIC+",
+      "model": "AMG GLE 53 4MATIC+",
       "units": 1,
       "confidence": "high",
       "reason_code": "approved_model_match",
@@ -159,12 +159,12 @@
     },
     {
       "brand": "Mercedes-Benz",
-      "raw_model": "AMG SL 55 4MATIC+",
-      "model": "AMG SL 55 4MATIC+",
+      "raw_model": "G 450 D AMG-Line",
+      "model": "G 450 D AMG-Line",
       "units": 1,
       "confidence": "high",
       "reason_code": "approved_model_match",
-      "reason": "Raw model name closely resembles the approved BEV raw model 'AMG EQE 53 4MATIC+'.",
+      "reason": "Raw model name closely resembles the approved BEV raw model 'G 580'.",
       "review_status": "pending"
     }
   ]

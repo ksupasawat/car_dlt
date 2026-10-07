@@ -1,14 +1,14 @@
 {
   "status": "review_needed",
-  "reporting_period": "August 2569",
-  "generated_at": "2026-09-06T19:09:40.675021",
-  "last_run_at": "2026-09-06T19:06:50.389952",
-  "model_row_count": 667892,
-  "fuel_row_count": 233061,
-  "model_total_units": 14402847,
-  "fuel_total_units": 14402847,
+  "reporting_period": "September 2569",
+  "generated_at": "2026-10-07T12:14:47.769371",
+  "last_run_at": "2026-10-07T12:12:00.145989",
+  "model_row_count": 678337,
+  "fuel_row_count": 237051,
+  "model_total_units": 14617598,
+  "fuel_total_units": 14617598,
   "totals_match": true,
-  "pending_review_count": 8578,
+  "pending_review_count": 8451,
   "published_files": [
     {
       "file": "dashboard_summary.json",
@@ -40,10 +40,10 @@
     }
   ],
   "bev_watchlist": {
-    "candidate_count": 0,
-    "total_units": 0,
-    "message": "No new BEV candidates."
+    "candidate_count": 16,
+    "total_units": 60,
+    "message": "16 possible new BEV models need checking. Published data remains safe."
   },
-  "next_action": "No action needed — new data is published and safe. 8578 new model row(s) are awaiting review and won't appear in Sheets 7-8 until approved in model_powertrain_review.csv; only act if a specific new BEV model is missing.",
+  "next_action": "Review the possible BEV models listed in the watchlist. Approve only models supported by reliable evidence.",
   "safe_live_data": true
 }

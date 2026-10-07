@@ -8851,3 +8851,76 @@ CAVAN,VANTASTIC,VANTASTIC,BEV,approved,Fuel-grain reconciliation 2564-2569 (bev_
 FOTON,eVIEWCONNECT,eVIEWCONNECT,BEV,approved,Reconciled against the fuel grain: this brand's BEV units match the sum of these model rows exactly in all 12 months to Aug 2569 (unique integer solution; no other model subset reproduces the monthly BEV totals).,claude-code,9/6/2026,approved via fuel-grain reconciliation
 VOLKAN,VOLKAN 6X6 ARFF,VOLKAN 6X6 ARFF,,pending,,,,auto-added from latest model data
 YUCHAI,NZ5250GSS,NZ5250GSS,,pending,,,,auto-added from latest model data
+LEPAS,L6 BEV PREMIUM,L6 BEV PREMIUM,BEV,approved,"Fuel-grain reconciliation Sep 2569: LEPAS registered 290 BEV and this is the brand's only model row that month, so the two match exactly.",Kamon (via bev reconciliation review),10/7/2026,approved 2026-10-07 from the September 2569 BEV watchlist
+AUDI,Q3 S line Tech Plus,Q3 S line Tech Plus,,pending,,,,auto-added from latest model data
+AUDI,Q3 SB quattro S line Tech Pro,Q3 SB quattro S line Tech Pro,,pending,,,,auto-added from latest model data
+AVATR,AVATR 11 ULTRA AWD,AVATR 11 ULTRA AWD,BEV,approved,Fuel-grain reconciliation Sep 2569: AVATR's BEV count exceeds the approved rows by exactly these 2 units; electric-only nameplate.,Kamon (via bev reconciliation review),10/7/2026,approved 2026-10-07 from the September 2569 BEV watchlist
+BAW,M8,M8,,pending,,,,auto-added from latest model data
+BMW,M3 COMPETITION TOURING,M3 COMPETITION TOURING,,pending,,,,auto-added from latest model data
+BMW,M5 Touring,M5 Touring,,pending,,,,auto-added from latest model data
+BYD,BYD SEAL 6 STANDARD,BYD SEAL 6 STANDARD,,pending,,,,auto-added from latest model data
+BYD,BYD SEALION 7 DYNAMIC,BYD SEALION 7 DYNAMIC,BEV,approved,Fuel-grain reconciliation Sep 2569: the SEALION 7 trims account for 10 of BYD's 11 unexplained BEV units; electric-only nameplate (the DM-i rows stay out).,Kamon (via bev reconciliation review),10/7/2026,approved 2026-10-07 from the September 2569 BEV watchlist
+BYD,BYD SEALION 7 EXTENDED,BYD SEALION 7 EXTENDED,BEV,approved,Fuel-grain reconciliation Sep 2569: the SEALION 7 trims account for 10 of BYD's 11 unexplained BEV units; electric-only nameplate (the DM-i rows stay out).,Kamon (via bev reconciliation review),10/7/2026,approved 2026-10-07 from the September 2569 BEV watchlist
+BYD,BYD SEALION 7 PERFORMANCE,BYD SEALION 7 PERFORMANCE,BEV,approved,Fuel-grain reconciliation Sep 2569: the SEALION 7 trims account for 10 of BYD's 11 unexplained BEV units; electric-only nameplate (the DM-i rows stay out).,Kamon (via bev reconciliation review),10/7/2026,approved 2026-10-07 from the September 2569 BEV watchlist
+CHERY,ICAR,ICAR,BEV,approved,Fuel-grain reconciliation Sep 2569: CHERY's 2 unexplained BEV units that month are exactly these; iCar is Chery's electric-only marque (the TIGGO8 PHEV rows stay out).,Kamon (via bev reconciliation review),10/7/2026,approved 2026-10-07 from the September 2569 BEV watchlist
+FARIZON,MPV SV6,MPV SV6,,pending,,,,auto-added from latest model data
+HONDA,STEP WGN AIR EX 2WD,STEP WGN AIR EX 2WD,,pending,,,,auto-added from latest model data
+HONDA,Super-ONE,Super-ONE,,pending,,,,auto-added from latest model data
+HONGQI,HONGQI E-HS9,HONGQI E-HS9,,pending,,,,auto-added from latest model data
+LEXUS,ES350E,ES350E,,pending,,,,auto-added from latest model data
+LEXUS,ES350H,ES350H,,pending,,,,auto-added from latest model data
+LOTUS,EMIRA TURBO SE,EMIRA TURBO SE,,pending,,,,auto-added from latest model data
+MITSUBISHI,PAJERO,PAJERO,,pending,,,,auto-added from latest model data
+SUBARU,BRZ STI SPORT TYPE RA,BRZ STI SPORT TYPE RA,,pending,,,,auto-added from latest model data
+TOYOTA,ALPHARD HYBRID G E-FOUR,ALPHARD HYBRID G E-FOUR,,pending,,,,auto-added from latest model data
+TOYOTA,VELLFIRE 2.5 HYBRID EXECUTIVE,VELLFIRE 2.5 HYBRID EXECUTIVE,,pending,,,,auto-added from latest model data
+VOLKSWAGEN,GOLF GTI CLUB 45 EDITION,GOLF GTI CLUB 45 EDITION,,pending,,,,auto-added from latest model data
+VOLKSWAGEN,ID BUZZ ELECTRIC,ID BUZZ ELECTRIC,BEV,approved,Fuel-grain reconciliation Sep 2569: VW's single unexplained BEV unit that month is this row; electric-only nameplate.,Kamon (via bev reconciliation review),10/7/2026,approved 2026-10-07 from the September 2569 BEV watchlist
+MOTO GUZZI,V100 MANDELLO,V100 MANDELLO,,pending,,,,auto-added from latest model data
+MOTO GUZZI,V100 MANDELLO S,V100 MANDELLO S,,pending,,,,auto-added from latest model data
+APRILIA,TUONO 660 FACTORY,TUONO 660 FACTORY,,pending,,,,auto-added from latest model data
+HONDA,CB1000GT,CB1000GT,,pending,,,,auto-added from latest model data
+NIU,FX PRO,FX PRO,,pending,,,,auto-added from latest model data
+VESPA,946,946,,pending,,,,auto-added from latest model data
+VESPA,LX 150 IGET ABS V EDITION,LX 150 IGET ABS V EDITION,,pending,,,,auto-added from latest model data
+YAMAHA,R15,R15,,pending,,,,auto-added from latest model data
+ZHI EV,G BEAST,G BEAST,,pending,,,,auto-added from latest model data
+HARLEY DAVIDSON,FLHXL,FLHXL,,pending,,,,auto-added from latest model data
+FURUKAWA,HCR900-DS,HCR900-DS,,pending,,,,auto-added from latest model data
+JCB,JS215LC NXT.,JS215LC NXT.,,pending,,,,auto-added from latest model data
+KOBELCO,SK125W-3,SK125W-3,,pending,,,,auto-added from latest model data
+KOBELCO,SK135SR-7,SK135SR-7,,pending,,,,auto-added from latest model data
+KOMATSU,0PC30MR-3,0PC30MR-3,,pending,,,,auto-added from latest model data
+KOMATSU,D20PL-5,D20PL-5,,pending,,,,auto-added from latest model data
+MAHINDRA,YUVO TECH+475 DI V1,YUVO TECH+475 DI V1,,pending,,,,auto-added from latest model data
+MITSUBISHI,MG500,MG500,,pending,,,,auto-added from latest model data
+MITSUBISHI,MG200,MG200,,pending,,,,auto-added from latest model data
+SDLG,L958F SLR,L958F SLR,,pending,,,,auto-added from latest model data
+KOBELCO,SK350LC-8,SK350LC-8,,pending,,,,auto-added from latest model data
+KOMATSU,D60P-11,D60P-11,,pending,,,,auto-added from latest model data
+WEICHAI LOVOL,TB754,TB754,,pending,,,,auto-added from latest model data
+CHAMP,YTO-NMF554X,YTO-NMF554X,,pending,,,,auto-added from latest model data
+ISEKI,NT554,NT554,,pending,,,,auto-added from latest model data
+NEWHOLLAND,7840 SLDP,7840 SLDP,,pending,,,,auto-added from latest model data
+BDMG,TT504,TT504,,pending,,,,auto-added from latest model data
+HENGWANG,HW16DE,HW16DE,,pending,,,,auto-added from latest model data
+KOMATSU,PC200-6S,PC200-6S,,pending,,,,auto-added from latest model data
+HITACHI,ZX230,ZX230,,pending,,,,auto-added from latest model data
+ALPHA,AW770,AW770,,pending,,,,auto-added from latest model data
+CASE,A8000,A8000,,pending,,,,auto-added from latest model data
+CASE,A8810,A8810,,pending,,,,auto-added from latest model data
+CAT,D6 GC,D6 GC,,pending,,,,auto-added from latest model data
+KOMATSU,PC200-11M2,PC200-11M2,,pending,,,,auto-added from latest model data
+NEWHOLLAND,TS115 (4WD),TS115 (4WD),,pending,,,,auto-added from latest model data
+LIUGONG,838TE,838TE,,pending,,,,auto-added from latest model data
+MAHINDRA,6065 4WD,6065 4WD,,pending,,,,auto-added from latest model data
+PROMACH,PRO16 MAX,PRO16 MAX,,pending,,,,auto-added from latest model data
+SHANTUI,SL30W,SL30W,,pending,,,,auto-added from latest model data
+DYNAPAC,CP202WT,CP202WT,,pending,,,,auto-added from latest model data
+SAKAI,R2H-2,R2H-2,,pending,,,,auto-added from latest model data
+SUMITOMO,HN200WTK-3,HN200WTK-3,,pending,,,,auto-added from latest model data
+HITACHI,ZC35C-3,ZC35C-3,,pending,,,,auto-added from latest model data
+SAKAI,SV201D-1K,SV201D-1K,,pending,,,,auto-added from latest model data
+SAKAI,SV201T-1,SV201T-1,,pending,,,,auto-added from latest model data
+REDLINE,DRS120D,DRS120D,,pending,,,,auto-added from latest model data
+HINO,FM8JN3D-CDDMH,FM8JN3D-CDDMH,,pending,,,,auto-added from latest model data
