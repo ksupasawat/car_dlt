@@ -1,3 +1,11 @@
+import { FORMAL_REPORT_CODES } from "./marketProfiles.ts";
+
+// Province-mode rows are summed client-side from raw facts, which carry every รย. code in
+// the file. The national tables come from the backend's "ALL" preset, which is exactly the
+// seven formal-report codes — so "ALL" has to mean the same seven here, or switching to a
+// province would quietly add vehicle types the rest of the dashboard never counts.
+const FORMAL_REPORT_CODE_SET = new Set(FORMAL_REPORT_CODES);
+
 export type AnalystFilterRow = {
   brand: string;
   model?: string;
@@ -147,7 +155,9 @@ export function buildAnalystRowsFromFacts({
   const prevMonthYear = currentMonthNum === 1 ? currentYear - 1 : currentYear;
   const scoped = facts.filter((fact) => {
     if (fact.p !== province) return false;
-    if (vehicleType !== "ALL" && fact.v !== vehicleType) return false;
+    if (vehicleType === "ALL") {
+      if (!FORMAL_REPORT_CODE_SET.has(fact.v)) return false;
+    } else if (fact.v !== vehicleType) return false;
     if (viewBy === "brand" && powertrain !== "ALL" && fact.pt !== powertrain) return false;
     return true;
   });

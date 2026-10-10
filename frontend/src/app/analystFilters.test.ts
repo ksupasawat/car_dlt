@@ -107,6 +107,31 @@ test("Analyst province facts can build province-scoped rows", () => {
   assert.equal(out[1].curr_growth_vs_prev_month, 0.5);
 });
 
+test("province-mode 'ALL' is the formal report scope, not every รย. code in the facts", () => {
+  // The backend's national "ALL" preset is {1,2,3,6,9,10,11}. Province rows are summed from
+  // raw facts, which also carry รย.12 (motorcycles) and the rest, so "ALL" must drop them —
+  // otherwise picking a province silently inflates the totals against the national view.
+  const facts = [
+    { p: "BANGKOK", b: "ACME", y: 2569, mo: 6, v: "รย.1", pt: "ICE", u: 12 },
+    { p: "BANGKOK", b: "ACME", y: 2569, mo: 6, v: "รย.11", pt: "ICE", u: 3 },
+    { p: "BANGKOK", b: "ACME", y: 2569, mo: 6, v: "รย.12", pt: "ICE", u: 500 },
+    { p: "BANGKOK", b: "ACME", y: 2569, mo: 6, v: "รย.17", pt: "ICE", u: 70 },
+  ];
+
+  const out = buildAnalystRowsFromFacts({
+    facts,
+    viewBy: "brand",
+    powertrain: "ALL",
+    vehicleType: "ALL",
+    province: "BANGKOK",
+    currentYear: 2569,
+    currentMonthNum: 6,
+  });
+
+  assert.equal(out[0].is_grand_total, true);
+  assert.equal(out[0].curr_month_units, 15);
+});
+
 // --- Market segment: the same filter the Deep Dive matrix uses, applied to analyst facts ---
 
 const SEG_TRIPLES: [string, string, string][] = [

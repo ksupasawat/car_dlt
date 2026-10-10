@@ -20,6 +20,7 @@ import {
   referenceDeepDiveTotal,
   selectDeepDiveMatrixOptions,
 } from "../deepDiveModelMatrix";
+import { resolveProfileCodes } from "../marketProfiles";
 
 const DATA_BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const MONTHS_EN = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -78,6 +79,15 @@ export default function ModelsPage() {
         if (j.meta?.years && j.meta.years.length > 0) {
           setActiveYears(j.meta.years.slice(-1).map(String));
         }
+        // Open on the DLT formal-report scope (รย.1,2,3,6,9,10,11), the same default the
+        // homepage uses, so the matrix totals match the headline numbers instead of
+        // silently summing every รย. code in the file. A selection the user already made
+        // is left alone (this also runs on Retry).
+        setSelectedVehicleTypes((prev) =>
+          prev.length > 0
+            ? prev
+            : resolveProfileCodes("formal_report", j.meta?.vehicle_types_list?.map((v) => v.code) ?? [])
+        );
         setLoading(false);
       })
       .catch((err) => {
@@ -98,6 +108,15 @@ export default function ModelsPage() {
         if (j.meta?.years && j.meta.years.length > 0) {
           setActiveYears(j.meta.years.slice(-1).map(String));
         }
+        // Open on the DLT formal-report scope (รย.1,2,3,6,9,10,11), the same default the
+        // homepage uses, so the matrix totals match the headline numbers instead of
+        // silently summing every รย. code in the file. A selection the user already made
+        // is left alone (this also runs on Retry).
+        setSelectedVehicleTypes((prev) =>
+          prev.length > 0
+            ? prev
+            : resolveProfileCodes("formal_report", j.meta?.vehicle_types_list?.map((v) => v.code) ?? [])
+        );
         setLoading(false);
       })
       .catch((err) => {
@@ -108,6 +127,17 @@ export default function ModelsPage() {
   }, []);
 
   const meta = data?.meta;
+  // The scope the page opens on. Anything equal to it is "no vehicle-type filter applied",
+  // and it is what the unfiltered reference sheet is measured against.
+  const defaultVehicleTypes = useMemo(
+    () => resolveProfileCodes("formal_report", meta?.vehicle_types_list?.map((v) => v.code) ?? []),
+    [meta]
+  );
+  const vehicleTypesAtDefault = useMemo(() => {
+    if (selectedVehicleTypes.length !== defaultVehicleTypes.length) return false;
+    const picked = new Set(selectedVehicleTypes);
+    return defaultVehicleTypes.every((c) => picked.has(c));
+  }, [selectedVehicleTypes, defaultVehicleTypes]);
   const years = meta?.years ?? [];
   const latestYear = years.length > 0 ? String(years[years.length - 1]) : null;
 
@@ -165,7 +195,7 @@ export default function ModelsPage() {
   const hasActiveFilters =
     selectedBrands.length > 0 ||
     selectedModels.length > 0 ||
-    selectedVehicleTypes.length > 0 ||
+    !vehicleTypesAtDefault ||
     selectedProvinces.length > 0 ||
     selectedPowertrains.length > 0 ||
     selectedSegments.length > 0;
@@ -247,7 +277,10 @@ export default function ModelsPage() {
         selectedBrands: [],
         selectedModels: [],
         selectedProvinces: [],
-        selectedVehicleTypes: [],
+        // "All Data" means every brand/model inside the report scope, not every รย. code in
+        // the file — otherwise the reference total would carry vehicle types the on-screen
+        // table never shows.
+        selectedVehicleTypes: defaultVehicleTypes,
         selectedPowertrains: [],
         selectedSegments: [],
       };
@@ -318,6 +351,9 @@ export default function ModelsPage() {
                 Brand & Model Deep-Dive Matrix
               </h1>
               <p className="text-[10px] text-slate-500 mt-0.5">Thailand Department of Land Transport — Multi-Year Registration Details</p>
+              <p className={`text-[10px] mt-0.5 tabular-nums ${vehicleTypesAtDefault ? "text-slate-500" : "text-amber-500"}`}>
+                Market scope: {vehicleTypesAtDefault ? "Formal report scope" : "Custom selection"} — {selectedVehicleTypes.length} of {meta?.vehicle_types_list?.length ?? 0} vehicle types
+              </p>
             </div>
             <div className="flex flex-wrap items-center gap-3">
               <span className="text-xs bg-slate-950 text-teal-300 font-semibold px-3 py-2 rounded border border-slate-800">
